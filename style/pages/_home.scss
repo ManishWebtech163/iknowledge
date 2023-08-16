@@ -121,4 +121,59 @@
       }
     }
   }
+  // ----Third Section-----//
+  .thirdSection{
+    @include container_1420;
+.thirdSectionContainer{
+.card{
+  display: flex;
+  align-items: center;
+  // justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 300px;
+  gap: 3rem;
+  padding: 2rem 4rem;
+  background-color: $lightBlueColor;
+.course{
+width: 25%;
+  h6{
+    font-weight: 400;
+    font-size: 20px;
+  }
+  h4{
+    font-weight: 400;
+    font-size: 24px;
+  }
+}
+.level{
+  display: flex;
+  gap: 4rem;
+  width: 40%;
+  .levelCard{
+    display: flex;
+    gap:1.5rem;
+    align-items: center;
+.levelTitle{
+    h6{
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #465286;
+    }
+  p{
+     font-weight: 400;
+  }
+  }
+  }
+  
+}
+.registration{
+  width: 35%;
+  text-align: end;
+button{
+  @include commonButton;
+}
+}
+}
+}
+  }
 }
