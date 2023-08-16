@@ -1,48 +1,74 @@
-.navbar input[type="checkbox"],
-.navbar .hamburger-lines {
+.navSection {
+  width: 100%;
+  //   overflow-x: hidden;
+  position: relative;
+  z-index: 999;
+}
+.navSection .navbar input[type="checkbox"],
+.navSection .navbar .hamburger-lines {
   display: none;
 }
-.navbar {
+.navSection .navbar {
   position: relative;
   width: 100%;
-  background: url(../../images/cover-1-min.jpg);
-  background-position: center;
-  background-size: cover;
   color: $whiteColor;
-  z-index: 999;
-  padding: 0 10vw;
+  background-image: linear-gradient(160deg, #29b1ff 0%, #0b7c26 100%);
 }
 
-.navbar-container {
+.navSection .navbar-container {
+  width: min(1720px, 95%);
   display: flex;
   justify-content: space-between;
   height: 8rem;
   align-items: center;
+  margin: auto;
 }
 
-.logo {
+.navSection .backgroundOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../../images/cover-1-min.jpg);
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.2;
+  mix-blend-mode: multiply;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.navSection .logo {
   order: 1;
   font-size: 2.3rem;
   width: 180px;
+  position: relative;
+  z-index: 4;
 }
-.menu-items {
+.navSection .menu-items {
   order: 2;
   display: flex;
+  position: relative;
+  z-index: 4;
+  height: 100%;
 }
 
-.menu-items li {
+.navSection .menu-items li {
   list-style: none;
   margin-left: 4rem;
   font-size: 1.3rem;
   display: flex;
   align-items: center;
+  position: relative;
+  height: 100%;
+  text-transform: uppercase;
   &.plus {
     position: relative;
     &::after {
       content: "+";
       position: absolute;
       right: -1.3rem;
-      top: 55%;
+      top: 50%;
       transform: translateY(-50%);
       font-size: 1.6rem;
     }
@@ -51,9 +77,41 @@
     font-size: 2rem;
     cursor: pointer;
   }
+
+  .items {
+    position: absolute;
+    top: 100%;
+    left: -1rem;
+    background-color: $lightBlueColor;
+    border: 2px solid $lightWhiteColor;
+    min-width: 200px;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 4;
+    .item {
+      font-size: $nText;
+      padding: 1rem;
+      display: block;
+      white-space: nowrap;
+      border-bottom: 1px solid $lightWhiteColor;
+      cursor: pointer;
+    }
+  }
 }
 
-.navbar a {
+.navSection .menu-items li {
+  &:hover > .items {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+}
+
+.navSection .navbar a {
   color: $whiteColor;
   text-decoration: none;
   font-weight: 500;
@@ -61,27 +119,27 @@
   font-size: $mText;
 }
 
-.navbar a:hover {
-  color: #117964;
+.navSection .navbar a:hover {
+  color: $primaryColor;
 }
 
 @media (max-width: 768px) {
-  .navbar {
+  .navSection .navbar {
     opacity: 0.95;
   }
 
-  .navbar-container input[type="checkbox"],
-  .navbar-container .hamburger-lines {
+  .navSection .navbar-container input[type="checkbox"],
+  .navSection .navbar-container .hamburger-lines {
     display: block;
   }
 
-  .navbar-container {
+  .navSection .navbar-container {
     display: block;
     position: relative;
     height: 64px;
   }
 
-  .navbar-container input[type="checkbox"] {
+  .navSection .navbar-container input[type="checkbox"] {
     position: absolute;
     display: block;
     height: 32px;
@@ -93,44 +151,44 @@
     cursor: pointer;
   }
 
-  .navbar-container .hamburger-lines {
+  .navSection .navbar-container .hamburger-lines {
     display: block;
-    height: 28px;
-    width: 35px;
+    height: 20px;
+    width: 25px;
     position: absolute;
     top: 20px;
-    left: 20px;
+    right: 20px;
     z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 4;
   }
 
-  .navbar-container .hamburger-lines .line {
+  .navSection .navbar-container .hamburger-lines .line {
     display: block;
-    height: 4px;
+    height: 3px;
     width: 100%;
     border-radius: 10px;
-    background: #333;
+    background: $whiteColor;
   }
 
-  .navbar-container .hamburger-lines .line1 {
+  .navSection .navbar-container .hamburger-lines .line1 {
     transform-origin: 0% 0%;
     transition: transform 0.3s ease-in-out;
   }
 
-  .navbar-container .hamburger-lines .line2 {
+  .navSection .navbar-container .hamburger-lines .line2 {
     transition: transform 0.2s ease-in-out;
   }
 
-  .navbar-container .hamburger-lines .line3 {
+  .navSection .navbar-container .hamburger-lines .line3 {
     transform-origin: 0% 100%;
     transition: transform 0.3s ease-in-out;
   }
 
-  .navbar .menu-items {
-    padding-top: 100px;
-    background: #fff;
+  .navSection .navbar .menu-items {
+    background: $primaryColor;
     height: 100vh;
     max-width: 300px;
     transform: translate(-150%);
@@ -139,42 +197,64 @@
     margin-left: -40px;
     padding-left: 40px;
     transition: transform 0.5s ease-in-out;
-    box-shadow: 5px 0px 10px 0px #aaa;
+    // box-shadow: 5px 0px 10px 0px #aaa;
     overflow: scroll;
+    padding: 1rem;
+    padding-top: 10vh;
   }
 
-  .navbar .menu-items li {
-    margin-bottom: 1.8rem;
+  .navSection .navbar .menu-items li {
+    margin-bottom: 2rem;
     font-size: 1.1rem;
     font-weight: 500;
+    height: auto;
+    &.plus {
+      position: relative;
+      &::after {
+        content: "+";
+        position: absolute;
+        right: 1.3rem;
+      }
+    }
   }
 
-  .logo {
+  .navSection .logo {
     position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 2.5rem;
+    top: 5px;
+    left: 15px;
+    width: 150px;
   }
 
-  .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+  .navSection .navbar-container input[type="checkbox"]:checked ~ .menu-items {
     transform: translateX(0);
   }
-
-  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  .navSection
+    .navbar-container
+    input[type="checkbox"]:checked
+    ~ .hamburger-lines
+    .line1 {
     transform: rotate(45deg);
   }
 
-  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  .navSection
+    .navbar-container
+    input[type="checkbox"]:checked
+    ~ .hamburger-lines
+    .line2 {
     transform: scaleY(0);
   }
 
-  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  .navSection
+    .navbar-container
+    input[type="checkbox"]:checked
+    ~ .hamburger-lines
+    .line3 {
     transform: rotate(-45deg);
   }
 }
 
 @media (max-width: 500px) {
-  .navbar-container input[type="checkbox"]:checked ~ .logo {
+  .navSection .navbar-container input[type="checkbox"]:checked ~ .logo {
     display: none;
   }
 }

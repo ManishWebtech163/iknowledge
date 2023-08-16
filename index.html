@@ -22,19 +22,44 @@
 <body>
     <div class="navSection">
         <nav class="navbar">
+            <div class="backgroundOverlay"></div>
             <div class="navbar-container container">
-                <input type="checkbox" name="" id="">
-                <div class="hamburger-lines">
+                <input type="checkbox" id="menuInput" hidden>
+                <label class="hamburger-lines" for="menuInput">
                     <span class="line line1"></span>
                     <span class="line line2"></span>
                     <span class="line line3"></span>
-                </div>
+                </label>
                 <ul class="menu-items">
                     <li><a href="#">Home</a></li>
-                    <li class="plus"><a href="#">About</a></li>
-                    <li class="plus"><a href="#">Category</a></li>
-                    <li class="plus"><a href="#">Menu</a></li>
-                    <li class="plus"><a href="#">Testimonial</a></li>
+                    <li class="plus"><a href="#">About</a>
+                        <div class="items">
+                            <a class="item">About us</a>
+                            <a class="item">Why us</a>
+                            <a class="item">Course</a>
+                            <a class="item">Course details</a>
+                        </div>
+                    </li>
+
+                    <li class="plus"><a href="#">FEATURES
+                        </a>
+                        <div class="items">
+                            <a class="item">Event</a>
+                            <a class="item">Event detail</a>
+                            <a class="item">Out team</a>
+                            <a class="item">team detail</a>
+                        </div>
+                    </li>
+                    <li class="plus"><a href="#">info
+                        </a>
+                        <div class="items">
+                            <a class="item">Out careers</a>
+                            <a class="item">career detail</a>
+                            <a class="item">pricing</a>
+                            <a class="item">partner</a>
+                            <a class="item">fadq</a>
+                        </div>
+                    </li>
                     <li><i class="fa-solid fa-magnifying-glass searchIcon" onclick="searchModelShow()"></i></li>
                 </ul>
                 <img src="./images/iknowledge.png" class="logo" />
