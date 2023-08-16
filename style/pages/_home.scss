@@ -431,31 +431,152 @@
   // ----EightSection----//
   .eightSection {
     position: relative;
+    border-radius: 30px;
+    overflow: hidden;
 
+    background-image: linear-gradient(280deg, #2946c86b 0%, #4c578881 100%);
     @include container_1420;
+    margin: 4rem auto;
     .overlay {
-      background: transparent;
-      // z-index: 4;
-      position: relative;
-      background-image: linear-gradient(280deg, #152052 0%, #465286 100%);
-    }
-    .eightSectionContainer {
-      text-align: center;
-      margin-top: 6rem;
-      position: absolute;
-      z-index: 3;
-      opacity: 0.6;
-      // mix-blend-mode: overlay;
-      border-radius: 30px;
-
-      padding: 1rem;
       width: 100%;
-      // z-index: 22;
+      height: 100%;
       background-image: url("../images/backgroundstar.jpg");
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
+      position: absolute;
+      opacity: 0.6;
+      mix-blend-mode: overlay;
+    }
+    .eightSectionContainer {
+      text-align: center;
+      margin-top: 6rem;
+
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      border-radius: 30px;
+      // background-image: url("../images/backgroundstar.jpg");
+      // background-position: center center;
+      // background-repeat: no-repeat;
+      // background-size: cover;
+      padding: 1rem;
+      // opacity: 0.6;
+      .earthBox {
+        width: 100%;
+
+        img {
+          width: min(800px, 100%);
+        }
+      }
+      .headingBox {
+        margin: 2rem 0 4rem 0;
+        position: relative;
+        z-index: 4;
+        h2 {
+          font-size: $xxlText;
+          text-align: center;
+          @include largeScreen {
+            font-size: $xlText;
+          }
+          @include smallScreen {
+            font-size: $lText + 1rem;
+            line-height: 5rem;
+          }
+          span {
+            @include primaryColorHover;
+          }
+        }
+        p {
+          font-size: $mText;
+          color: #cccccc;
+        }
+      }
+      .playstore {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        img {
+          width: 120px;
+        }
+      }
     }
   }
   // ----//EightSection----//
+  // ----SixSection----//
+  .sixSection {
+    @include container_1420;
+
+    margin-top: 10rem;
+    padding: 0 6rem;
+    @include largeScreen {
+      padding: 1rem;
+    }
+    .sixSectionContainer {
+      display: flex;
+      // align-items: center;
+      @include largeScreen {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .leftBox {
+        width: 45%;
+        img {
+          width: min(450px, 100%);
+        }
+      }
+      .rightBox {
+        width: 55%;
+        @include largeScreen {
+          width: 100%;
+        }
+        .rightBoxTitle {
+          .headingBox {
+            h2 {
+              font-size: $xxlText;
+              @include largeScreen {
+                font-size: $xlText;
+              }
+              @include smallScreen {
+                font-size: $lText + 1rem;
+                line-height: 5rem;
+              }
+              span {
+                @include primaryColorHover;
+              }
+            }
+            p {
+              font-size: $nText;
+              color: #cccccc;
+              margin-top: 1rem;
+            }
+          }
+          .listBox {
+            margin-top: 2rem;
+            .list {
+              ul {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-row-gap: 1rem;
+                @include mediumScreen {
+                  grid-template-columns: 1fr;
+                }
+                li {
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                  h4 {
+                    font-weight: 400;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // ----SixSection----//
 }
