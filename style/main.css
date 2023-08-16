@@ -1102,6 +1102,12 @@ a {
 .homePage .sixSection .sixSectionContainer .leftBox {
   width: 45%;
 }
+@media (max-width: 992px) {
+  .homePage .sixSection .sixSectionContainer .leftBox {
+    width: 100%;
+    text-align: center;
+  }
+}
 .homePage .sixSection .sixSectionContainer .leftBox img {
   width: min(450px, 100%);
 }

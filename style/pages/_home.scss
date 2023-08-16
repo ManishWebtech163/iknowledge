@@ -156,7 +156,11 @@
   .secondSection {
     @include container_1420;
     min-height: 100vh;
-    background: radial-gradient(closest-side at 50% 50%, $lightBlueColor, $darkBlueColor);
+    background: radial-gradient(
+      closest-side at 50% 50%,
+      $lightBlueColor,
+      $darkBlueColor
+    );
     .secondSectionContainer {
       width: 100%;
       padding: 5vh 2vw;
@@ -697,6 +701,10 @@
       }
       .leftBox {
         width: 45%;
+        @include largeScreen {
+          width: 100%;
+          text-align: center;
+        }
         img {
           width: min(450px, 100%);
         }
@@ -881,7 +889,11 @@
             }
             // -last card
             &:nth-child(4) {
-              background-image: linear-gradient(110deg, #ebcc63 0%, #0bcb73 100%);
+              background-image: linear-gradient(
+                110deg,
+                #ebcc63 0%,
+                #0bcb73 100%
+              );
             }
           }
         }
