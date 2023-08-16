@@ -630,6 +630,7 @@ a {
     box-shadow: 0 0 5px 10px rgba(235, 204, 99, 0.4784313725);
   }
 }
+<<<<<<< HEAD
 .homePage .forthSection {
   width: min(1420px, 98%);
   margin: auto;
@@ -670,20 +671,44 @@ a {
 }
 @media (max-width: 992px) {
   .homePage .forthSection .forthSectionContainer .boxes .contentBox .heading {
+=======
+.homePage .thirdSection {
+  width: min(1420px, 98%);
+  margin: auto;
+}
+.homePage .thirdSection .thirdSectionContainer .headingBox {
+  margin: 2rem 0 4rem 0;
+}
+.homePage .thirdSection .thirdSectionContainer .headingBox h2 {
+  font-size: 5rem;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .homePage .thirdSection .thirdSectionContainer .headingBox h2 {
+>>>>>>> ronaki
     font-size: 4rem;
   }
 }
 @media (max-width: 576px) {
+<<<<<<< HEAD
   .homePage .forthSection .forthSectionContainer .boxes .contentBox .heading {
+=======
+  .homePage .thirdSection .thirdSectionContainer .headingBox h2 {
+>>>>>>> ronaki
     font-size: 3.5rem;
     line-height: 5rem;
   }
 }
+<<<<<<< HEAD
 .homePage .forthSection .forthSectionContainer .boxes .contentBox .heading span {
+=======
+.homePage .thirdSection .thirdSectionContainer .headingBox h2 span {
+>>>>>>> ronaki
   color: #05be74;
   transition: 0.3s;
   transition-delay: 0.3s;
 }
+<<<<<<< HEAD
 .homePage .forthSection .forthSectionContainer .boxes .contentBox .heading span:hover {
   color: #222;
 }
@@ -1068,6 +1093,126 @@ a {
   }
 }
 .homePage .seventhSection .seventhSectionContainer .boxes .planCards .planCard .bottomLinks .startLink {
+=======
+.homePage .thirdSection .thirdSectionContainer .headingBox h2 span:hover {
+  color: #222;
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox .card {
+  display: flex;
+  align-items: center;
+  border: 2px solid #465286;
+  border-radius: 300px;
+  gap: 3rem;
+  padding: 2rem 4rem;
+  background-color: #152052;
+}
+@media (max-width: 992px) {
+  .homePage .thirdSection .thirdSectionContainer .cardBox .card {
+    flex-direction: column;
+    border-radius: 10px;
+  }
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox .card:hover {
+  border: 2px solid #0bcb73;
+  background: #0d132f;
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox .card .course {
+  width: 30%;
+}
+@media (max-width: 992px) {
+  .homePage .thirdSection .thirdSectionContainer .cardBox .card .course {
+    width: 100%;
+    text-align: center;
+  }
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox .card .course h6 {
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-top: 5px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox .card .course h4 {
+  font-weight: 400;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox .card .course p {
+  color: #465286;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox .card .course .rating {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+@media (max-width: 992px) {
+  .homePage .thirdSection .thirdSectionContainer .cardBox .card .course .rating {
+    justify-content: center;
+  }
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox .card .course .rating .stars {
+  display: flex;
+  gap: 8px;
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox .card .level {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  width: 50%;
+}
+@media (max-width: 992px) {
+  .homePage .thirdSection .thirdSectionContainer .cardBox .card .level {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .homePage .thirdSection .thirdSectionContainer .cardBox .card .level {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox .card .level .levelCard {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .homePage .thirdSection .thirdSectionContainer .cardBox .card .level .levelCard {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox .card .level .levelCard .levelTitle h6 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #465286;
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox .card .level .levelCard .levelTitle p {
+  font-weight: 400;
+  font-size: 2rem;
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox .card .registration {
+  width: 30%;
+  text-align: end;
+}
+@media (max-width: 992px) {
+  .homePage .thirdSection .thirdSectionContainer .cardBox .card .registration {
+    width: 100%;
+    text-align: center;
+  }
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox .card .registration button {
+>>>>>>> ronaki
   padding: 1rem 3rem;
   background: linear-gradient(100deg, #f98601 0%, #ebcc63 100%);
   color: #f4f4f4;
@@ -1076,6 +1221,7 @@ a {
   font-size: 1.6rem;
   font-weight: 600;
   cursor: pointer;
+<<<<<<< HEAD
 }
 @media (max-width: 992px) {
   .homePage .seventhSection .seventhSectionContainer .boxes .planCards .planCard .bottomLinks .startLink {
@@ -1202,4 +1348,165 @@ a {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
+=======
+  padding: 1.4rem 2.5rem;
+}
+.homePage .eightSection {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  background-image: linear-gradient(280deg, rgba(41, 70, 200, 0.4196078431) 0%, rgba(76, 87, 136, 0.5058823529) 100%);
+  width: min(1420px, 98%);
+  margin: auto;
+  margin: 4rem auto;
+}
+.homePage .eightSection .overlay {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/backgroundstar.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  opacity: 0.6;
+  mix-blend-mode: overlay;
+}
+.homePage .eightSection .eightSectionContainer {
+  text-align: center;
+  margin-top: 6rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  padding: 1rem;
+}
+.homePage .eightSection .eightSectionContainer .earthBox {
+  width: 100%;
+}
+.homePage .eightSection .eightSectionContainer .earthBox img {
+  width: min(800px, 100%);
+}
+.homePage .eightSection .eightSectionContainer .headingBox {
+  margin: 2rem 0 4rem 0;
+  position: relative;
+  z-index: 4;
+}
+.homePage .eightSection .eightSectionContainer .headingBox h2 {
+  font-size: 5rem;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .homePage .eightSection .eightSectionContainer .headingBox h2 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .homePage .eightSection .eightSectionContainer .headingBox h2 {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+}
+.homePage .eightSection .eightSectionContainer .headingBox h2 span {
+  color: #05be74;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+.homePage .eightSection .eightSectionContainer .headingBox h2 span:hover {
+  color: #222;
+}
+.homePage .eightSection .eightSectionContainer .headingBox p {
+  font-size: 2rem;
+  color: #cccccc;
+}
+.homePage .eightSection .eightSectionContainer .playstore {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.homePage .eightSection .eightSectionContainer .playstore img {
+  width: 120px;
+}
+.homePage .sixSection {
+  width: min(1420px, 98%);
+  margin: auto;
+  margin-top: 10rem;
+  padding: 0 6rem;
+}
+@media (max-width: 992px) {
+  .homePage .sixSection {
+    padding: 1rem;
+  }
+}
+.homePage .sixSection .sixSectionContainer {
+  display: flex;
+}
+@media (max-width: 992px) {
+  .homePage .sixSection .sixSectionContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.homePage .sixSection .sixSectionContainer .leftBox {
+  width: 45%;
+}
+.homePage .sixSection .sixSectionContainer .leftBox img {
+  width: min(450px, 100%);
+}
+.homePage .sixSection .sixSectionContainer .rightBox {
+  width: 55%;
+}
+@media (max-width: 992px) {
+  .homePage .sixSection .sixSectionContainer .rightBox {
+    width: 100%;
+  }
+}
+.homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .headingBox h2 {
+  font-size: 5rem;
+}
+@media (max-width: 992px) {
+  .homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .headingBox h2 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .headingBox h2 {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+}
+.homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .headingBox h2 span {
+  color: #05be74;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+.homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .headingBox h2 span:hover {
+  color: #222;
+}
+.homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .headingBox p {
+  font-size: 1.6rem;
+  color: #cccccc;
+  margin-top: 1rem;
+}
+.homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .listBox {
+  margin-top: 2rem;
+}
+.homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .listBox .list ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1rem;
+}
+@media (max-width: 768px) {
+  .homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .listBox .list ul {
+    grid-template-columns: 1fr;
+  }
+}
+.homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .listBox .list ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .listBox .list ul li h4 {
+  font-weight: 400;
+>>>>>>> ronaki
 }/*# sourceMappingURL=main.css.map */

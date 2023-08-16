@@ -150,17 +150,14 @@
       }
     }
   }
+
   // ----//heroSection-----
 
   // ----second section----
   .secondSection {
     @include container_1420;
     min-height: 100vh;
-    background: radial-gradient(
-      closest-side at 50% 50%,
-      $lightBlueColor,
-      $darkBlueColor
-    );
+    background: radial-gradient(closest-side at 50% 50%, $lightBlueColor, $darkBlueColor);
     .secondSectionContainer {
       width: 100%;
       padding: 5vh 2vw;
@@ -681,15 +678,221 @@
                 #ebcc63 0%,
                 #0bcb73 100%
               );
+  // ----//seventh Section----
+
+
+
+}
+
+  // ----SixSection----//
+  .sixSection {
+    @include container_1420;
+
+    margin-top: 10rem;
+    padding: 0 6rem;
+    @include largeScreen {
+      padding: 1rem;
+    }
+    .sixSectionContainer {
+      display: flex;
+      // align-items: center;
+      @include largeScreen {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .leftBox {
+        width: 45%;
+        img {
+          width: min(450px, 100%);
+        }
+      }
+      .rightBox {
+        width: 55%;
+        @include largeScreen {
+          width: 100%;
+        }
+        .rightBoxTitle {
+          .headingBox {
+            h2 {
+              font-size: $xxlText;
+              @include largeScreen {
+                font-size: $xlText;
+              }
+              @include smallScreen {
+                font-size: $lText + 1rem;
+                line-height: 5rem;
+              }
+              span {
+                @include primaryColorHover;
+              }
+            }
+            p {
+              font-size: $nText;
+              color: #cccccc;
+              margin-top: 1rem;
+            }
+          }
+          .listBox {
+            margin-top: 2rem;
+            .list {
+              ul {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-row-gap: 1rem;
+                @include mediumScreen {
+                  grid-template-columns: 1fr;
+                }
+                li {
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                  h4 {
+                    font-weight: 400;
+                  }
+                }
+              }
             }
           }
         }
       }
     }
   }
-  // ----//seventh Section----
-}
 
+  // ----SixSection----//
+
+  
+  // ----Third Section-----
+  .thirdSection {
+    @include container_1420;
+    .thirdSectionContainer {
+      .headingBox {
+        margin: 2rem 0 4rem 0;
+        h2 {
+          font-size: $xxlText;
+          text-align: center;
+          @include largeScreen {
+            font-size: $xlText;
+          }
+          @include smallScreen {
+            font-size: $lText + 1rem;
+            line-height: 5rem;
+          }
+          span {
+            @include primaryColorHover;
+          }
+        }
+      }
+      .cardBox {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .card {
+          display: flex;
+          align-items: center;
+          // justify-content: space-between;
+          border: 2px solid #465286;
+          border-radius: 300px;
+          gap: 3rem;
+          padding: 2rem 4rem;
+          background-color: $lightBlueColor;
+          @include largeScreen {
+            flex-direction: column;
+            border-radius: 10px;
+          }
+          &:hover {
+            border: 2px solid #0bcb73;
+            background: #0d132f;
+          }
+          .course {
+            width: 30%;
+            @include largeScreen {
+              width: 100%;
+              text-align: center;
+            }
+            h6 {
+              font-weight: 400;
+              font-size: $nText + 0.2rem;
+              margin-top: 5px;
+              word-spacing: 1px;
+              letter-spacing: 1px;
+            }
+            h4 {
+              font-weight: 400;
+              font-size: $mText + 0.4rem;
+              text-transform: uppercase;
+            }
+            p {
+              color: #465286;
+              font-size: $nText;
+              font-weight: 600;
+            }
+            .rating {
+              display: flex;
+              align-items: center;
+              margin-top: 1rem;
+
+              gap: 1rem;
+              @include largeScreen {
+                justify-content: center;
+              }
+              .stars {
+                display: flex;
+                gap: 8px;
+              }
+            }
+          }
+          .level {
+            display: flex;
+            gap: 2rem;
+            justify-content: space-between;
+            width: 50%;
+            @include largeScreen {
+              width: 100%;
+              justify-content: center;
+            }
+            @include mediumScreen {
+              flex-direction: column;
+              justify-content: center;
+            }
+            .levelCard {
+              display: flex;
+              gap: 1.5rem;
+              align-items: center;
+              @include mediumScreen {
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+              }
+              .levelTitle {
+                h6 {
+                  font-size: $nText + 0.1rem;
+                  font-weight: 600;
+                  color: #465286;
+                }
+                p {
+                  font-weight: 400;
+                  font-size: $mText;
+                }
+              }
+            }
+          }
+          .registration {
+            width: 30%;
+            text-align: end;
+            @include largeScreen {
+              width: 100%;
+              text-align: center;
+            }
+            button {
+              @include commonButton;
+              padding: 1.4rem 2.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
 // ----modal boxes----
 #searchBoxModal {
   @include modalBox;
@@ -735,3 +938,80 @@
     pointer-events: all;
   }
 }
+
+  // ----EightSection----//
+  .eightSection {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+
+    background-image: linear-gradient(280deg, #2946c86b 0%, #4c578881 100%);
+    @include container_1420;
+    margin: 4rem auto;
+    .overlay {
+      width: 100%;
+      height: 100%;
+      background-image: url("../images/backgroundstar.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      opacity: 0.6;
+      mix-blend-mode: overlay;
+    }
+    .eightSectionContainer {
+      text-align: center;
+      margin-top: 6rem;
+
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      border-radius: 30px;
+      // background-image: url("../images/backgroundstar.jpg");
+      // background-position: center center;
+      // background-repeat: no-repeat;
+      // background-size: cover;
+      padding: 1rem;
+      // opacity: 0.6;
+      .earthBox {
+        width: 100%;
+
+        img {
+          width: min(800px, 100%);
+        }
+      }
+      .headingBox {
+        margin: 2rem 0 4rem 0;
+        position: relative;
+        z-index: 4;
+        h2 {
+          font-size: $xxlText;
+          text-align: center;
+          @include largeScreen {
+            font-size: $xlText;
+          }
+          @include smallScreen {
+            font-size: $lText + 1rem;
+            line-height: 5rem;
+          }
+          span {
+            @include primaryColorHover;
+          }
+        }
+        p {
+          font-size: $mText;
+          color: #cccccc;
+        }
+      }
+      .playstore {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        img {
+          width: 120px;
+        }
+      }
+    }
+  }
+
+  // ----//EightSection----//
