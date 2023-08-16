@@ -20,6 +20,27 @@
 </head>
 
 <body>
+    <div class="navSection">
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <ul class="menu-items">
+                    <li><a href="#">Home</a></li>
+                    <li class="plus"><a href="#">About</a></li>
+                    <li class="plus"><a href="#">Category</a></li>
+                    <li class="plus"><a href="#">Menu</a></li>
+                    <li class="plus"><a href="#">Testimonial</a></li>
+                    <li><i class="fa-solid fa-magnifying-glass searchIcon" onclick="searchModelShow()"></i></li>
+                </ul>
+                <img src="./images/iknowledge.png" class="logo" />
+            </div>
+        </nav>
+    </div>
     <section class="homePage">
         <!----hero section---->
         <main class="heroSection">
@@ -207,7 +228,8 @@
                         <!-- - -->
                         <div class="btnDiv">
                             <a class="startBtn">Start learning</a>
-                            <button class="videoModelBtn"><i class="fa-solid fa-circle-play"></i></button>
+                            <button class="videoModelBtn" onclick="videoModelShow()"><i
+                                    class="fa-solid fa-circle-play"></i></button>
                         </div>
                     </div>
 
@@ -280,7 +302,8 @@
                         <div class="videoCard">
                             <div class="imgBox">
                                 <img src="./images/photo-1.jpg" alt="youtubeVideoImg">
-                                <button class="playBtn"><i class="fa-solid fa-play"></i></button>
+                                <button class="playBtn" onclick="videoModelShow()"><i
+                                        class="fa-solid fa-play"></i></button>
                             </div>
                             <div class="content">
                                 <h4 class="title">Classes to Spark Creativity</h4>
@@ -324,7 +347,8 @@
                         <div class="videoCard">
                             <div class="imgBox">
                                 <img src="./images/photo-3.jpg" alt="youtubeVideoImg">
-                                <button class="playBtn"><i class="fa-solid fa-play"></i></button>
+                                <button class="playBtn" onclick="videoModelShow()"><i
+                                        class="fa-solid fa-play"></i></button>
                             </div>
                             <div class="content">
                                 <h4 class="title">SEO Training Course Beginner</h4>
@@ -368,7 +392,8 @@
                         <div class="videoCard">
                             <div class="imgBox">
                                 <img src="./images/photo-4.jpg" alt="youtubeVideoImg">
-                                <button class="playBtn"><i class="fa-solid fa-play"></i></button>
+                                <button class="playBtn" onclick="videoModelShow()"><i
+                                        class="fa-solid fa-play"></i></button>
                             </div>
                             <div class="content">
                                 <h4 class="title">Build your own Android Apps</h4>
@@ -412,7 +437,8 @@
                         <div class="videoCard">
                             <div class="imgBox">
                                 <img src="./images/photo-5.jpg" alt="youtubeVideoImg">
-                                <button class="playBtn"><i class="fa-solid fa-play"></i></button>
+                                <button class="playBtn" onclick="videoModelShow()"><i
+                                        class="fa-solid fa-play"></i></button>
                             </div>
                             <div class="content">
                                 <h4 class="title">How to Build Webpages</h4>
@@ -456,7 +482,8 @@
                         <div class="videoCard">
                             <div class="imgBox">
                                 <img src="./images/photo-3.jpg" alt="youtubeVideoImg">
-                                <button class="playBtn"><i class="fa-solid fa-play"></i></button>
+                                <button class="playBtn" onclick="videoModelShow()"><i
+                                        class="fa-solid fa-play"></i></button>
                             </div>
                             <div class="content">
                                 <h4 class="title">Basic Course of UI/UX Design</h4>
@@ -500,7 +527,8 @@
                         <div class="videoCard">
                             <div class="imgBox">
                                 <img src="./images/photo-6.jpg" alt="youtubeVideoImg">
-                                <button class="playBtn"><i class="fa-solid fa-play"></i></button>
+                                <button class="playBtn" onclick="videoModelShow()"><i
+                                        class="fa-solid fa-play"></i></button>
                             </div>
                             <div class="content">
                                 <h4 class="title">How to Use Adobe Photoshop</h4>
@@ -656,9 +684,32 @@
             </div>
         </section>
         <!---- //seventh section ---->
-
-
     </section>
+    <!-- ----modals---- -->
+    <div class="searchBoxModal " id="searchBoxModal">
+        <div class="wrapper"></div>
+        <button class="closeBtn" onclick="searchModelHide()">x</button>
+        <div class="content">
+            <div class="search">
+                <input type="text">
+                <button>search</button>
+            </div>
+        </div>
+    </div>
+    <!--video modal-->
+    <div class="videoBoxModal " id="videoBoxModal">
+        <div class="wrapper"></div>
+        <button class="closeBtn" onclick="videoModelHide()">x</button>
+        <div class="content">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2LsOyOaobrc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- ----//modals---- -->
     <!-- --scripts load-- -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- <script src="./script/script.js"></script> -->
@@ -669,6 +720,30 @@
             slidesPerView: 4,
             spaceBetween: 10,
         });
+
+        // --search modal open hide--
+        function searchModelShow() {
+            let searchModal = document.getElementById("searchBoxModal")
+            searchModal.classList.add("searchModalActive")
+            document.body.style.overflowY = "hidden";
+        }
+        function searchModelHide() {
+            let searchModal = document.getElementById("searchBoxModal")
+            searchModal.classList.remove("searchModalActive")
+            document.body.style.overflowY = "auto";
+        }
+        // --video modal open hide--
+        function videoModelShow() {
+            let videoModal = document.getElementById("videoBoxModal")
+            videoModal.classList.add("videoModalActive")
+
+            document.body.style.overflowY = "hidden";
+        }
+        function videoModelHide() {
+            let videoModal = document.getElementById("videoBoxModal")
+            videoModal.classList.remove("videoModalActive")
+            document.body.style.overflowY = "auto";
+        }
     </script>
     <script>
         AOS.init();
