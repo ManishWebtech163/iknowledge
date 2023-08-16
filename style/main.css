@@ -68,7 +68,7 @@ a {
   z-index: 999;
 }
 
-.navSection .navbar input[type=checkbox],
+.navSection .navbar input[type="checkbox"],
 .navSection .navbar .hamburger-lines {
   display: none;
 }
@@ -190,7 +190,7 @@ a {
   .navSection .navbar {
     opacity: 0.95;
   }
-  .navSection .navbar-container input[type=checkbox],
+  .navSection .navbar-container input[type="checkbox"],
   .navSection .navbar-container .hamburger-lines {
     display: block;
   }
@@ -199,7 +199,7 @@ a {
     position: relative;
     height: 64px;
   }
-  .navSection .navbar-container input[type=checkbox] {
+  .navSection .navbar-container input[type="checkbox"] {
     position: absolute;
     display: block;
     height: 32px;
@@ -275,21 +275,33 @@ a {
     left: 15px;
     width: 150px;
   }
-  .navSection .navbar-container input[type=checkbox]:checked ~ .menu-items {
+  .navSection .navbar-container input[type="checkbox"]:checked ~ .menu-items {
     transform: translateX(0);
   }
-  .navSection .navbar-container input[type=checkbox]:checked ~ .hamburger-lines .line1 {
+  .navSection
+    .navbar-container
+    input[type="checkbox"]:checked
+    ~ .hamburger-lines
+    .line1 {
     transform: rotate(45deg);
   }
-  .navSection .navbar-container input[type=checkbox]:checked ~ .hamburger-lines .line2 {
+  .navSection
+    .navbar-container
+    input[type="checkbox"]:checked
+    ~ .hamburger-lines
+    .line2 {
     transform: scaleY(0);
   }
-  .navSection .navbar-container input[type=checkbox]:checked ~ .hamburger-lines .line3 {
+  .navSection
+    .navbar-container
+    input[type="checkbox"]:checked
+    ~ .hamburger-lines
+    .line3 {
     transform: rotate(-45deg);
   }
 }
 @media (max-width: 500px) {
-  .navSection .navbar-container input[type=checkbox]:checked ~ .logo {
+  .navSection .navbar-container input[type="checkbox"]:checked ~ .logo {
     display: none;
   }
 }
@@ -345,7 +357,13 @@ a {
   color: #222;
 }
 @media (max-width: 768px) {
-  .homePage .heroSection .heroSectionContainer .boxes .infoBox .tagBox .bookIcon {
+  .homePage
+    .heroSection
+    .heroSectionContainer
+    .boxes
+    .infoBox
+    .tagBox
+    .bookIcon {
     font-size: 2rem;
   }
 }
@@ -380,7 +398,13 @@ a {
   transition: 0.3s;
   transition-delay: 0.3s;
 }
-.homePage .heroSection .heroSectionContainer .boxes .infoBox .heading span:hover {
+.homePage
+  .heroSection
+  .heroSectionContainer
+  .boxes
+  .infoBox
+  .heading
+  span:hover {
   color: #222;
 }
 .homePage .heroSection .heroSectionContainer .boxes .infoBox .emailForm {
@@ -396,7 +420,14 @@ a {
     grid-template-columns: 70% 30%;
   }
 }
-.homePage .heroSection .heroSectionContainer .boxes .infoBox .emailForm form input {
+.homePage
+  .heroSection
+  .heroSectionContainer
+  .boxes
+  .infoBox
+  .emailForm
+  form
+  input {
   width: 100%;
   border-radius: 54px;
   outline: none;
@@ -405,7 +436,14 @@ a {
   color: #f4f4f4;
   border: 2px solid #465286;
 }
-.homePage .heroSection .heroSectionContainer .boxes .infoBox .emailForm form button {
+.homePage
+  .heroSection
+  .heroSectionContainer
+  .boxes
+  .infoBox
+  .emailForm
+  form
+  button {
   padding: 1rem 3rem;
   background: linear-gradient(100deg, #f98601 0%, #ebcc63 100%);
   color: #f4f4f4;
@@ -417,7 +455,14 @@ a {
   white-space: nowrap;
 }
 @media (max-width: 768px) {
-  .homePage .heroSection .heroSectionContainer .boxes .infoBox .emailForm form button {
+  .homePage
+    .heroSection
+    .heroSectionContainer
+    .boxes
+    .infoBox
+    .emailForm
+    form
+    button {
     font-size: 1.2rem;
     padding: 1rem;
   }
@@ -428,22 +473,62 @@ a {
 .homePage .heroSection .heroSectionContainer .boxes .infoBox .sliderDiv .title {
   font-size: 1.4rem;
 }
-.homePage .heroSection .heroSectionContainer .boxes .infoBox .sliderDiv .sliderBox {
+.homePage
+  .heroSection
+  .heroSectionContainer
+  .boxes
+  .infoBox
+  .sliderDiv
+  .sliderBox {
   width: 100%;
   overflow: hidden;
   margin: 2rem 0;
 }
-.homePage .heroSection .heroSectionContainer .boxes .infoBox .sliderDiv .sliderBox .heroSectionLogosSlider {
+.homePage
+  .heroSection
+  .heroSectionContainer
+  .boxes
+  .infoBox
+  .sliderDiv
+  .sliderBox
+  .heroSectionLogosSlider {
   width: 100%;
   padding: 0 0.5rem;
 }
-.homePage .heroSection .heroSectionContainer .boxes .infoBox .sliderDiv .sliderBox .heroSectionLogosSlider .swiper-wrapper {
+.homePage
+  .heroSection
+  .heroSectionContainer
+  .boxes
+  .infoBox
+  .sliderDiv
+  .sliderBox
+  .heroSectionLogosSlider
+  .swiper-wrapper {
   width: 100%;
 }
-.homePage .heroSection .heroSectionContainer .boxes .infoBox .sliderDiv .sliderBox .heroSectionLogosSlider .swiper-wrapper .slideDiv {
+.homePage
+  .heroSection
+  .heroSectionContainer
+  .boxes
+  .infoBox
+  .sliderDiv
+  .sliderBox
+  .heroSectionLogosSlider
+  .swiper-wrapper
+  .slideDiv {
   width: 100%;
 }
-.homePage .heroSection .heroSectionContainer .boxes .infoBox .sliderDiv .sliderBox .heroSectionLogosSlider .swiper-wrapper .slideDiv img {
+.homePage
+  .heroSection
+  .heroSectionContainer
+  .boxes
+  .infoBox
+  .sliderDiv
+  .sliderBox
+  .heroSectionLogosSlider
+  .swiper-wrapper
+  .slideDiv
+  img {
   width: 100%;
 }
 .homePage .heroSection .heroSectionContainer .boxes .imageBox picture,
@@ -464,7 +549,7 @@ a {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .homePage .secondSection {
   width: min(1420px, 98%);
@@ -565,34 +650,76 @@ a {
   gap: 1rem;
   font-size: 1.3rem;
 }
-.homePage .secondSection .secondSectionContainer .boxes .cardsBox .card .tags .price {
+.homePage
+  .secondSection
+  .secondSectionContainer
+  .boxes
+  .cardsBox
+  .card
+  .tags
+  .price {
   background-color: #e9aa13;
   padding: 0.3rem 0.7rem;
   border-radius: 3px;
   display: flex;
   align-items: center;
 }
-.homePage .secondSection .secondSectionContainer .boxes .cardsBox .card .tags .rating {
+.homePage
+  .secondSection
+  .secondSectionContainer
+  .boxes
+  .cardsBox
+  .card
+  .tags
+  .rating {
   background-color: #465286;
   padding: 0.3rem 0.7rem;
   border-radius: 3px;
 }
-.homePage .secondSection .secondSectionContainer .boxes .cardsBox .card .content h3 {
+.homePage
+  .secondSection
+  .secondSectionContainer
+  .boxes
+  .cardsBox
+  .card
+  .content
+  h3 {
   font-size: 2.5rem;
   margin: 2rem 0;
 }
 @media (max-width: 992px) {
-  .homePage .secondSection .secondSectionContainer .boxes .cardsBox .card .content h3 {
+  .homePage
+    .secondSection
+    .secondSectionContainer
+    .boxes
+    .cardsBox
+    .card
+    .content
+    h3 {
     font-size: 2rem;
     margin: 1rem 0;
   }
 }
-.homePage .secondSection .secondSectionContainer .boxes .cardsBox .card .content p {
+.homePage
+  .secondSection
+  .secondSectionContainer
+  .boxes
+  .cardsBox
+  .card
+  .content
+  p {
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
 @media (max-width: 992px) {
-  .homePage .secondSection .secondSectionContainer .boxes .cardsBox .card .content p {
+  .homePage
+    .secondSection
+    .secondSectionContainer
+    .boxes
+    .cardsBox
+    .card
+    .content
+    p {
     font-size: 1.4rem;
   }
 }
@@ -604,14 +731,26 @@ a {
   padding: 1rem;
   gap: 2rem;
 }
-.homePage .secondSection .secondSectionContainer .boxes .cardsBox .btnDiv .startBtn {
+.homePage
+  .secondSection
+  .secondSectionContainer
+  .boxes
+  .cardsBox
+  .btnDiv
+  .startBtn {
   background-color: #e9aa13;
   font-size: 1.6rem;
   font-weight: 600;
   padding: 1rem 2rem;
   border-radius: 54px;
 }
-.homePage .secondSection .secondSectionContainer .boxes .cardsBox .btnDiv .videoModelBtn {
+.homePage
+  .secondSection
+  .secondSectionContainer
+  .boxes
+  .cardsBox
+  .btnDiv
+  .videoModelBtn {
   background-color: #e9aa13;
   font-size: 2rem;
   font-weight: 600;
@@ -630,7 +769,6 @@ a {
     box-shadow: 0 0 5px 10px rgba(235, 204, 99, 0.4784313725);
   }
 }
-<<<<<<< HEAD
 .homePage .forthSection {
   width: min(1420px, 98%);
   margin: auto;
@@ -663,53 +801,53 @@ a {
 .homePage .forthSection .forthSectionContainer .boxes .contentBox .heading {
   font-size: 5rem;
 }
-.homePage .forthSection .forthSectionContainer .boxes .contentBox .heading:hover span {
+.homePage
+  .forthSection
+  .forthSectionContainer
+  .boxes
+  .contentBox
+  .heading:hover
+  span {
   color: #222;
 }
-.homePage .forthSection .forthSectionContainer .boxes .contentBox .heading span {
+.homePage
+  .forthSection
+  .forthSectionContainer
+  .boxes
+  .contentBox
+  .heading
+  span {
   color: #05be74;
 }
 @media (max-width: 992px) {
   .homePage .forthSection .forthSectionContainer .boxes .contentBox .heading {
-=======
-.homePage .thirdSection {
-  width: min(1420px, 98%);
-  margin: auto;
-}
-.homePage .thirdSection .thirdSectionContainer .headingBox {
-  margin: 2rem 0 4rem 0;
-}
-.homePage .thirdSection .thirdSectionContainer .headingBox h2 {
-  font-size: 5rem;
-  text-align: center;
-}
-@media (max-width: 992px) {
-  .homePage .thirdSection .thirdSectionContainer .headingBox h2 {
->>>>>>> ronaki
     font-size: 4rem;
   }
 }
 @media (max-width: 576px) {
-<<<<<<< HEAD
   .homePage .forthSection .forthSectionContainer .boxes .contentBox .heading {
-=======
-  .homePage .thirdSection .thirdSectionContainer .headingBox h2 {
->>>>>>> ronaki
     font-size: 3.5rem;
     line-height: 5rem;
   }
 }
-<<<<<<< HEAD
-.homePage .forthSection .forthSectionContainer .boxes .contentBox .heading span {
-=======
-.homePage .thirdSection .thirdSectionContainer .headingBox h2 span {
->>>>>>> ronaki
+.homePage
+  .forthSection
+  .forthSectionContainer
+  .boxes
+  .contentBox
+  .heading
+  span {
   color: #05be74;
   transition: 0.3s;
   transition-delay: 0.3s;
 }
-<<<<<<< HEAD
-.homePage .forthSection .forthSectionContainer .boxes .contentBox .heading span:hover {
+.homePage
+  .forthSection
+  .forthSectionContainer
+  .boxes
+  .contentBox
+  .heading
+  span:hover {
   color: #222;
 }
 .homePage .forthSection .forthSectionContainer .boxes .contentBox .pera {
@@ -721,25 +859,58 @@ a {
   justify-content: space-between;
 }
 @media (max-width: 992px) {
-  .homePage .forthSection .forthSectionContainer .boxes .contentBox .numbersBox {
+  .homePage
+    .forthSection
+    .forthSectionContainer
+    .boxes
+    .contentBox
+    .numbersBox {
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 2rem;
   }
 }
-.homePage .forthSection .forthSectionContainer .boxes .contentBox .numbersBox .box .num {
+.homePage
+  .forthSection
+  .forthSectionContainer
+  .boxes
+  .contentBox
+  .numbersBox
+  .box
+  .num {
   font-size: 3.5rem;
   font-weight: 600;
 }
-.homePage .forthSection .forthSectionContainer .boxes .contentBox .numbersBox .box .title {
+.homePage
+  .forthSection
+  .forthSectionContainer
+  .boxes
+  .contentBox
+  .numbersBox
+  .box
+  .title {
   font-size: 1.6rem;
 }
-.homePage .forthSection .forthSectionContainer .boxes .contentBox .numbersBox .box .subTitle {
+.homePage
+  .forthSection
+  .forthSectionContainer
+  .boxes
+  .contentBox
+  .numbersBox
+  .box
+  .subTitle {
   font-size: 1.4rem;
   color: rgba(255, 255, 255, 0.4);
 }
-.homePage .forthSection .forthSectionContainer .boxes .contentBox .numbersBox .box.ratingCourse .stars {
+.homePage
+  .forthSection
+  .forthSectionContainer
+  .boxes
+  .contentBox
+  .numbersBox
+  .box.ratingCourse
+  .stars {
   margin-top: 2rem;
   display: flex;
   font-size: 1.4rem;
@@ -747,12 +918,26 @@ a {
   color: #e9aa13;
 }
 @media (max-width: 992px) {
-  .homePage .forthSection .forthSectionContainer .boxes .contentBox .numbersBox .box.ratingCourse .stars {
+  .homePage
+    .forthSection
+    .forthSectionContainer
+    .boxes
+    .contentBox
+    .numbersBox
+    .box.ratingCourse
+    .stars {
     justify-content: center;
     margin-top: 1rem;
   }
 }
-.homePage .forthSection .forthSectionContainer .boxes .contentBox .numbersBox .box.tutorials .youBox {
+.homePage
+  .forthSection
+  .forthSectionContainer
+  .boxes
+  .contentBox
+  .numbersBox
+  .box.tutorials
+  .youBox {
   margin-top: 2rem;
   display: flex;
   font-size: 1.6rem;
@@ -761,14 +946,36 @@ a {
   color: rgba(255, 255, 255, 0.5333333333);
 }
 @media (max-width: 992px) {
-  .homePage .forthSection .forthSectionContainer .boxes .contentBox .numbersBox .box.tutorials .youBox {
+  .homePage
+    .forthSection
+    .forthSectionContainer
+    .boxes
+    .contentBox
+    .numbersBox
+    .box.tutorials
+    .youBox {
     margin-top: 1rem;
   }
 }
-.homePage .forthSection .forthSectionContainer .boxes .contentBox .numbersBox .box.tutorials .youBox .icon {
+.homePage
+  .forthSection
+  .forthSectionContainer
+  .boxes
+  .contentBox
+  .numbersBox
+  .box.tutorials
+  .youBox
+  .icon {
   color: red;
 }
-.homePage .forthSection .forthSectionContainer .boxes .contentBox .numbersBox .box.registarions .link {
+.homePage
+  .forthSection
+  .forthSectionContainer
+  .boxes
+  .contentBox
+  .numbersBox
+  .box.registarions
+  .link {
   margin-top: 2rem;
   display: flex;
   font-size: 1.6rem;
@@ -778,12 +985,27 @@ a {
   align-items: center;
 }
 @media (max-width: 992px) {
-  .homePage .forthSection .forthSectionContainer .boxes .contentBox .numbersBox .box.registarions .link {
+  .homePage
+    .forthSection
+    .forthSectionContainer
+    .boxes
+    .contentBox
+    .numbersBox
+    .box.registarions
+    .link {
     justify-content: center;
     margin-top: 1rem;
   }
 }
-.homePage .forthSection .forthSectionContainer .boxes .contentBox .numbersBox .box.registarions .link span {
+.homePage
+  .forthSection
+  .forthSectionContainer
+  .boxes
+  .contentBox
+  .numbersBox
+  .box.registarions
+  .link
+  span {
   height: 1.5rem;
   width: 1.5rem;
   background-color: #f4f4f4;
@@ -859,24 +1081,44 @@ a {
   overflow: hidden;
   background-color: #152052;
 }
-.homePage .fifthSection .fifthSectionContainer .boxes .videoBox .videoCard .imgBox {
+.homePage
+  .fifthSection
+  .fifthSectionContainer
+  .boxes
+  .videoBox
+  .videoCard
+  .imgBox {
   position: relative;
   aspect-ratio: 16/10;
   overflow: hidden;
   background-color: rebeccapurple;
   cursor: pointer;
 }
-.homePage .fifthSection .fifthSectionContainer .boxes .videoBox .videoCard .imgBox img {
+.homePage
+  .fifthSection
+  .fifthSectionContainer
+  .boxes
+  .videoBox
+  .videoCard
+  .imgBox
+  img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   filter: brightness(0.8);
 }
-.homePage .fifthSection .fifthSectionContainer .boxes .videoBox .videoCard .imgBox .playBtn {
+.homePage
+  .fifthSection
+  .fifthSectionContainer
+  .boxes
+  .videoBox
+  .videoCard
+  .imgBox
+  .playBtn {
   position: absolute;
   top: 0;
   left: 0;
@@ -893,30 +1135,72 @@ a {
   box-shadow: 0px 0px 10px #f4f4f4;
   filter: brightness(0.9);
 }
-.homePage .fifthSection .fifthSectionContainer .boxes .videoBox .videoCard .content {
+.homePage
+  .fifthSection
+  .fifthSectionContainer
+  .boxes
+  .videoBox
+  .videoCard
+  .content {
   padding: 1.6rem 2rem;
 }
-.homePage .fifthSection .fifthSectionContainer .boxes .videoBox .videoCard .content .title {
+.homePage
+  .fifthSection
+  .fifthSectionContainer
+  .boxes
+  .videoBox
+  .videoCard
+  .content
+  .title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   font-weight: 500;
 }
-.homePage .fifthSection .fifthSectionContainer .boxes .videoBox .videoCard .content .subTitle {
+.homePage
+  .fifthSection
+  .fifthSectionContainer
+  .boxes
+  .videoBox
+  .videoCard
+  .content
+  .subTitle {
   font-size: 1.6rem;
   font-weight: 400;
 }
-.homePage .fifthSection .fifthSectionContainer .boxes .videoBox .videoCard .content .review {
+.homePage
+  .fifthSection
+  .fifthSectionContainer
+  .boxes
+  .videoBox
+  .videoCard
+  .content
+  .review {
   display: flex;
   align-items: center;
   font-size: 1.2rem;
   gap: 1rem;
   color: rgba(255, 255, 255, 0.4);
 }
-.homePage .fifthSection .fifthSectionContainer .boxes .videoBox .videoCard .content .review .stars {
+.homePage
+  .fifthSection
+  .fifthSectionContainer
+  .boxes
+  .videoBox
+  .videoCard
+  .content
+  .review
+  .stars {
   color: #e9aa13;
   font-size: 1.5rem;
 }
-.homePage .fifthSection .fifthSectionContainer .boxes .videoBox .videoCard .content .tags {
+.homePage
+  .fifthSection
+  .fifthSectionContainer
+  .boxes
+  .videoBox
+  .videoCard
+  .content
+  .tags {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -924,15 +1208,39 @@ a {
   font-size: 1.6rem;
   margin-top: 1rem;
 }
-.homePage .fifthSection .fifthSectionContainer .boxes .videoBox .videoCard .content .tags .tag {
+.homePage
+  .fifthSection
+  .fifthSectionContainer
+  .boxes
+  .videoBox
+  .videoCard
+  .content
+  .tags
+  .tag {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-.homePage .fifthSection .fifthSectionContainer .boxes .videoBox .videoCard .content .tags .tag .name {
+.homePage
+  .fifthSection
+  .fifthSectionContainer
+  .boxes
+  .videoBox
+  .videoCard
+  .content
+  .tags
+  .tag
+  .name {
   color: rgba(255, 255, 255, 0.4);
 }
-.homePage .fifthSection .fifthSectionContainer .boxes .videoBox .videoCard .content .timeing {
+.homePage
+  .fifthSection
+  .fifthSectionContainer
+  .boxes
+  .videoBox
+  .videoCard
+  .content
+  .timeing {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -941,7 +1249,15 @@ a {
   border-top: 2px solid rgba(255, 255, 255, 0.4);
   gap: 2rem;
 }
-.homePage .fifthSection .fifthSectionContainer .boxes .videoBox .videoCard .content .timeing .box {
+.homePage
+  .fifthSection
+  .fifthSectionContainer
+  .boxes
+  .videoBox
+  .videoCard
+  .content
+  .timeing
+  .box {
   display: flex;
   align-items: center;
   font-size: 1.4rem;
@@ -1004,54 +1320,139 @@ a {
   border-radius: 10px;
   padding: 2rem;
 }
-.homePage .seventhSection .seventhSectionContainer .boxes .planCards .planCard .status {
+.homePage
+  .seventhSection
+  .seventhSectionContainer
+  .boxes
+  .planCards
+  .planCard
+  .status {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2rem;
 }
-.homePage .seventhSection .seventhSectionContainer .boxes .planCards .planCard .status .name {
+.homePage
+  .seventhSection
+  .seventhSectionContainer
+  .boxes
+  .planCards
+  .planCard
+  .status
+  .name {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.homePage .seventhSection .seventhSectionContainer .boxes .planCards .planCard .status .name .icon {
+.homePage
+  .seventhSection
+  .seventhSectionContainer
+  .boxes
+  .planCards
+  .planCard
+  .status
+  .name
+  .icon {
   font-size: 1.3rem;
   color: #e9aa13;
 }
-.homePage .seventhSection .seventhSectionContainer .boxes .planCards .planCard .status .name p {
+.homePage
+  .seventhSection
+  .seventhSectionContainer
+  .boxes
+  .planCards
+  .planCard
+  .status
+  .name
+  p {
   font-size: 2rem;
 }
-.homePage .seventhSection .seventhSectionContainer .boxes .planCards .planCard .status .type {
+.homePage
+  .seventhSection
+  .seventhSectionContainer
+  .boxes
+  .planCards
+  .planCard
+  .status
+  .type {
   font-size: 1.6rem;
   color: rgba(255, 255, 255, 0.4);
 }
-.homePage .seventhSection .seventhSectionContainer .boxes .planCards .planCard .price {
+.homePage
+  .seventhSection
+  .seventhSectionContainer
+  .boxes
+  .planCards
+  .planCard
+  .price {
   font-size: 3rem;
   margin-bottom: 2rem;
 }
 @media (max-width: 992px) {
-  .homePage .seventhSection .seventhSectionContainer .boxes .planCards .planCard .price {
+  .homePage
+    .seventhSection
+    .seventhSectionContainer
+    .boxes
+    .planCards
+    .planCard
+    .price {
     font-size: 2.5rem;
   }
 }
-.homePage .seventhSection .seventhSectionContainer .boxes .planCards .planCard .points ul {
+.homePage
+  .seventhSection
+  .seventhSectionContainer
+  .boxes
+  .planCards
+  .planCard
+  .points
+  ul {
   padding-left: 2rem;
   position: relative;
 }
-.homePage .seventhSection .seventhSectionContainer .boxes .planCards .planCard .points ul li {
+.homePage
+  .seventhSection
+  .seventhSectionContainer
+  .boxes
+  .planCards
+  .planCard
+  .points
+  ul
+  li {
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
-.homePage .seventhSection .seventhSectionContainer .boxes .planCards .planCard .points ul li:hover {
+.homePage
+  .seventhSection
+  .seventhSectionContainer
+  .boxes
+  .planCards
+  .planCard
+  .points
+  ul
+  li:hover {
   color: #e9aa13;
 }
-.homePage .seventhSection .seventhSectionContainer .boxes .planCards .planCard .points ul li:before {
+.homePage
+  .seventhSection
+  .seventhSectionContainer
+  .boxes
+  .planCards
+  .planCard
+  .points
+  ul
+  li:before {
   content: "+";
   position: absolute;
   left: 0;
 }
-.homePage .seventhSection .seventhSectionContainer .boxes .planCards .planCard .bottomLinks {
+.homePage
+  .seventhSection
+  .seventhSectionContainer
+  .boxes
+  .planCards
+  .planCard
+  .bottomLinks {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1059,7 +1460,14 @@ a {
   margin-top: 3rem;
   margin-bottom: 1rem;
 }
-.homePage .seventhSection .seventhSectionContainer .boxes .planCards .planCard .bottomLinks .demoLink {
+.homePage
+  .seventhSection
+  .seventhSectionContainer
+  .boxes
+  .planCards
+  .planCard
+  .bottomLinks
+  .demoLink {
   color: #f4f4f4;
   display: flex;
   align-items: center;
@@ -1068,11 +1476,26 @@ a {
   font-size: 1.6rem;
 }
 @media (max-width: 992px) {
-  .homePage .seventhSection .seventhSectionContainer .boxes .planCards .planCard .bottomLinks .demoLink {
+  .homePage
+    .seventhSection
+    .seventhSectionContainer
+    .boxes
+    .planCards
+    .planCard
+    .bottomLinks
+    .demoLink {
     font-size: 1.2rem;
   }
 }
-.homePage .seventhSection .seventhSectionContainer .boxes .planCards .planCard .bottomLinks .demoLink span {
+.homePage
+  .seventhSection
+  .seventhSectionContainer
+  .boxes
+  .planCards
+  .planCard
+  .bottomLinks
+  .demoLink
+  span {
   margin-top: 0.3rem;
   background-color: #f4f4f4;
   height: 2rem;
@@ -1085,134 +1508,29 @@ a {
   font-size: 1.2rem;
 }
 @media (max-width: 992px) {
-  .homePage .seventhSection .seventhSectionContainer .boxes .planCards .planCard .bottomLinks .demoLink span {
+  .homePage
+    .seventhSection
+    .seventhSectionContainer
+    .boxes
+    .planCards
+    .planCard
+    .bottomLinks
+    .demoLink
+    span {
     height: 1.5rem;
     width: 1.5rem;
     font-size: 0.9rem;
     margin-top: 0.1rem;
   }
 }
-.homePage .seventhSection .seventhSectionContainer .boxes .planCards .planCard .bottomLinks .startLink {
-=======
-.homePage .thirdSection .thirdSectionContainer .headingBox h2 span:hover {
-  color: #222;
-}
-.homePage .thirdSection .thirdSectionContainer .cardBox {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.homePage .thirdSection .thirdSectionContainer .cardBox .card {
-  display: flex;
-  align-items: center;
-  border: 2px solid #465286;
-  border-radius: 300px;
-  gap: 3rem;
-  padding: 2rem 4rem;
-  background-color: #152052;
-}
-@media (max-width: 992px) {
-  .homePage .thirdSection .thirdSectionContainer .cardBox .card {
-    flex-direction: column;
-    border-radius: 10px;
-  }
-}
-.homePage .thirdSection .thirdSectionContainer .cardBox .card:hover {
-  border: 2px solid #0bcb73;
-  background: #0d132f;
-}
-.homePage .thirdSection .thirdSectionContainer .cardBox .card .course {
-  width: 30%;
-}
-@media (max-width: 992px) {
-  .homePage .thirdSection .thirdSectionContainer .cardBox .card .course {
-    width: 100%;
-    text-align: center;
-  }
-}
-.homePage .thirdSection .thirdSectionContainer .cardBox .card .course h6 {
-  font-weight: 400;
-  font-size: 1.8rem;
-  margin-top: 5px;
-  word-spacing: 1px;
-  letter-spacing: 1px;
-}
-.homePage .thirdSection .thirdSectionContainer .cardBox .card .course h4 {
-  font-weight: 400;
-  font-size: 2.4rem;
-  text-transform: uppercase;
-}
-.homePage .thirdSection .thirdSectionContainer .cardBox .card .course p {
-  color: #465286;
-  font-size: 1.6rem;
-  font-weight: 600;
-}
-.homePage .thirdSection .thirdSectionContainer .cardBox .card .course .rating {
-  display: flex;
-  align-items: center;
-  margin-top: 1rem;
-  gap: 1rem;
-}
-@media (max-width: 992px) {
-  .homePage .thirdSection .thirdSectionContainer .cardBox .card .course .rating {
-    justify-content: center;
-  }
-}
-.homePage .thirdSection .thirdSectionContainer .cardBox .card .course .rating .stars {
-  display: flex;
-  gap: 8px;
-}
-.homePage .thirdSection .thirdSectionContainer .cardBox .card .level {
-  display: flex;
-  gap: 2rem;
-  justify-content: space-between;
-  width: 50%;
-}
-@media (max-width: 992px) {
-  .homePage .thirdSection .thirdSectionContainer .cardBox .card .level {
-    width: 100%;
-    justify-content: center;
-  }
-}
-@media (max-width: 768px) {
-  .homePage .thirdSection .thirdSectionContainer .cardBox .card .level {
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-.homePage .thirdSection .thirdSectionContainer .cardBox .card .level .levelCard {
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
-}
-@media (max-width: 768px) {
-  .homePage .thirdSection .thirdSectionContainer .cardBox .card .level .levelCard {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-}
-.homePage .thirdSection .thirdSectionContainer .cardBox .card .level .levelCard .levelTitle h6 {
-  font-size: 1.7rem;
-  font-weight: 600;
-  color: #465286;
-}
-.homePage .thirdSection .thirdSectionContainer .cardBox .card .level .levelCard .levelTitle p {
-  font-weight: 400;
-  font-size: 2rem;
-}
-.homePage .thirdSection .thirdSectionContainer .cardBox .card .registration {
-  width: 30%;
-  text-align: end;
-}
-@media (max-width: 992px) {
-  .homePage .thirdSection .thirdSectionContainer .cardBox .card .registration {
-    width: 100%;
-    text-align: center;
-  }
-}
-.homePage .thirdSection .thirdSectionContainer .cardBox .card .registration button {
->>>>>>> ronaki
+.homePage
+  .seventhSection
+  .seventhSectionContainer
+  .boxes
+  .planCards
+  .planCard
+  .bottomLinks
+  .startLink {
   padding: 1rem 3rem;
   background: linear-gradient(100deg, #f98601 0%, #ebcc63 100%);
   color: #f4f4f4;
@@ -1221,14 +1539,25 @@ a {
   font-size: 1.6rem;
   font-weight: 600;
   cursor: pointer;
-<<<<<<< HEAD
 }
 @media (max-width: 992px) {
-  .homePage .seventhSection .seventhSectionContainer .boxes .planCards .planCard .bottomLinks .startLink {
+  .homePage
+    .seventhSection
+    .seventhSectionContainer
+    .boxes
+    .planCards
+    .planCard
+    .bottomLinks
+    .startLink {
     font-size: 1.2rem;
   }
 }
-.homePage .seventhSection .seventhSectionContainer .boxes .planCards .planCard:nth-child(4) {
+.homePage
+  .seventhSection
+  .seventhSectionContainer
+  .boxes
+  .planCards
+  .planCard:nth-child(4) {
   background-image: linear-gradient(110deg, #ebcc63 0%, #0bcb73 100%);
 }
 
@@ -1348,165 +1677,4 @@ a {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
-=======
-  padding: 1.4rem 2.5rem;
-}
-.homePage .eightSection {
-  position: relative;
-  border-radius: 30px;
-  overflow: hidden;
-  background-image: linear-gradient(280deg, rgba(41, 70, 200, 0.4196078431) 0%, rgba(76, 87, 136, 0.5058823529) 100%);
-  width: min(1420px, 98%);
-  margin: auto;
-  margin: 4rem auto;
-}
-.homePage .eightSection .overlay {
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/backgroundstar.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  opacity: 0.6;
-  mix-blend-mode: overlay;
-}
-.homePage .eightSection .eightSectionContainer {
-  text-align: center;
-  margin-top: 6rem;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  border-radius: 30px;
-  padding: 1rem;
-}
-.homePage .eightSection .eightSectionContainer .earthBox {
-  width: 100%;
-}
-.homePage .eightSection .eightSectionContainer .earthBox img {
-  width: min(800px, 100%);
-}
-.homePage .eightSection .eightSectionContainer .headingBox {
-  margin: 2rem 0 4rem 0;
-  position: relative;
-  z-index: 4;
-}
-.homePage .eightSection .eightSectionContainer .headingBox h2 {
-  font-size: 5rem;
-  text-align: center;
-}
-@media (max-width: 992px) {
-  .homePage .eightSection .eightSectionContainer .headingBox h2 {
-    font-size: 4rem;
-  }
-}
-@media (max-width: 576px) {
-  .homePage .eightSection .eightSectionContainer .headingBox h2 {
-    font-size: 3.5rem;
-    line-height: 5rem;
-  }
-}
-.homePage .eightSection .eightSectionContainer .headingBox h2 span {
-  color: #05be74;
-  transition: 0.3s;
-  transition-delay: 0.3s;
-}
-.homePage .eightSection .eightSectionContainer .headingBox h2 span:hover {
-  color: #222;
-}
-.homePage .eightSection .eightSectionContainer .headingBox p {
-  font-size: 2rem;
-  color: #cccccc;
-}
-.homePage .eightSection .eightSectionContainer .playstore {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-}
-.homePage .eightSection .eightSectionContainer .playstore img {
-  width: 120px;
-}
-.homePage .sixSection {
-  width: min(1420px, 98%);
-  margin: auto;
-  margin-top: 10rem;
-  padding: 0 6rem;
-}
-@media (max-width: 992px) {
-  .homePage .sixSection {
-    padding: 1rem;
-  }
-}
-.homePage .sixSection .sixSectionContainer {
-  display: flex;
-}
-@media (max-width: 992px) {
-  .homePage .sixSection .sixSectionContainer {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-.homePage .sixSection .sixSectionContainer .leftBox {
-  width: 45%;
-}
-.homePage .sixSection .sixSectionContainer .leftBox img {
-  width: min(450px, 100%);
-}
-.homePage .sixSection .sixSectionContainer .rightBox {
-  width: 55%;
-}
-@media (max-width: 992px) {
-  .homePage .sixSection .sixSectionContainer .rightBox {
-    width: 100%;
-  }
-}
-.homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .headingBox h2 {
-  font-size: 5rem;
-}
-@media (max-width: 992px) {
-  .homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .headingBox h2 {
-    font-size: 4rem;
-  }
-}
-@media (max-width: 576px) {
-  .homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .headingBox h2 {
-    font-size: 3.5rem;
-    line-height: 5rem;
-  }
-}
-.homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .headingBox h2 span {
-  color: #05be74;
-  transition: 0.3s;
-  transition-delay: 0.3s;
-}
-.homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .headingBox h2 span:hover {
-  color: #222;
-}
-.homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .headingBox p {
-  font-size: 1.6rem;
-  color: #cccccc;
-  margin-top: 1rem;
-}
-.homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .listBox {
-  margin-top: 2rem;
-}
-.homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .listBox .list ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-row-gap: 1rem;
-}
-@media (max-width: 768px) {
-  .homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .listBox .list ul {
-    grid-template-columns: 1fr;
-  }
-}
-.homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .listBox .list ul li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .listBox .list ul li h4 {
-  font-weight: 400;
->>>>>>> ronaki
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
