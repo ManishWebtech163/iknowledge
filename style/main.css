@@ -1078,6 +1078,89 @@ a {
   gap: 0.5rem;
   color: #f4f4f4;
 }
+.homePage .sixSection {
+  width: min(1420px, 98%);
+  margin: auto;
+  margin-top: 10rem;
+  padding: 0 6rem;
+}
+@media (max-width: 992px) {
+  .homePage .sixSection {
+    padding: 1rem;
+  }
+}
+.homePage .sixSection .sixSectionContainer {
+  display: flex;
+}
+@media (max-width: 992px) {
+  .homePage .sixSection .sixSectionContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.homePage .sixSection .sixSectionContainer .leftBox {
+  width: 45%;
+}
+.homePage .sixSection .sixSectionContainer .leftBox img {
+  width: min(450px, 100%);
+}
+.homePage .sixSection .sixSectionContainer .rightBox {
+  width: 55%;
+}
+@media (max-width: 992px) {
+  .homePage .sixSection .sixSectionContainer .rightBox {
+    width: 100%;
+  }
+}
+.homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .headingBox h2 {
+  font-size: 5rem;
+}
+@media (max-width: 992px) {
+  .homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .headingBox h2 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .headingBox h2 {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+}
+.homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .headingBox h2 span {
+  color: #05be74;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+.homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .headingBox h2 span:hover {
+  color: #222;
+}
+.homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .headingBox p {
+  font-size: 1.6rem;
+  color: #cccccc;
+  margin-top: 1rem;
+}
+.homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .listBox {
+  margin-top: 2rem;
+}
+.homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .listBox .list ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1rem;
+}
+@media (max-width: 768px) {
+  .homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .listBox .list ul {
+    grid-template-columns: 1fr;
+  }
+}
+.homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .listBox .list ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.homePage .sixSection .sixSectionContainer .rightBox .rightBoxTitle .listBox .list ul li h4 {
+  font-weight: 400;
+}
 .homePage .seventhSection {
   width: min(1420px, 98%);
   margin: auto;

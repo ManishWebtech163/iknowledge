@@ -678,9 +678,83 @@
   }
   // ----//fifth section----
 
+  // ----SixSection----//
+  .sixSection {
+    @include container_1420;
 
+    margin-top: 10rem;
+    padding: 0 6rem;
+    @include largeScreen {
+      padding: 1rem;
+    }
+    .sixSectionContainer {
+      display: flex;
+      // align-items: center;
+      @include largeScreen {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .leftBox {
+        width: 45%;
+        img {
+          width: min(450px, 100%);
+        }
+      }
+      .rightBox {
+        width: 55%;
+        @include largeScreen {
+          width: 100%;
+        }
+        .rightBoxTitle {
+          .headingBox {
+            h2 {
+              font-size: $xxlText;
+              @include largeScreen {
+                font-size: $xlText;
+              }
+              @include smallScreen {
+                font-size: $lText + 1rem;
+                line-height: 5rem;
+              }
+              span {
+                @include primaryColorHover;
+              }
+            }
+            p {
+              font-size: $nText;
+              color: #cccccc;
+              margin-top: 1rem;
+            }
+          }
+          .listBox {
+            margin-top: 2rem;
+            .list {
+              ul {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-row-gap: 1rem;
+                @include mediumScreen {
+                  grid-template-columns: 1fr;
+                }
+                li {
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                  h4 {
+                    font-weight: 400;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 
-  
+  // ----SixSection----//
+
   // ----seventh Section----
   .seventhSection {
     @include container_1420;
