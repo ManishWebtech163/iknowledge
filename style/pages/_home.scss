@@ -1,0 +1,124 @@
+.homePage {
+  @include container_1920;
+  // -heroSection-
+  .heroSection {
+    @include container_1420;
+    margin: 10vh auto;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(160deg, #202b54 0%, #0d132f 100%);
+    border-radius: 30px;
+    .boxes {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      padding: 2vw;
+      position: relative;
+      z-index: 4;
+      // -
+      .infoBox {
+        .tagBox {
+          // width: min(300px, 90%);
+          background-color: aqua;
+          padding: 1rem 2rem;
+          display: inline-flex;
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+          background: linear-gradient(100deg, #ebcc63 0%, #0bcb73 100%);
+          gap: 10px;
+          align-items: center;
+          margin-bottom: 2rem;
+          .bookIcon {
+            font-size: 3rem;
+            color: $blackColor;
+          }
+          h2 {
+            font-size: 2rem;
+            font-weight: 400;
+          }
+        }
+        .heading {
+          margin-bottom: 2rem;
+          font-size: $xxlText + 2rem;
+          line-height: 9rem;
+          span {
+            color: $primaryColor;
+            transition: 0.3s;
+            &:hover {
+              color: $blackColor;
+            }
+          }
+        }
+        .emailForm {
+          margin-bottom: 1rem;
+          form {
+            display: flex;
+            gap: 1rem;
+            input {
+              width: 100%;
+              border-radius: 54px;
+              outline: none;
+              padding: 0 2rem;
+              background-color: $darkBlueColor;
+              color: $whiteColor;
+              border: 2px solid #465286;
+            }
+            button {
+              @include commonButton;
+              white-space: nowrap;
+            }
+          }
+        }
+        .sliderDiv {
+          padding: 1rem;
+          .title {
+            font-size: 1.4rem;
+          }
+          .sliderBox {
+            width: 100%;
+            overflow: hidden;
+            margin: 2rem 0;
+
+            .heroSectionLogosSlider {
+              width: 100%;
+              padding: 0 0.5rem;
+              .swiper-wrapper {
+                width: 100%;
+                .slideDiv {
+                  width: 100%;
+                  img {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      // -
+      .imageBox {
+        picture,
+        img {
+          width: min(450px, 90%);
+          display: block;
+          margin: auto;
+        }
+      }
+    }
+    // -backgroundImageContainer
+    .backgroundImageContainer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

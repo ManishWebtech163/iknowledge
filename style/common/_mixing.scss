@@ -1,0 +1,26 @@
+// --conmmon contaner--
+@mixin container_1920 {
+  width: min(1920px, 98%);
+  margin: auto;
+}
+
+@mixin container_1720 {
+  width: min(1720px, 98%);
+  margin: auto;
+}
+
+@mixin container_1420 {
+  width: min(1420px, 98%);
+  margin: auto;
+}
+
+@mixin commonButton {
+  padding: 1rem 3rem;
+  background: linear-gradient(100deg, #f98601 0%, #ebcc63 100%);
+  color: $whiteColor;
+  border-radius: 54px;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+}
