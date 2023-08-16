@@ -4,146 +4,149 @@
   .heroSection {
     @include container_1420;
     margin: 10vh auto;
-    position: relative;
-    overflow: hidden;
-    background-image: linear-gradient(160deg, #202b54 0%, #0d132f 100%);
-    border-radius: 30px;
-    @include mediumScreen {
-      margin: 5vh auto;
-    }
-    .boxes {
-      display: grid;
-      grid-template-columns: 50% 50%;
-      padding: 2vw;
+    min-height: 70vh;
+    .heroSectionContainer {
       position: relative;
-      z-index: 4;
+      overflow: hidden;
+      background-image: linear-gradient(160deg, #202b54 0%, #0d132f 100%);
+      border-radius: 30px;
       @include mediumScreen {
-        grid-template-columns: 100%;
-        padding: 4vw;
+        margin: 5vh auto;
       }
-      // -
-      .infoBox {
-        .tagBox {
-          // width: min(300px, 90%);
-          background-color: aqua;
-          padding: 1rem 2rem;
-          display: inline-flex;
-          border-top-right-radius: 20px;
-          border-bottom-right-radius: 20px;
-          border-top-left-radius: 4px;
-          border-bottom-left-radius: 4px;
-          background: linear-gradient(100deg, #ebcc63 0%, #0bcb73 100%);
-          gap: 10px;
-          align-items: center;
-          margin-bottom: 2rem;
-          .bookIcon {
-            font-size: 3rem;
-            color: $blackColor;
-            @include mediumScreen {
-              font-size: 2rem;
-            }
-          }
-          h2 {
-            font-size: 2rem;
-            font-weight: 400;
-            @include mediumScreen {
-              font-size: 1.6rem;
-            }
-          }
+      .boxes {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 2vw;
+        position: relative;
+        z-index: 4;
+        @include mediumScreen {
+          grid-template-columns: 100%;
+          padding: 4vw;
         }
-        .heading {
-          margin-bottom: 2rem;
-          font-size: $xxlText + 2rem;
-          line-height: 9rem;
-          @include bigScreen {
-            font-size: $xxlText;
-            line-height: 6rem;
-          }
-          @include mediumScreen {
-            font-size: $xlText;
-            line-height: 5rem;
-          }
-          span {
-            @include primaryColorHover;
-          }
-        }
-        .emailForm {
-          margin-bottom: 1rem;
-
-          form {
-            display: flex;
-            gap: 1rem;
-            @include mediumScreen {
-              display: grid;
-              grid-template-columns: 70% 30%;
-            }
-            input {
-              width: 100%;
-              border-radius: 54px;
-              outline: none;
-              padding: 0 2rem;
-              background-color: $darkBlueColor;
-              color: $whiteColor;
-              border: 2px solid #465286;
-            }
-            button {
-              @include commonButton;
-              white-space: nowrap;
+        // -
+        .infoBox {
+          .tagBox {
+            // width: min(300px, 90%);
+            background-color: aqua;
+            padding: 1rem 2rem;
+            display: inline-flex;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            background: linear-gradient(100deg, #ebcc63 0%, #0bcb73 100%);
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 2rem;
+            .bookIcon {
+              font-size: 3rem;
+              color: $blackColor;
               @include mediumScreen {
-                font-size: 1.2rem;
-                padding: 1rem;
+                font-size: 2rem;
+              }
+            }
+            h2 {
+              font-size: 2rem;
+              font-weight: 400;
+              @include mediumScreen {
+                font-size: 1.6rem;
               }
             }
           }
-        }
-        .sliderDiv {
-          padding: 1rem;
-          .title {
-            font-size: 1.4rem;
+          .heading {
+            margin-bottom: 2rem;
+            font-size: $xxlText + 2rem;
+            line-height: 9rem;
+            @include bigScreen {
+              font-size: $xxlText;
+              line-height: 6rem;
+            }
+            @include mediumScreen {
+              font-size: $xlText;
+              line-height: 5rem;
+            }
+            span {
+              @include primaryColorHover;
+            }
           }
-          .sliderBox {
-            width: 100%;
-            overflow: hidden;
-            margin: 2rem 0;
+          .emailForm {
+            margin-bottom: 1rem;
 
-            .heroSectionLogosSlider {
-              width: 100%;
-              padding: 0 0.5rem;
-              .swiper-wrapper {
+            form {
+              display: flex;
+              gap: 1rem;
+              @include mediumScreen {
+                display: grid;
+                grid-template-columns: 70% 30%;
+              }
+              input {
                 width: 100%;
-                .slideDiv {
+                border-radius: 54px;
+                outline: none;
+                padding: 0 2rem;
+                background-color: $darkBlueColor;
+                color: $whiteColor;
+                border: 2px solid #465286;
+              }
+              button {
+                @include commonButton;
+                white-space: nowrap;
+                @include mediumScreen {
+                  font-size: 1.2rem;
+                  padding: 1rem;
+                }
+              }
+            }
+          }
+          .sliderDiv {
+            padding: 1rem;
+            .title {
+              font-size: 1.4rem;
+            }
+            .sliderBox {
+              width: 100%;
+              overflow: hidden;
+              margin: 2rem 0;
+
+              .heroSectionLogosSlider {
+                width: 100%;
+                padding: 0 0.5rem;
+                .swiper-wrapper {
                   width: 100%;
-                  img {
+                  .slideDiv {
                     width: 100%;
+                    img {
+                      width: 100%;
+                    }
                   }
                 }
               }
             }
           }
         }
-      }
-      // -
-      .imageBox {
-        picture,
-        img {
-          width: min(450px, 90%);
-          display: block;
-          margin: auto;
+        // -
+        .imageBox {
+          picture,
+          img {
+            width: min(450px, 90%);
+            display: block;
+            margin: auto;
+          }
         }
       }
-    }
-    // -backgroundImageContainer
-    .backgroundImageContainer {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 2;
-      img {
+      // -backgroundImageContainer
+      .backgroundImageContainer {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        z-index: 2;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
     }
   }
@@ -547,4 +550,142 @@
     }
   }
   // ----//fifth section----
+  // ----seventh Section----
+  .seventhSection {
+    @include container_1420;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    .seventhSectionContainer {
+      width: 100%;
+      margin: 10vh auto;
+      .boxes {
+        .heading {
+          @include commongHeading;
+          text-align: center;
+          width: min(400px, 99%);
+          margin: auto;
+        }
+        // planCards
+        .planCards {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 2rem;
+          margin-top: 4vw;
+          @include bigScreen {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          @include smallScreen {
+            grid-template-columns: repeat(1, 1fr);
+          }
+          .planCard {
+            background-color: $lightBlueColor;
+            border: 2px solid $primaryColor;
+            border-radius: 10px;
+            padding: 2rem;
+            .status {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 2rem;
+              .name {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                .icon {
+                  font-size: 1.3rem;
+                  color: $secondryColor;
+                }
+                p {
+                  font-size: 2rem;
+                }
+              }
+              .type {
+                font-size: $nText;
+                color: $lightWhiteColor;
+              }
+            }
+            .price {
+              font-size: $lText + 0.5rem;
+              margin-bottom: 2rem;
+              @include largeScreen {
+                font-size: $lText;
+              }
+            }
+            .points {
+              ul {
+                padding-left: 2rem;
+                position: relative;
+                li {
+                  font-size: $nText;
+                  margin-bottom: 1rem;
+
+                  &:hover {
+                    color: $secondryColor;
+                  }
+                  &:before {
+                    content: "+";
+                    position: absolute;
+                    left: 0;
+                  }
+                }
+              }
+            }
+            .bottomLinks {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              font-size: 1.6rem;
+              margin-top: 3rem;
+              margin-bottom: 1rem;
+              .demoLink {
+                color: $whiteColor;
+                display: flex;
+                align-items: center;
+                gap: 0.8rem;
+                font-weight: 600;
+                font-size: $nText;
+                @include largeScreen {
+                  font-size: $sText;
+                }
+                span {
+                  margin-top: 0.3rem;
+                  background-color: $whiteColor;
+                  height: 2rem;
+                  width: 2rem;
+                  border-radius: 50%;
+                  color: $blackColor;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: $sText;
+                  @include largeScreen {
+                    height: 1.5rem;
+                    width: 1.5rem;
+                    font-size: $sText - 0.3rem;
+                    margin-top: 0.1rem;
+                  }
+                }
+              }
+              .startLink {
+                @include commonButton;
+                @include largeScreen {
+                  font-size: $sText;
+                }
+              }
+            }
+            // -last card
+            &:nth-child(4) {
+              background-image: linear-gradient(
+                110deg,
+                #ebcc63 0%,
+                #0bcb73 100%
+              );
+            }
+          }
+        }
+      }
+    }
+  }
+  // ----//seventh Section----
 }
