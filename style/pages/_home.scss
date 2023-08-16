@@ -290,6 +290,137 @@
     }
   }
   // ----//second section----
+// ----Third Section-----//
+.thirdSection {
+  @include container_1420;
+  .thirdSectionContainer {
+    .headingBox {
+      margin: 2rem 0 4rem 0;
+      h2 {
+        font-size: $xxlText;
+        text-align: center;
+        @include largeScreen {
+          font-size: $xlText;
+        }
+        @include smallScreen {
+          font-size: $lText + 1rem;
+          line-height: 5rem;
+        }
+        span {
+          @include primaryColorHover;
+        }
+      }
+    }
+    .cardBox {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .card {
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+        border: 2px solid #465286;
+        border-radius: 300px;
+        gap: 3rem;
+        padding: 2rem 4rem;
+        background-color: $lightBlueColor;
+        @include largeScreen {
+          flex-direction: column;
+          border-radius: 10px;
+        }
+        &:hover {
+          border: 2px solid #0bcb73;
+          background: #0d132f;
+        }
+        .course {
+          width: 30%;
+          @include largeScreen {
+            width: 100%;
+            text-align: center;
+          }
+          h6 {
+            font-weight: 400;
+            font-size: $nText + 0.2rem;
+            margin-top: 5px;
+            word-spacing: 1px;
+            letter-spacing: 1px;
+          }
+          h4 {
+            font-weight: 400;
+            font-size: $mText + 0.4rem;
+            text-transform: uppercase;
+          }
+          p {
+            color: #465286;
+            font-size: $nText;
+            font-weight: 600;
+          }
+          .rating {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+
+            gap: 1rem;
+            @include largeScreen {
+              justify-content: center;
+            }
+            .stars {
+              display: flex;
+              gap: 8px;
+            }
+          }
+        }
+        .level {
+          display: flex;
+          gap: 2rem;
+          justify-content: space-between;
+          width: 50%;
+          @include largeScreen {
+            width: 100%;
+            justify-content: center;
+          }
+          @include mediumScreen {
+            flex-direction: column;
+            justify-content: center;
+          }
+          .levelCard {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            @include mediumScreen {
+              flex-direction: column;
+              justify-content: center;
+              text-align: center;
+            }
+            .levelTitle {
+              h6 {
+                font-size: $nText + 0.1rem;
+                font-weight: 600;
+                color: #465286;
+              }
+              p {
+                font-weight: 400;
+                font-size: $mText;
+              }
+            }
+          }
+        }
+        .registration {
+          width: 30%;
+          text-align: end;
+          @include largeScreen {
+            width: 100%;
+            text-align: center;
+          }
+          button {
+            @include commonButton;
+            padding: 1.4rem 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
 
   // ----forth section----
   .forthSection {
