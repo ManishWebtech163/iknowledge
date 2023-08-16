@@ -33,3 +33,22 @@
     color: $blackColor;
   }
 }
+
+@mixin commongHeading {
+  font-size: $xxlText;
+  &:hover {
+    span {
+      color: $blackColor;
+    }
+  }
+  span {
+    color: $primaryColor;
+  }
+  @include largeScreen {
+    font-size: $xlText;
+  }
+  @include smallScreen {
+    font-size: $lText + 1rem;
+    line-height: 5rem;
+  }
+}

@@ -168,15 +168,8 @@
       .headingBox {
         margin: 2rem 0 4rem 0;
         h2 {
-          font-size: $xxlText;
+          @include commongHeading;
           text-align: center;
-          @include largeScreen {
-            font-size: $xlText;
-          }
-          @include smallScreen {
-            font-size: $lText + 1rem;
-            line-height: 5rem;
-          }
           span {
             @include primaryColorHover;
           }
@@ -298,4 +291,260 @@
     }
   }
   // ----//second section----
+
+  // ----forth section----
+  .forthSection {
+    @include container_1420;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    .forthSectionContainer {
+      width: 100%;
+      margin: 10vh auto;
+      .boxes {
+        display: grid;
+        grid-template-columns: auto 30%;
+        @include largeScreen {
+          grid-template-columns: 100%;
+        }
+        // -contentBox
+        .contentBox {
+          padding-right: 10vw;
+          @include largeScreen {
+            text-align: center;
+            padding-right: 0vw;
+          }
+          .heading {
+            @include commongHeading;
+            span {
+              @include primaryColorHover;
+            }
+          }
+          .pera {
+            font-size: 1.6rem;
+            margin: 2vw 0;
+          }
+          .numbersBox {
+            display: flex;
+            justify-content: space-between;
+            @include largeScreen {
+              flex-direction: column;
+              align-items: center;
+              text-align: center;
+              gap: 2rem;
+            }
+            .box {
+              .num {
+                font-size: 3.5rem;
+                font-weight: 600;
+              }
+              .title {
+                font-size: 1.6rem;
+              }
+              .subTitle {
+                font-size: 1.4rem;
+                color: #ffffff66;
+              }
+              &.ratingCourse {
+                .stars {
+                  margin-top: 2rem;
+                  display: flex;
+                  font-size: 1.4rem;
+                  gap: 0.5rem;
+                  color: $secondryColor;
+                  @include largeScreen {
+                    justify-content: center;
+                    margin-top: 1rem;
+                  }
+                }
+              }
+              &.tutorials {
+                .youBox {
+                  margin-top: 2rem;
+                  display: flex;
+                  font-size: 1.6rem;
+                  gap: 0.5rem;
+                  align-items: center;
+                  color: #ffffff88;
+                  @include largeScreen {
+                    margin-top: 1rem;
+                  }
+                  .icon {
+                    color: red;
+                  }
+                }
+              }
+              &.registarions {
+                .link {
+                  margin-top: 2rem;
+                  display: flex;
+                  font-size: 1.6rem;
+                  color: $whiteColor;
+                  display: flex;
+                  gap: 0.7rem;
+                  align-items: center;
+                  @include largeScreen {
+                    justify-content: center;
+                    margin-top: 1rem;
+                  }
+                  span {
+                    height: 1.5rem;
+                    width: 1.5rem;
+                    background-color: $whiteColor;
+                    color: $blackColor;
+                    text-align: center;
+                    border-radius: 50%;
+                    font-size: 1rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+        // -imageBox
+        .imageBox {
+          @include largeScreen {
+            margin-top: 4rem;
+            text-align: center;
+          }
+          picture,
+          img {
+            width: min(450px, 90%);
+          }
+        }
+      }
+    }
+  }
+  // ----//forth section----
+
+  // ----fifth section----
+  .fifthSection {
+    @include container_1420;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    .fifthSectionContainer {
+      width: 100%;
+      margin: 10vh auto;
+      .boxes {
+        .heading {
+          @include commongHeading;
+          text-align: center;
+          width: min(620px, 99%);
+          margin: auto;
+        }
+        // -videoBox
+        .videoBox {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 2vw;
+          margin-top: 4vw;
+          @include largeScreen {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          @include smallScreen {
+            grid-template-columns: repeat(1, 1fr);
+            padding: 1rem;
+            gap: 2rem;
+          }
+          .videoCard {
+            border-radius: 20px;
+            overflow: hidden;
+            background-color: $lightBlueColor;
+            .imgBox {
+              position: relative;
+              aspect-ratio: 16 / 10;
+              overflow: hidden;
+              background-color: rebeccapurple;
+              cursor: pointer;
+
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                filter: brightness(0.8);
+              }
+              .playBtn {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 7rem;
+                height: 7rem;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 50%;
+                background-color: transparent;
+                border: 3px solid $whiteColor;
+                color: $whiteColor;
+                font-size: 2.5rem;
+                box-shadow: 0px 0px 10px $whiteColor;
+                filter: brightness(0.9);
+              }
+            }
+            .content {
+              padding: 1.6rem 2rem;
+              .title {
+                font-size: $lText;
+                margin-bottom: 1rem;
+                font-weight: 500;
+              }
+              .subTitle {
+                font-size: $sText + 0.4rem;
+                font-weight: 400;
+              }
+              .review {
+                display: flex;
+                align-items: center;
+                font-size: $sText;
+                gap: 1rem;
+                color: $lightWhiteColor;
+                .stars {
+                  color: $secondryColor;
+                  font-size: $sText + 0.3rem;
+                }
+              }
+              .tags {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 1rem;
+                font-size: 1.6rem;
+                margin-top: 1rem;
+
+                .tag {
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                  .name {
+                    color: $lightWhiteColor;
+                  }
+                }
+              }
+              .timeing {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                margin-top: 2rem;
+                padding: 2rem 0;
+                border-top: 2px solid $lightWhiteColor;
+                gap: 2rem;
+                .box {
+                  display: flex;
+                  align-items: center;
+                  font-size: 1.4rem;
+                  gap: 0.5rem;
+                  color: $whiteColor;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // ----//fifth section----
 }
