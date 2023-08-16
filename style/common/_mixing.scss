@@ -24,3 +24,12 @@
   font-weight: 600;
   cursor: pointer;
 }
+
+@mixin primaryColorHover {
+  color: $primaryColor;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+  &:hover {
+    color: $blackColor;
+  }
+}

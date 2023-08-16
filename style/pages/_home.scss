@@ -1,6 +1,6 @@
 .homePage {
   @include container_1920;
-  // -heroSection-
+  // ----heroSection-----
   .heroSection {
     @include container_1420;
     margin: 10vh auto;
@@ -8,12 +8,19 @@
     overflow: hidden;
     background-image: linear-gradient(160deg, #202b54 0%, #0d132f 100%);
     border-radius: 30px;
+    @include mediumScreen {
+      margin: 5vh auto;
+    }
     .boxes {
       display: grid;
       grid-template-columns: 50% 50%;
       padding: 2vw;
       position: relative;
       z-index: 4;
+      @include mediumScreen {
+        grid-template-columns: 100%;
+        padding: 4vw;
+      }
       // -
       .infoBox {
         .tagBox {
@@ -32,29 +39,44 @@
           .bookIcon {
             font-size: 3rem;
             color: $blackColor;
+            @include mediumScreen {
+              font-size: 2rem;
+            }
           }
           h2 {
             font-size: 2rem;
             font-weight: 400;
+            @include mediumScreen {
+              font-size: 1.6rem;
+            }
           }
         }
         .heading {
           margin-bottom: 2rem;
           font-size: $xxlText + 2rem;
           line-height: 9rem;
+          @include bigScreen {
+            font-size: $xxlText;
+            line-height: 6rem;
+          }
+          @include mediumScreen {
+            font-size: $xlText;
+            line-height: 5rem;
+          }
           span {
-            color: $primaryColor;
-            transition: 0.3s;
-            &:hover {
-              color: $blackColor;
-            }
+            @include primaryColorHover;
           }
         }
         .emailForm {
           margin-bottom: 1rem;
+
           form {
             display: flex;
             gap: 1rem;
+            @include mediumScreen {
+              display: grid;
+              grid-template-columns: 70% 30%;
+            }
             input {
               width: 100%;
               border-radius: 54px;
@@ -67,6 +89,10 @@
             button {
               @include commonButton;
               white-space: nowrap;
+              @include mediumScreen {
+                font-size: 1.2rem;
+                padding: 1rem;
+              }
             }
           }
         }
@@ -121,4 +147,155 @@
       }
     }
   }
+  // ----//heroSection-----
+
+  // ----second section----
+  .secondSection {
+    @include container_1420;
+    min-height: 100vh;
+    background: radial-gradient(
+      closest-side at 50% 50%,
+      $lightBlueColor,
+      $darkBlueColor
+    );
+    .secondSectionContainer {
+      width: 100%;
+      padding: 5vh 2vw;
+      @include bigScreen {
+        padding: 5vh 0;
+      }
+      // -headingBox-
+      .headingBox {
+        margin: 2rem 0 4rem 0;
+        h2 {
+          font-size: $xxlText;
+          text-align: center;
+          @include largeScreen {
+            font-size: $xlText;
+          }
+          @include smallScreen {
+            font-size: $lText + 1rem;
+            line-height: 5rem;
+          }
+          span {
+            @include primaryColorHover;
+          }
+        }
+      }
+      // -boxes-
+      .boxes {
+        display: grid;
+        grid-template-columns: 35% auto;
+        padding: 2rem 0;
+        @include largeScreen {
+          grid-template-columns: 100%;
+        }
+        .imageBox {
+          @include largeScreen {
+            text-align: center;
+          }
+          picture,
+          img {
+            width: min(450px, 90%);
+          }
+        }
+        .cardsBox {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+
+          gap: 2.5rem;
+          padding: 1rem;
+          @include bigScreen {
+            gap: 1.5rem;
+          }
+          @include largeScreen {
+            grid-template-columns: repeat(1, 1fr);
+            text-align: left;
+          }
+          // -card
+          .card {
+            background: $lightBlueColor;
+            border: 2px solid #465286;
+            border-radius: 10px;
+            padding: 1.5rem;
+            transition: 0.3s;
+            &:hover {
+              background: radial-gradient($darkBlueColor, $lightBlueColor);
+              border: 2px solid $primaryColor;
+            }
+            .tags {
+              display: flex;
+              gap: 1rem;
+              font-size: 1.3rem;
+              .price {
+                background-color: $secondryColor;
+                padding: 0.3rem 0.7rem;
+                border-radius: 3px;
+                display: flex;
+                align-items: center;
+              }
+              .rating {
+                background-color: #465286;
+                padding: 0.3rem 0.7rem;
+                border-radius: 3px;
+              }
+            }
+            .content {
+              h3 {
+                font-size: 2.5rem;
+                margin: 2rem 0;
+                @include largeScreen {
+                  font-size: 2rem;
+                  margin: 1rem 0;
+                }
+              }
+              p {
+                font-size: 1.6rem;
+                margin-bottom: 1rem;
+                @include largeScreen {
+                  font-size: 1.4rem;
+                }
+              }
+            }
+          }
+          // -
+          .btnDiv {
+            grid-column: 1/-1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            gap: 2rem;
+            .startBtn {
+              background-color: $secondryColor;
+              font-size: 1.6rem;
+              font-weight: 600;
+              padding: 1rem 2rem;
+              border-radius: 54px;
+            }
+            .videoModelBtn {
+              background-color: $secondryColor;
+              font-size: 2rem;
+              font-weight: 600;
+              height: 50px;
+              width: 50px;
+              border: none;
+              border-radius: 50%;
+              color: white;
+              animation: slideIn 1s ease-in-out 0.5s infinite;
+              @keyframes slideIn {
+                from {
+                  box-shadow: 0 0 0px 0px #ebcc637a;
+                }
+                to {
+                  box-shadow: 0 0 5px 10px #ebcc637a;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // ----//second section----
 }

@@ -1,11 +1,14 @@
 // --variables--
 @import "./common/variables";
+// --mediaQueries--
+@import "./common/mediaQueries";
 // --globle css--
 @import "./common/globle";
 // --mixing--
 @import "./common/mixing";
 // --typography--
 @import "./common/typography";
+
 // ----pages----
 // --home--
 @import "./pages/home";

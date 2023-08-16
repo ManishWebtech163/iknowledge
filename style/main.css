@@ -75,12 +75,23 @@ a {
   background-image: linear-gradient(160deg, #202b54 0%, #0d132f 100%);
   border-radius: 30px;
 }
+@media (max-width: 768px) {
+  .homePage .heroSection {
+    margin: 5vh auto;
+  }
+}
 .homePage .heroSection .boxes {
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 2vw;
   position: relative;
   z-index: 4;
+}
+@media (max-width: 768px) {
+  .homePage .heroSection .boxes {
+    grid-template-columns: 100%;
+    padding: 4vw;
+  }
 }
 .homePage .heroSection .boxes .infoBox .tagBox {
   background-color: aqua;
@@ -99,18 +110,41 @@ a {
   font-size: 3rem;
   color: #222;
 }
+@media (max-width: 768px) {
+  .homePage .heroSection .boxes .infoBox .tagBox .bookIcon {
+    font-size: 2rem;
+  }
+}
 .homePage .heroSection .boxes .infoBox .tagBox h2 {
   font-size: 2rem;
   font-weight: 400;
+}
+@media (max-width: 768px) {
+  .homePage .heroSection .boxes .infoBox .tagBox h2 {
+    font-size: 1.6rem;
+  }
 }
 .homePage .heroSection .boxes .infoBox .heading {
   margin-bottom: 2rem;
   font-size: 7rem;
   line-height: 9rem;
 }
+@media (max-width: 1200px) {
+  .homePage .heroSection .boxes .infoBox .heading {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+}
+@media (max-width: 768px) {
+  .homePage .heroSection .boxes .infoBox .heading {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
 .homePage .heroSection .boxes .infoBox .heading span {
   color: #05be74;
   transition: 0.3s;
+  transition-delay: 0.3s;
 }
 .homePage .heroSection .boxes .infoBox .heading span:hover {
   color: #222;
@@ -121,6 +155,12 @@ a {
 .homePage .heroSection .boxes .infoBox .emailForm form {
   display: flex;
   gap: 1rem;
+}
+@media (max-width: 768px) {
+  .homePage .heroSection .boxes .infoBox .emailForm form {
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
 }
 .homePage .heroSection .boxes .infoBox .emailForm form input {
   width: 100%;
@@ -141,6 +181,12 @@ a {
   font-weight: 600;
   cursor: pointer;
   white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .homePage .heroSection .boxes .infoBox .emailForm form button {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
 }
 .homePage .heroSection .boxes .infoBox .sliderDiv {
   padding: 1rem;
@@ -185,4 +231,162 @@ a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.homePage .secondSection {
+  width: min(1420px, 98%);
+  margin: auto;
+  min-height: 100vh;
+  background: radial-gradient(closest-side at 50% 50%, #152052, #00082a);
+}
+.homePage .secondSection .secondSectionContainer {
+  width: 100%;
+  padding: 5vh 2vw;
+}
+@media (max-width: 1200px) {
+  .homePage .secondSection .secondSectionContainer {
+    padding: 5vh 0;
+  }
+}
+.homePage .secondSection .secondSectionContainer .headingBox {
+  margin: 2rem 0 4rem 0;
+}
+.homePage .secondSection .secondSectionContainer .headingBox h2 {
+  font-size: 5rem;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .homePage .secondSection .secondSectionContainer .headingBox h2 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .homePage .secondSection .secondSectionContainer .headingBox h2 {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+}
+.homePage .secondSection .secondSectionContainer .headingBox h2 span {
+  color: #05be74;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+.homePage .secondSection .secondSectionContainer .headingBox h2 span:hover {
+  color: #222;
+}
+.homePage .secondSection .secondSectionContainer .boxes {
+  display: grid;
+  grid-template-columns: 35% auto;
+  padding: 2rem 0;
+}
+@media (max-width: 992px) {
+  .homePage .secondSection .secondSectionContainer .boxes {
+    grid-template-columns: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .homePage .secondSection .secondSectionContainer .boxes .imageBox {
+    text-align: center;
+  }
+}
+.homePage .secondSection .secondSectionContainer .boxes .imageBox picture,
+.homePage .secondSection .secondSectionContainer .boxes .imageBox img {
+  width: min(450px, 90%);
+}
+.homePage .secondSection .secondSectionContainer .boxes .cardsBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  padding: 1rem;
+}
+@media (max-width: 1200px) {
+  .homePage .secondSection .secondSectionContainer .boxes .cardsBox {
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 992px) {
+  .homePage .secondSection .secondSectionContainer .boxes .cardsBox {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: left;
+  }
+}
+.homePage .secondSection .secondSectionContainer .boxes .cardsBox .card {
+  background: #152052;
+  border: 2px solid #465286;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: 0.3s;
+}
+.homePage .secondSection .secondSectionContainer .boxes .cardsBox .card:hover {
+  background: radial-gradient(#00082a, #152052);
+  border: 2px solid #05be74;
+}
+.homePage .secondSection .secondSectionContainer .boxes .cardsBox .card .tags {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+.homePage .secondSection .secondSectionContainer .boxes .cardsBox .card .tags .price {
+  background-color: #e9aa13;
+  padding: 0.3rem 0.7rem;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+.homePage .secondSection .secondSectionContainer .boxes .cardsBox .card .tags .rating {
+  background-color: #465286;
+  padding: 0.3rem 0.7rem;
+  border-radius: 3px;
+}
+.homePage .secondSection .secondSectionContainer .boxes .cardsBox .card .content h3 {
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+@media (max-width: 992px) {
+  .homePage .secondSection .secondSectionContainer .boxes .cardsBox .card .content h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+}
+.homePage .secondSection .secondSectionContainer .boxes .cardsBox .card .content p {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 992px) {
+  .homePage .secondSection .secondSectionContainer .boxes .cardsBox .card .content p {
+    font-size: 1.4rem;
+  }
+}
+.homePage .secondSection .secondSectionContainer .boxes .cardsBox .btnDiv {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+.homePage .secondSection .secondSectionContainer .boxes .cardsBox .btnDiv .startBtn {
+  background-color: #e9aa13;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 54px;
+}
+.homePage .secondSection .secondSectionContainer .boxes .cardsBox .btnDiv .videoModelBtn {
+  background-color: #e9aa13;
+  font-size: 2rem;
+  font-weight: 600;
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  animation: slideIn 1s ease-in-out 0.5s infinite;
+}
+@keyframes slideIn {
+  from {
+    box-shadow: 0 0 0px 0px rgba(235, 204, 99, 0.4784313725);
+  }
+  to {
+    box-shadow: 0 0 5px 10px rgba(235, 204, 99, 0.4784313725);
+  }
 }/*# sourceMappingURL=main.css.map */
