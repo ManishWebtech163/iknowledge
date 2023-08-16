@@ -75,12 +75,23 @@ a {
   background-image: linear-gradient(160deg, #202b54 0%, #0d132f 100%);
   border-radius: 30px;
 }
+@media (max-width: 768px) {
+  .homePage .heroSection {
+    margin: 5vh auto;
+  }
+}
 .homePage .heroSection .boxes {
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 2vw;
   position: relative;
   z-index: 4;
+}
+@media (max-width: 768px) {
+  .homePage .heroSection .boxes {
+    grid-template-columns: 100%;
+    padding: 4vw;
+  }
 }
 .homePage .heroSection .boxes .infoBox .tagBox {
   background-color: aqua;
@@ -99,18 +110,41 @@ a {
   font-size: 3rem;
   color: #222;
 }
+@media (max-width: 768px) {
+  .homePage .heroSection .boxes .infoBox .tagBox .bookIcon {
+    font-size: 2rem;
+  }
+}
 .homePage .heroSection .boxes .infoBox .tagBox h2 {
   font-size: 2rem;
   font-weight: 400;
+}
+@media (max-width: 768px) {
+  .homePage .heroSection .boxes .infoBox .tagBox h2 {
+    font-size: 1.6rem;
+  }
 }
 .homePage .heroSection .boxes .infoBox .heading {
   margin-bottom: 2rem;
   font-size: 7rem;
   line-height: 9rem;
 }
+@media (max-width: 1200px) {
+  .homePage .heroSection .boxes .infoBox .heading {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+}
+@media (max-width: 768px) {
+  .homePage .heroSection .boxes .infoBox .heading {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
 .homePage .heroSection .boxes .infoBox .heading span {
   color: #05be74;
   transition: 0.3s;
+  transition-delay: 0.3s;
 }
 .homePage .heroSection .boxes .infoBox .heading span:hover {
   color: #222;
@@ -121,6 +155,12 @@ a {
 .homePage .heroSection .boxes .infoBox .emailForm form {
   display: flex;
   gap: 1rem;
+}
+@media (max-width: 768px) {
+  .homePage .heroSection .boxes .infoBox .emailForm form {
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
 }
 .homePage .heroSection .boxes .infoBox .emailForm form input {
   width: 100%;
@@ -141,6 +181,12 @@ a {
   font-weight: 600;
   cursor: pointer;
   white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .homePage .heroSection .boxes .infoBox .emailForm form button {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
 }
 .homePage .heroSection .boxes .infoBox .sliderDiv {
   padding: 1rem;
@@ -186,53 +232,309 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.homePage .secondSection {
+  width: min(1420px, 98%);
+  margin: auto;
+  min-height: 100vh;
+  background: radial-gradient(closest-side at 50% 50%, #152052, #00082a);
+}
+.homePage .secondSection .secondSectionContainer {
+  width: 100%;
+  padding: 5vh 2vw;
+}
+@media (max-width: 1200px) {
+  .homePage .secondSection .secondSectionContainer {
+    padding: 5vh 0;
+  }
+}
+.homePage .secondSection .secondSectionContainer .headingBox {
+  margin: 2rem 0 4rem 0;
+}
+.homePage .secondSection .secondSectionContainer .headingBox h2 {
+  font-size: 5rem;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .homePage .secondSection .secondSectionContainer .headingBox h2 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .homePage .secondSection .secondSectionContainer .headingBox h2 {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+}
+.homePage .secondSection .secondSectionContainer .headingBox h2 span {
+  color: #05be74;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+.homePage .secondSection .secondSectionContainer .headingBox h2 span:hover {
+  color: #222;
+}
+.homePage .secondSection .secondSectionContainer .boxes {
+  display: grid;
+  grid-template-columns: 35% auto;
+  padding: 2rem 0;
+}
+@media (max-width: 992px) {
+  .homePage .secondSection .secondSectionContainer .boxes {
+    grid-template-columns: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .homePage .secondSection .secondSectionContainer .boxes .imageBox {
+    text-align: center;
+  }
+}
+.homePage .secondSection .secondSectionContainer .boxes .imageBox picture,
+.homePage .secondSection .secondSectionContainer .boxes .imageBox img {
+  width: min(450px, 90%);
+}
+.homePage .secondSection .secondSectionContainer .boxes .cardsBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  padding: 1rem;
+}
+@media (max-width: 1200px) {
+  .homePage .secondSection .secondSectionContainer .boxes .cardsBox {
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 992px) {
+  .homePage .secondSection .secondSectionContainer .boxes .cardsBox {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: left;
+  }
+}
+.homePage .secondSection .secondSectionContainer .boxes .cardsBox .card {
+  background: #152052;
+  border: 2px solid #465286;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: 0.3s;
+}
+.homePage .secondSection .secondSectionContainer .boxes .cardsBox .card:hover {
+  background: radial-gradient(#00082a, #152052);
+  border: 2px solid #05be74;
+}
+.homePage .secondSection .secondSectionContainer .boxes .cardsBox .card .tags {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+.homePage .secondSection .secondSectionContainer .boxes .cardsBox .card .tags .price {
+  background-color: #e9aa13;
+  padding: 0.3rem 0.7rem;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+.homePage .secondSection .secondSectionContainer .boxes .cardsBox .card .tags .rating {
+  background-color: #465286;
+  padding: 0.3rem 0.7rem;
+  border-radius: 3px;
+}
+.homePage .secondSection .secondSectionContainer .boxes .cardsBox .card .content h3 {
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+@media (max-width: 992px) {
+  .homePage .secondSection .secondSectionContainer .boxes .cardsBox .card .content h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+}
+.homePage .secondSection .secondSectionContainer .boxes .cardsBox .card .content p {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 992px) {
+  .homePage .secondSection .secondSectionContainer .boxes .cardsBox .card .content p {
+    font-size: 1.4rem;
+  }
+}
+.homePage .secondSection .secondSectionContainer .boxes .cardsBox .btnDiv {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+.homePage .secondSection .secondSectionContainer .boxes .cardsBox .btnDiv .startBtn {
+  background-color: #e9aa13;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 54px;
+}
+.homePage .secondSection .secondSectionContainer .boxes .cardsBox .btnDiv .videoModelBtn {
+  background-color: #e9aa13;
+  font-size: 2rem;
+  font-weight: 600;
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  animation: slideIn 1s ease-in-out 0.5s infinite;
+}
+@keyframes slideIn {
+  from {
+    box-shadow: 0 0 0px 0px rgba(235, 204, 99, 0.4784313725);
+  }
+  to {
+    box-shadow: 0 0 5px 10px rgba(235, 204, 99, 0.4784313725);
+  }
+}
 .homePage .thirdSection {
   width: min(1420px, 98%);
   margin: auto;
 }
-.homePage .thirdSection .thirdSectionContainer .card {
+.homePage .thirdSection .thirdSectionContainer .headingBox {
+  margin: 2rem 0 4rem 0;
+}
+.homePage .thirdSection .thirdSectionContainer .headingBox h2 {
+  font-size: 5rem;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .homePage .thirdSection .thirdSectionContainer .headingBox h2 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .homePage .thirdSection .thirdSectionContainer .headingBox h2 {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+}
+.homePage .thirdSection .thirdSectionContainer .headingBox h2 span {
+  color: #05be74;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+.homePage .thirdSection .thirdSectionContainer .headingBox h2 span:hover {
+  color: #222;
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox .card {
   display: flex;
   align-items: center;
-  border: 1px solid black;
+  border: 2px solid #465286;
   border-radius: 300px;
   gap: 3rem;
   padding: 2rem 4rem;
   background-color: #152052;
 }
-.homePage .thirdSection .thirdSectionContainer .card .course {
-  width: 25%;
+@media (max-width: 992px) {
+  .homePage .thirdSection .thirdSectionContainer .cardBox .card {
+    flex-direction: column;
+    border-radius: 10px;
+  }
 }
-.homePage .thirdSection .thirdSectionContainer .card .course h6 {
+.homePage .thirdSection .thirdSectionContainer .cardBox .card:hover {
+  border: 2px solid #0bcb73;
+  background: #0d132f;
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox .card .course {
+  width: 30%;
+}
+@media (max-width: 992px) {
+  .homePage .thirdSection .thirdSectionContainer .cardBox .card .course {
+    width: 100%;
+    text-align: center;
+  }
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox .card .course h6 {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.8rem;
+  margin-top: 5px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
 }
-.homePage .thirdSection .thirdSectionContainer .card .course h4 {
+.homePage .thirdSection .thirdSectionContainer .cardBox .card .course h4 {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 2.4rem;
+  text-transform: uppercase;
 }
-.homePage .thirdSection .thirdSectionContainer .card .level {
+.homePage .thirdSection .thirdSectionContainer .cardBox .card .course p {
+  color: #465286;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox .card .course .rating {
   display: flex;
-  gap: 4rem;
-  width: 40%;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
 }
-.homePage .thirdSection .thirdSectionContainer .card .level .levelCard {
+@media (max-width: 992px) {
+  .homePage .thirdSection .thirdSectionContainer .cardBox .card .course .rating {
+    justify-content: center;
+  }
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox .card .course .rating .stars {
+  display: flex;
+  gap: 8px;
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox .card .level {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  width: 50%;
+}
+@media (max-width: 992px) {
+  .homePage .thirdSection .thirdSectionContainer .cardBox .card .level {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .homePage .thirdSection .thirdSectionContainer .cardBox .card .level {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox .card .level .levelCard {
   display: flex;
   gap: 1.5rem;
   align-items: center;
 }
-.homePage .thirdSection .thirdSectionContainer .card .level .levelCard .levelTitle h6 {
-  font-size: 1.5rem;
-  font-weight: 400;
+@media (max-width: 768px) {
+  .homePage .thirdSection .thirdSectionContainer .cardBox .card .level .levelCard {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox .card .level .levelCard .levelTitle h6 {
+  font-size: 1.7rem;
+  font-weight: 600;
   color: #465286;
 }
-.homePage .thirdSection .thirdSectionContainer .card .level .levelCard .levelTitle p {
+.homePage .thirdSection .thirdSectionContainer .cardBox .card .level .levelCard .levelTitle p {
   font-weight: 400;
+  font-size: 2rem;
 }
-.homePage .thirdSection .thirdSectionContainer .card .registration {
-  width: 35%;
+.homePage .thirdSection .thirdSectionContainer .cardBox .card .registration {
+  width: 30%;
   text-align: end;
 }
-.homePage .thirdSection .thirdSectionContainer .card .registration button {
+@media (max-width: 992px) {
+  .homePage .thirdSection .thirdSectionContainer .cardBox .card .registration {
+    width: 100%;
+    text-align: center;
+  }
+}
+.homePage .thirdSection .thirdSectionContainer .cardBox .card .registration button {
   padding: 1rem 3rem;
   background: linear-gradient(100deg, #f98601 0%, #ebcc63 100%);
   color: #f4f4f4;
@@ -241,4 +543,29 @@ a {
   font-size: 1.6rem;
   font-weight: 600;
   cursor: pointer;
+  padding: 1.4rem 2.5rem;
+}
+.homePage .eightSection {
+  position: relative;
+  width: min(1420px, 98%);
+  margin: auto;
+}
+.homePage .eightSection .overlay {
+  background: transparent;
+  position: relative;
+  background-image: linear-gradient(280deg, #152052 0%, #465286 100%);
+}
+.homePage .eightSection .eightSectionContainer {
+  text-align: center;
+  margin-top: 6rem;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.6;
+  border-radius: 30px;
+  padding: 1rem;
+  width: 100%;
+  background-image: url("../images/backgroundstar.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }/*# sourceMappingURL=main.css.map */
