@@ -147,72 +147,14 @@
       }
     }
   }
-  // ----Third Section-----//
-  .thirdSection{
-    @include container_1420;
-.thirdSectionContainer{
-.card{
-  display: flex;
-  align-items: center;
-  // justify-content: space-between;
-  border: 1px solid black;
-  border-radius: 300px;
-  gap: 3rem;
-  padding: 2rem 4rem;
-  background-color: $lightBlueColor;
-.course{
-width: 25%;
-  h6{
-    font-weight: 400;
-    font-size: 20px;
-  }
-  h4{
-    font-weight: 400;
-    font-size: 24px;
-  }
-}
-.level{
-  display: flex;
-  gap: 4rem;
-  width: 40%;
-  .levelCard{
-    display: flex;
-    gap:1.5rem;
-    align-items: center;
-.levelTitle{
-    h6{
-      font-size: 1.5rem;
-      font-weight: 400;
-      color: #465286;
-    }
-  p{
-     font-weight: 400;
-  }
-  }
-  }
-  
-}
-.registration{
-  width: 35%;
-  text-align: end;
-button{
-  @include commonButton;
-}
-}
-}
-}
-  }
+
   // ----//heroSection-----
 
   // ----second section----
   .secondSection {
     @include container_1420;
     min-height: 100vh;
-    background: radial-gradient(
-      closest-side at 50% 50%,
-      $lightBlueColor,
-      $darkBlueColor
-    );
+    background: radial-gradient(closest-side at 50% 50%, $lightBlueColor, $darkBlueColor);
     .secondSectionContainer {
       width: 100%;
       padding: 5vh 2vw;
@@ -353,4 +295,167 @@ button{
     }
   }
   // ----//second section----
+
+  // ----Third Section-----//
+  .thirdSection {
+    @include container_1420;
+    .thirdSectionContainer {
+      .headingBox {
+        margin: 2rem 0 4rem 0;
+        h2 {
+          font-size: $xxlText;
+          text-align: center;
+          @include largeScreen {
+            font-size: $xlText;
+          }
+          @include smallScreen {
+            font-size: $lText + 1rem;
+            line-height: 5rem;
+          }
+          span {
+            @include primaryColorHover;
+          }
+        }
+      }
+      .cardBox {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .card {
+          display: flex;
+          align-items: center;
+          // justify-content: space-between;
+          border: 2px solid #465286;
+          border-radius: 300px;
+          gap: 3rem;
+          padding: 2rem 4rem;
+          background-color: $lightBlueColor;
+          @include largeScreen {
+            flex-direction: column;
+            border-radius: 10px;
+          }
+          &:hover {
+            border: 2px solid #0bcb73;
+            background: #0d132f;
+          }
+          .course {
+            width: 30%;
+            @include largeScreen {
+              width: 100%;
+              text-align: center;
+            }
+            h6 {
+              font-weight: 400;
+              font-size: $nText + 0.2rem;
+              margin-top: 5px;
+              word-spacing: 1px;
+              letter-spacing: 1px;
+            }
+            h4 {
+              font-weight: 400;
+              font-size: $mText + 0.4rem;
+              text-transform: uppercase;
+            }
+            p {
+              color: #465286;
+              font-size: $nText;
+              font-weight: 600;
+            }
+            .rating {
+              display: flex;
+              align-items: center;
+              margin-top: 1rem;
+
+              gap: 1rem;
+              @include largeScreen {
+                justify-content: center;
+              }
+              .stars {
+                display: flex;
+                gap: 8px;
+              }
+            }
+          }
+          .level {
+            display: flex;
+            gap: 2rem;
+            justify-content: space-between;
+            width: 50%;
+            @include largeScreen {
+              width: 100%;
+              justify-content: center;
+            }
+            @include mediumScreen {
+              flex-direction: column;
+              justify-content: center;
+            }
+            .levelCard {
+              display: flex;
+              gap: 1.5rem;
+              align-items: center;
+              @include mediumScreen {
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+              }
+              .levelTitle {
+                h6 {
+                  font-size: $nText + 0.1rem;
+                  font-weight: 600;
+                  color: #465286;
+                }
+                p {
+                  font-weight: 400;
+                  font-size: $mText;
+                }
+              }
+            }
+          }
+          .registration {
+            width: 30%;
+            text-align: end;
+            @include largeScreen {
+              width: 100%;
+              text-align: center;
+            }
+            button {
+              @include commonButton;
+              padding: 1.4rem 2.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // ----EightSection----//
+  .eightSection {
+    position: relative;
+
+    @include container_1420;
+    .overlay {
+      background: transparent;
+      // z-index: 4;
+      position: relative;
+      background-image: linear-gradient(280deg, #152052 0%, #465286 100%);
+    }
+    .eightSectionContainer {
+      text-align: center;
+      margin-top: 6rem;
+      position: absolute;
+      z-index: 3;
+      opacity: 0.6;
+      // mix-blend-mode: overlay;
+      border-radius: 30px;
+
+      padding: 1rem;
+      width: 100%;
+      // z-index: 22;
+      background-image: url("../images/backgroundstar.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  // ----//EightSection----//
 }
