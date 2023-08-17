@@ -3590,6 +3590,7 @@ a {
   margin: 10vh auto;
   min-height: 70vh;
   position: relative;
+  min-height: auto;
 }
 .courseDetailsPage .heroSection .heroSectionContainer {
   position: relative;
@@ -3731,139 +3732,8 @@ a {
     display: none;
   }
 }
-.courseDetailsPage .emailBanner {
-  border-radius: 30px;
-  position: relative;
-  background-image: linear-gradient(280deg, rgba(41, 70, 200, 0.4196078431) 0%, rgba(76, 87, 136, 0.5058823529) 100%);
-  width: min(1420px, 98%);
-  margin: auto;
-}
-.courseDetailsPage .emailBanner .overlay {
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/backgroundstar.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  opacity: 0.6;
-  border-radius: 30px;
-  mix-blend-mode: overlay;
-}
-.courseDetailsPage .emailBanner .eightSectionContainer {
-  margin-top: 6rem;
-  width: 100%;
-  position: relative;
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  padding: 2rem;
-}
-@media (max-width: 768px) {
-  .courseDetailsPage .emailBanner .eightSectionContainer {
-    flex-direction: column;
-  }
-}
-.courseDetailsPage .emailBanner .eightSectionContainer .earthBox {
-  width: 50%;
-  position: relative;
-  top: -8rem;
-}
-@media (max-width: 768px) {
-  .courseDetailsPage .emailBanner .eightSectionContainer .earthBox {
-    width: 100%;
-  }
-}
-.courseDetailsPage .emailBanner .eightSectionContainer .earthBox img {
-  width: min(900px, 100%);
-}
-.courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-}
-@media (max-width: 768px) {
-  .courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox {
-    width: 100%;
-    margin-top: -6rem;
-  }
-}
-.courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .headingBox h2 {
-  font-size: 5.8rem;
-  font-weight: 500;
-}
-@media (max-width: 992px) {
-  .courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .headingBox h2 {
-    font-size: 4rem;
-  }
-}
-@media (max-width: 576px) {
-  .courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .headingBox h2 {
-    font-size: 3.5rem;
-    line-height: 5rem;
-    text-align: center;
-  }
-}
-.courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .headingBox h2 span {
-  color: #05be74;
-  transition: 0.3s;
-  transition-delay: 0.3s;
-}
-.courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .headingBox h2 span:hover {
-  color: #222;
-}
-.courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .headingBox p {
-  font-size: 1.9rem;
-  margin-top: 1rem;
-  color: #cccccc;
-}
-@media (max-width: 576px) {
-  .courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .headingBox p {
-    text-align: center;
-  }
-}
-.courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .emailForm {
-  margin-bottom: 1rem;
-}
-.courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .emailForm form {
-  display: flex;
-  gap: 1rem;
-}
-@media (max-width: 768px) {
-  .courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .emailForm form {
-    display: grid;
-    grid-template-columns: 70% 30%;
-  }
-}
-.courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .emailForm form input {
-  width: 100%;
-  border-radius: 54px;
-  outline: none;
-  padding: 0 2rem;
-  background-color: #00082a;
-  color: #f4f4f4;
-  border: 2px solid #465286;
-}
-.courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .emailForm form button {
-  padding: 1rem 3rem;
-  background: linear-gradient(100deg, #f98601 0%, #ebcc63 100%);
-  color: #f4f4f4;
-  border-radius: 54px;
-  border: none;
-  font-size: 1.6rem;
-  font-weight: 600;
-  cursor: pointer;
-  white-space: nowrap;
-}
-@media (max-width: 768px) {
-  .courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .emailForm form button {
-    font-size: 1.2rem;
-    padding: 1rem;
-  }
-}
 .courseDetailsPage .courseDetailsSection {
-  margin: 5vw 0;
+  margin: 3vw 0 5vw 0;
   width: min(1420px, 98%);
   margin: auto;
 }
@@ -4105,4 +3975,273 @@ a {
 }
 .courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box2 .courseRelatedPoints .card .content .ratingDiv .starts .icon {
   color: #e9aa13;
+}
+.courseDetailsPage .emailBanner {
+  width: min(1420px, 98%);
+  margin: auto;
+  border-radius: 30px;
+  position: relative;
+  background-image: linear-gradient(280deg, rgba(41, 70, 200, 0.4196078431) 0%, rgba(76, 87, 136, 0.5058823529) 100%);
+  margin-bottom: 5vw;
+}
+.courseDetailsPage .emailBanner .overlay {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/backgroundstar.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  opacity: 0.6;
+  border-radius: 30px;
+  mix-blend-mode: overlay;
+}
+.courseDetailsPage .emailBanner .eightSectionContainer {
+  margin-top: 6rem;
+  width: 100%;
+  position: relative;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+@media (max-width: 768px) {
+  .courseDetailsPage .emailBanner .eightSectionContainer {
+    flex-direction: column;
+  }
+}
+.courseDetailsPage .emailBanner .eightSectionContainer .earthBox {
+  width: 50%;
+  position: relative;
+  top: -8rem;
+}
+@media (max-width: 768px) {
+  .courseDetailsPage .emailBanner .eightSectionContainer .earthBox {
+    width: 100%;
+  }
+}
+.courseDetailsPage .emailBanner .eightSectionContainer .earthBox img {
+  width: min(900px, 100%);
+}
+.courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+@media (max-width: 768px) {
+  .courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox {
+    width: 100%;
+    margin-top: -6rem;
+  }
+}
+.courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .headingBox h2 {
+  font-size: 5.8rem;
+  font-weight: 500;
+}
+@media (max-width: 992px) {
+  .courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .headingBox h2 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .headingBox h2 {
+    font-size: 3.5rem;
+    line-height: 5rem;
+    text-align: center;
+  }
+}
+.courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .headingBox h2 span {
+  color: #05be74;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+.courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .headingBox h2 span:hover {
+  color: #222;
+}
+.courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .headingBox p {
+  font-size: 1.9rem;
+  margin-top: 1rem;
+  color: #cccccc;
+}
+@media (max-width: 576px) {
+  .courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .headingBox p {
+    text-align: center;
+  }
+}
+.courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .emailForm {
+  margin-bottom: 1rem;
+}
+.courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .emailForm form {
+  display: flex;
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  .courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .emailForm form {
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+}
+.courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .emailForm form input {
+  width: 100%;
+  border-radius: 54px;
+  outline: none;
+  padding: 0 2rem;
+  background-color: #00082a;
+  color: #f4f4f4;
+  border: 2px solid #465286;
+}
+.courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .emailForm form button {
+  padding: 1rem 3rem;
+  background: linear-gradient(100deg, #f98601 0%, #ebcc63 100%);
+  color: #f4f4f4;
+  border-radius: 54px;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .courseDetailsPage .emailBanner .eightSectionContainer .rightInputBox .emailForm form button {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+}
+.courseDetailsPage .reletedCoursesSection {
+  width: min(1420px, 98%);
+  margin: auto;
+  margin-bottom: 5vw;
+}
+.courseDetailsPage .reletedCoursesSection .reletedCoursesContainer {
+  width: 100%;
+}
+.courseDetailsPage .reletedCoursesSection .reletedCoursesContainer .heading {
+  font-size: 5rem;
+  width: min(700px, 98%);
+  margin: auto;
+  text-align: center;
+  margin-bottom: 4vw;
+  margin-top: 4vw;
+}
+.courseDetailsPage .reletedCoursesSection .reletedCoursesContainer .heading:hover span {
+  color: #222;
+}
+.courseDetailsPage .reletedCoursesSection .reletedCoursesContainer .heading span {
+  color: #05be74;
+}
+@media (max-width: 992px) {
+  .courseDetailsPage .reletedCoursesSection .reletedCoursesContainer .heading {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .courseDetailsPage .reletedCoursesSection .reletedCoursesContainer .heading {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+}
+.courseDetailsPage .reletedCoursesSection .reletedCoursesContainer .boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3vw;
+}
+@media (max-width: 768px) {
+  .courseDetailsPage .reletedCoursesSection .reletedCoursesContainer .boxes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.courseDetailsPage .reletedCoursesSection .reletedCoursesContainer .boxes .box .videoCard {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #152052;
+}
+.courseDetailsPage .reletedCoursesSection .reletedCoursesContainer .boxes .box .videoCard .imgBox {
+  position: relative;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  background-color: rebeccapurple;
+  cursor: pointer;
+}
+.courseDetailsPage .reletedCoursesSection .reletedCoursesContainer .boxes .box .videoCard .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(0.8);
+}
+.courseDetailsPage .reletedCoursesSection .reletedCoursesContainer .boxes .box .videoCard .imgBox .playBtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 7rem;
+  height: 7rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: transparent;
+  border: 3px solid #f4f4f4;
+  color: #f4f4f4;
+  font-size: 2.5rem;
+  box-shadow: 0px 0px 10px #f4f4f4;
+  filter: brightness(0.9);
+}
+.courseDetailsPage .reletedCoursesSection .reletedCoursesContainer .boxes .box .videoCard .content {
+  padding: 1.6rem 2rem;
+}
+.courseDetailsPage .reletedCoursesSection .reletedCoursesContainer .boxes .box .videoCard .content .title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.courseDetailsPage .reletedCoursesSection .reletedCoursesContainer .boxes .box .videoCard .content .subTitle {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.courseDetailsPage .reletedCoursesSection .reletedCoursesContainer .boxes .box .videoCard .content .review {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  gap: 1rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+.courseDetailsPage .reletedCoursesSection .reletedCoursesContainer .boxes .box .videoCard .content .review .stars {
+  color: #e9aa13;
+  font-size: 1.5rem;
+}
+.courseDetailsPage .reletedCoursesSection .reletedCoursesContainer .boxes .box .videoCard .content .tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+.courseDetailsPage .reletedCoursesSection .reletedCoursesContainer .boxes .box .videoCard .content .tags .tag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.courseDetailsPage .reletedCoursesSection .reletedCoursesContainer .boxes .box .videoCard .content .tags .tag .name {
+  color: rgba(255, 255, 255, 0.4);
+}
+.courseDetailsPage .reletedCoursesSection .reletedCoursesContainer .boxes .box .videoCard .content .timeing {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 2rem 0;
+  border-top: 2px solid rgba(255, 255, 255, 0.4);
+  gap: 2rem;
+}
+.courseDetailsPage .reletedCoursesSection .reletedCoursesContainer .boxes .box .videoCard .content .timeing .box {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  gap: 0.5rem;
+  color: #f4f4f4;
 }/*# sourceMappingURL=main.css.map */
