@@ -1618,6 +1618,139 @@ a {
   pointer-events: all;
 }
 
+.loginPage {
+  background-color: #00082a;
+  position: relative;
+  overflow: hidden;
+}
+.loginPage::before {
+  content: "";
+  width: 600px;
+  height: 600px;
+  background-color: #05be74;
+  top: 22%;
+  left: -16%;
+  position: absolute;
+  border-radius: 50%;
+}
+@media (max-width: 768px) {
+  .loginPage::before {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .loginPage::before {
+    width: 350px;
+    height: 350px;
+  }
+}
+.loginPage .containerEle1 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -190px;
+  right: -10%;
+  background-image: url("../../images/el1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: rotate(40deg);
+}
+@media (max-width: 768px) {
+  .loginPage .containerEle1 {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .loginPage .containerEle1 {
+    width: 350px;
+    height: 350px;
+  }
+}
+.loginPage .containerEle2 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  bottom: -150px;
+  right: -7%;
+  background-image: url("../../images/el1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  .loginPage .containerEle2 {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .loginPage .containerEle2 {
+    width: 350px;
+    height: 350px;
+  }
+}
+.loginPage .loginPageContainer {
+  width: min(1420px, 98%);
+  margin: auto;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.loginPage .loginPageContainer .containerBox {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.8px);
+  -webkit-backdrop-filter: blur(2.8px);
+  width: min(500px, 95%);
+  margin: auto;
+  padding: 0px 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  height: 400px;
+}
+.loginPage .loginPageContainer .containerBox .formContainer {
+  width: 100%;
+  margin-top: 10px;
+}
+.loginPage .loginPageContainer .containerBox .formContainer .inputContainer {
+  width: 100%;
+  padding: 10px 0px;
+}
+.loginPage .loginPageContainer .containerBox .formContainer .inputContainer .inputBase {
+  width: 100%;
+  border-bottom: 1px solid white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: none;
+  padding: 10px 5px;
+  outline: none;
+  color: white;
+}
+.loginPage .loginPageContainer .containerBox .formContainer .inputContainer .inputBase::-moz-placeholder {
+  color: white;
+}
+.loginPage .loginPageContainer .containerBox .formContainer .inputContainer .inputBase::placeholder {
+  color: white;
+}
+.loginPage .loginPageContainer .containerBox .formContainer .Loginbtn {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+.loginPage .loginPageContainer .containerBox .formContainer .Loginbtn .submitBtn {
+  width: 100%;
+  height: 40px;
+  background-color: #152052;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 .aboutPage .heroSection {
   width: min(1420px, 98%);
   margin: auto;
