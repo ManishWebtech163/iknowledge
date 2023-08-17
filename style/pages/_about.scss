@@ -1,0 +1,131 @@
+.aboutPage {
+  .heroSection {
+    @include container_1420;
+    margin: 10vh auto;
+    min-height: 70vh;
+    position: relative;
+    .heroSectionContainer {
+      position: relative;
+      // overflow: hidden;
+      background-image: linear-gradient(160deg, #202b54 0%, #0d132f 100%);
+      border-radius: 30px;
+      @include mediumScreen {
+        margin: 5vh auto;
+        padding-top: 1.5rem;
+      }
+      .boxes {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        padding: 2vw;
+        position: relative;
+        z-index: 4;
+        @include mediumScreen {
+          grid-template-columns: 100%;
+          padding: 4vw;
+        }
+        // -
+        .infoBox {
+          .tagBox {
+            // width: min(300px, 90%);
+            background-color: aqua;
+            padding: 1rem 2rem;
+            display: inline-flex;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            background: linear-gradient(100deg, #ebcc63 0%, #0bcb73 100%);
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 2rem;
+            .bookIcon {
+              font-size: 3rem;
+              color: $blackColor;
+              @include mediumScreen {
+                font-size: 2rem;
+              }
+            }
+            h2 {
+              font-size: 2rem;
+              font-weight: 400;
+              @include mediumScreen {
+                font-size: 1.6rem;
+              }
+            }
+          }
+          .heading {
+            margin-bottom: 2rem;
+            font-size: $xxlText + 2rem;
+            line-height: 9rem;
+            @include bigScreen {
+              font-size: $xxlText;
+              line-height: 6rem;
+            }
+            @include mediumScreen {
+              font-size: $xlText + 1rem;
+              line-height: 5rem;
+              text-align: center;
+            }
+            span {
+              @include primaryColorHover;
+            }
+          }
+          .smallerTitle {
+            font-weight: 400;
+            font-size: $mText;
+            @include mediumScreen {
+              font-size: $nText;
+              text-align: center;
+            }
+            span {
+              color: #ebcc63;
+            }
+          }
+        }
+        // -
+        .imageBox {
+          margin-top: -10rem;
+          @include mediumScreen {
+            margin-top: 0;
+          }
+          picture,
+          img {
+            width: min(420px, 90%);
+            // height: 100%;
+            display: block;
+            margin: auto;
+          }
+        }
+      }
+      // -backgroundImageContainer
+      .backgroundImageContainer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: top;
+        }
+      }
+    }
+    .starImage {
+      position: absolute;
+      right: -4rem;
+      top: -4rem;
+      width: min(200px, 100%);
+      z-index: 5;
+      img {
+        width: 100%;
+      }
+      @include largeScreen {
+        display: none;
+      }
+    }
+  }
+}

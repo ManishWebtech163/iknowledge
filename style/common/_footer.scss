@@ -1,0 +1,108 @@
+.footerSection {
+  footer {
+    .boxes {
+      background-color: $lightBlueColor;
+      border-top: 1px solid #344fa4;
+      // -
+      .linksBox {
+        @include container_1420;
+        border: 1px solid #344fa4;
+        margin: 2vw auto;
+        border-radius: 10px;
+        .containerBox {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 4vw;
+          align-items: flex-start;
+          padding: 3vw;
+          @include largeScreen {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          @include smallScreen {
+            grid-template-columns: repeat(1, 1fr);
+          }
+          //   -
+          .logoDiv {
+            .sitelogo {
+              width: 14rem;
+            }
+            .title {
+              font-size: $mText;
+            }
+            .subTitle {
+              font-size: $nText;
+              margin-bottom: 2rem;
+            }
+            .appLink {
+              display: flex;
+              img {
+                width: 9rem;
+                transition: 0.3s;
+                &:hover {
+                  scale: 1.1;
+                }
+              }
+            }
+          }
+          // -
+          .linkList {
+            .title {
+              font-size: $mText;
+              color: $primaryColor;
+              margin-bottom: 1rem;
+              font-weight: 600;
+            }
+            ul {
+              li {
+                margin-bottom: 1rem;
+                a {
+                  color: $whiteColor;
+                  font-size: $nText;
+                  &:hover {
+                    color: $primaryColor;
+                  }
+                }
+              }
+            }
+          }
+          //   -
+          .socialDiv {
+            .title {
+              font-size: $mText;
+              color: $primaryColor;
+              margin-bottom: 1rem;
+              font-weight: 600;
+            }
+            ul {
+              li {
+                font-size: $nText - 0.2rem;
+                margin-bottom: 1rem;
+                span {
+                  font-weight: 600;
+                }
+              }
+            }
+            .socailLink {
+              display: flex;
+              gap: 1rem;
+              a {
+                font-size: $mText;
+              }
+            }
+          }
+        }
+      }
+      // -
+      .copywriteBox {
+        background-color: #344fa4;
+        height: 7rem;
+        text-align: center;
+        display: grid;
+        place-items: center;
+        h6 {
+          font-size: $nText;
+        }
+      }
+    }
+  }
+}
