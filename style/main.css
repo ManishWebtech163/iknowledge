@@ -3729,4 +3729,248 @@ a {
   .courseDetailsPage .heroSection .starImage {
     display: none;
   }
+}
+.courseDetailsPage .courseDetailsSection {
+  margin: 5vw 0;
+  width: min(1420px, 98%);
+  margin: auto;
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer {
+  width: 100%;
+  padding: 5vh 2vw;
+  overflow-x: hidden;
+}
+@media (max-width: 1200px) {
+  .courseDetailsPage .courseDetailsSection .courseDetailsContainer {
+    padding: 5vh 0;
+  }
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .heading {
+  margin: 2rem 0 4rem 0;
+  font-size: 5rem;
+  text-align: center;
+  width: min(500px, 99%);
+  margin: auto;
+  margin-bottom: 4vw;
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .heading:hover span {
+  color: #222;
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .heading span {
+  color: #05be74;
+}
+@media (max-width: 992px) {
+  .courseDetailsPage .courseDetailsSection .courseDetailsContainer .heading {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .courseDetailsPage .courseDetailsSection .courseDetailsContainer .heading {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .heading span {
+  color: #05be74;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .heading span:hover {
+  color: #222;
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes {
+  display: grid;
+  grid-template-columns: 60% auto;
+  gap: 3vw;
+}
+@media (max-width: 1200px) {
+  .courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes {
+    grid-template-columns: 50% auto;
+  }
+}
+@media (max-width: 992px) {
+  .courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes {
+    grid-template-columns: 100%;
+  }
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box1 .videoImageBox {
+  position: relative;
+  aspect-ratio: 16/10;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 4vw;
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box1 .videoImageBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box1 .videoImageBox .playBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f4f4f4;
+  border: 3px solid #f4f4f4;
+  box-shadow: 0px 0px 10px lightgray;
+  border-radius: 50%;
+  background-color: transparent;
+  height: 7rem;
+  width: 7rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box1 .info {
+  margin-bottom: 2rem;
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box1 .info .title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box1 .info .title {
+    font-size: 2rem;
+  }
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box1 .info .pera {
+  font-size: 1.6rem;
+  color: #cccccc;
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 768px) {
+  .courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box1 .info .pera {
+    font-size: 1.3rem;
+  }
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box1 .points ul li {
+  font-size: 1.6rem;
+  display: grid;
+  grid-template-columns: 2.5rem auto;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: #cccccc;
+  padding-left: 1rem;
+}
+@media (max-width: 768px) {
+  .courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box1 .points ul li {
+    font-size: 1.3rem;
+  }
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box1 .points ul li .cricle {
+  background-color: #05be74;
+  height: 0.7rem;
+  width: 0.7rem;
+  border-radius: 50%;
+  outline: 2px solid #05be74;
+  outline-offset: 5px;
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box2 .courseTimingInfoBox {
+  background: #152052;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  padding: 2rem;
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box2 .courseTimingInfoBox .price {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box2 .courseTimingInfoBox .price .p {
+  color: #05be74;
+  font-weight: 600;
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box2 .courseTimingInfoBox .startBtn {
+  text-align: center;
+  padding: 1rem 0 0 0;
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box2 .courseTimingInfoBox .startBtn button {
+  padding: 1rem 3rem;
+  background: linear-gradient(100deg, #f98601 0%, #ebcc63 100%);
+  color: #f4f4f4;
+  border-radius: 54px;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box2 .courseTimingInfoBox .items {
+  margin-top: 1rem;
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box2 .courseTimingInfoBox .items .item {
+  font-size: 1.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 0 0.3rem 1rem 0.3rem;
+}
+@media (max-width: 768px) {
+  .courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box2 .courseTimingInfoBox .items .item {
+    font-size: 1.6rem;
+  }
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box2 .courseRelatedPoints {
+  margin-top: 3vw;
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box2 .courseRelatedPoints .card {
+  display: grid;
+  grid-template-columns: 120px auto;
+  background: #152052;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  padding: 1rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box2 .courseRelatedPoints .card .imgDiv {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box2 .courseRelatedPoints .card .imgDiv img {
+  width: 100%;
+  height: 100%;
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box2 .courseRelatedPoints .card .imgDiv .playBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f4f4f4;
+  border: 3px solid #f4f4f4;
+  box-shadow: 0px 0px 10px lightgray;
+  border-radius: 50%;
+  background-color: transparent;
+  height: 4rem;
+  width: 4rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box2 .courseRelatedPoints .card .content {
+  width: 100%;
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box2 .courseRelatedPoints .card .content .title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 768px) {
+  .courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box2 .courseRelatedPoints .card .content .title {
+    font-size: 1.6rem;
+  }
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box2 .courseRelatedPoints .card .content .ratingDiv {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  gap: 0.3rem;
+}
+.courseDetailsPage .courseDetailsSection .courseDetailsContainer .boxes .box2 .courseRelatedPoints .card .content .ratingDiv .starts .icon {
+  color: #e9aa13;
 }/*# sourceMappingURL=main.css.map */

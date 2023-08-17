@@ -3,4 +3,219 @@
   .heroSection {
     @include commonHeroSection;
   }
+  // --courseDetailsSection--
+  .courseDetailsSection {
+    margin: 5vw 0;
+    @include container_1420;
+    .courseDetailsContainer {
+      width: 100%;
+      padding: 5vh 2vw;
+      overflow-x: hidden;
+      @include bigScreen {
+        padding: 5vh 0;
+      }
+      // -headingBox-
+      .heading {
+        margin: 2rem 0 4rem 0;
+        @include commongHeading;
+        text-align: center;
+        width: min(500px, 99%);
+        margin: auto;
+        margin-bottom: 4vw;
+        span {
+          @include primaryColorHover;
+        }
+      }
+      // -
+      .boxes {
+        display: grid;
+        grid-template-columns: 60% auto;
+        gap: 3vw;
+        @include bigScreen {
+          grid-template-columns: 50% auto;
+        }
+        @include largeScreen {
+          grid-template-columns: 100%;
+        }
+        // -
+        .box1 {
+          .videoImageBox {
+            position: relative;
+            aspect-ratio: 16 / 10;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 4vw;
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+              opacity: 0.8;
+            }
+            .playBtn {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: $whiteColor;
+              border: 3px solid $whiteColor;
+              box-shadow: 0px 0px 10px lightgray;
+              border-radius: 50%;
+              background-color: transparent;
+              height: 7rem;
+              width: 7rem;
+              font-size: 2rem;
+              cursor: pointer;
+            }
+          }
+          .info {
+            margin-bottom: 2rem;
+            .title {
+              font-size: $lText;
+              font-weight: 400;
+              margin-bottom: 1rem;
+              @include mediumScreen {
+                font-size: $mText;
+              }
+            }
+            .pera {
+              font-size: $nText;
+              color: #cccccc;
+              margin-bottom: 0.5rem;
+              @include mediumScreen {
+                font-size: $nText - 0.3rem;
+              }
+            }
+          }
+          .points {
+            ul {
+              li {
+                font-size: $nText;
+                display: grid;
+                grid-template-columns: 2.5rem auto;
+                align-items: center;
+                margin-bottom: 1rem;
+                color: #cccccc;
+                padding-left: 1rem;
+                @include mediumScreen {
+                  font-size: $nText - 0.3rem;
+                }
+                .cricle {
+                  background-color: $primaryColor;
+                  height: 0.7rem;
+                  width: 0.7rem;
+                  border-radius: 50%;
+                  outline: 2px solid $primaryColor;
+                  outline-offset: 5px;
+                }
+              }
+            }
+          }
+        }
+        // -
+        .box2 {
+          .courseTimingInfoBox {
+            background: $lightBlueColor;
+            border: 1px solid $lightWhiteColor;
+            border-radius: 10px;
+            padding: 2rem;
+            .price {
+              font-size: $lText;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              .p {
+                color: $primaryColor;
+                font-weight: 600;
+              }
+            }
+            .startBtn {
+              text-align: center;
+              padding: 1rem 0 0 0;
+              button {
+                @include commonButton;
+              }
+            }
+            .items {
+              margin-top: 1rem;
+              .item {
+                font-size: $nText + 0.3rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 1rem;
+                border-bottom: 1px solid $lightWhiteColor;
+                padding: 0 0.3rem 1rem 0.3rem;
+                @include mediumScreen {
+                  font-size: $nText;
+                }
+              }
+            }
+          }
+          // -
+          .courseRelatedPoints {
+            margin-top: 3vw;
+            .card {
+              display: grid;
+              grid-template-columns: 120px auto;
+              background: $lightBlueColor;
+              border: 1px solid $lightWhiteColor;
+              border-radius: 10px;
+              padding: 1rem;
+              gap: 1rem;
+              margin-bottom: 1rem;
+              .imgDiv {
+                width: 100%;
+                border-radius: 10px;
+                overflow: hidden;
+                position: relative;
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+                .playBtn {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  color: $whiteColor;
+                  border: 3px solid $whiteColor;
+                  box-shadow: 0px 0px 10px lightgray;
+                  border-radius: 50%;
+                  background-color: transparent;
+                  height: 4rem;
+                  width: 4rem;
+                  font-size: 1rem;
+                  cursor: pointer;
+                }
+              }
+              .content {
+                width: 100%;
+                .title {
+                  font-size: $mText;
+                  margin-bottom: 0.5rem;
+                  @include mediumScreen {
+                    font-size: $nText;
+                  }
+                }
+                .ratingDiv {
+                  display: flex;
+                  align-items: center;
+                  font-size: $sText;
+                  gap: 0.3rem;
+                  .starts {
+                    .icon {
+                      color: $secondryColor;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // --//courseDetailsSection--
 }
