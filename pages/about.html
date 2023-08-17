@@ -28,11 +28,11 @@
                 </label>
                 <ul class="menu-items">
                     <li><a href="/">Home</a></li>
-                    <li class="plus"><a href="#">Services
+                    <li class="plus"><a>Services
                         </a>
                         <div class="items">
-                            <a class="item" href="./pages/coureses.html">Course</a>
-                            <a class="item">Course detail</a>
+                            <a class="item" href="./coureses.html">Course</a>
+                            <a class="item" href="./courseDetails.html">Course detail</a>
                         </div>
                     </li>
                     <li> <a class="item">About us</a></li>
@@ -101,7 +101,8 @@
                     </div>
                     <div class="iknowledgeButton">
                         <a class="startBtn">Start learning</a>
-                        <button class="videoModelBtn"><i class="fa-solid fa-circle-play fa-2"></i></button>
+                        <button class="videoModelBtn" onclick="videoModelShow()"><i
+                                class="fa-solid fa-circle-play fa-2"></i></button>
                     </div>
                 </div>
                 <div class="iknowledgeright">
@@ -360,10 +361,37 @@
         </footer>
     </section>
     <!-- //footer -->
+    <!--video modal-->
+    <div class="videoBoxModal " id="videoBoxModal">
+        <div class="wrapper"></div>
+        <button class="closeBtn" onclick="videoModelHide()">x</button>
+        <div class="content">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2LsOyOaobrc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
     <!-- --animation package cdn -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        // --video modal open hide--
+        function videoModelShow() {
+            let videoModal = document.getElementById("videoBoxModal")
+            videoModal.classList.add("videoModalActive")
+
+            document.body.style.overflowY = "hidden";
+        }
+        function videoModelHide() {
+            let videoModal = document.getElementById("videoBoxModal")
+            videoModal.classList.remove("videoModalActive")
+            document.body.style.overflowY = "auto";
+        }
     </script>
 </body>
 

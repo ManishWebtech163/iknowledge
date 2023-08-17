@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- --animation package cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -26,16 +28,16 @@
                     <span class="line line3"></span>
                 </label>
                 <ul class="menu-items">
-                    <li><a href="#">Home</a></li>
-                    <li class="plus"><a href="#">Services
+                    <li><a href="/">Home</a></li>
+                    <li class="plus"><a>Services
                         </a>
                         <div class="items">
-                            <a class="item" href="./pages/coureses.html">Course</a>
+                            <a class="item" href="./coureses.html">Course</a>
                             <a class="item">Course detail</a>
                         </div>
                     </li>
-                    <li> <a class="item" href="./pages/about.html">About us</a></li>
-                    <li> <a class="item" href="./pages/contact.html">Contact</a></li>
+                    <li> <a class="item" href="./about.html">About us</a></li>
+                    <li> <a class="item" href="./contact.html">Contact</a></li>
                     <li><i class="fa-solid fa-magnifying-glass searchIcon" onclick="searchModelShow()"></i></li>
                 </ul>
                 <img src="../images/iknowledge.png" class="logo" />
@@ -82,13 +84,13 @@
         <!-- --course detials section-- -->
         <section class="courseDetailsSection">
             <div class="courseDetailsContainer">
-                <h3 class="heading"> Introducing Graphic <span> Design. </span> </h3>
+                <h3 class="heading" data-aos="fade-down"> Introducing Graphic <span> Design. </span> </h3>
                 <div class="boxes">
                     <!-- - -->
                     <div class="box box1">
                         <div class="videoImageBox">
                             <img src="../images/photo-3.jpg" alt="/">
-                            <button class="playBtn"><i class="fa-solid fa-play"></i></button>
+                            <button class="playBtn" onclick="videoModelShow()"><i class="fa-solid fa-play"></i></button>
                         </div>
                         <div class="info description">
                             <h6 class="title">DESCRIPTION</h6>
@@ -298,7 +300,7 @@
         <!-- --releted courses section -->
         <section class="reletedCoursesSection">
             <div class="reletedCoursesContainer">
-                <h4 class="heading">Find a Free <span> Course </span>
+                <h4 class="heading" data-aos="fade-down">Find a Free <span> Course </span>
                     Video that Fits your Life.</h4>
                 <!-- - -->
                 <div class="boxes">
@@ -515,6 +517,37 @@
         </footer>
     </section>
     <!-- //footer -->
+    <!--video modal-->
+    <div class="videoBoxModal " id="videoBoxModal">
+        <div class="wrapper"></div>
+        <button class="closeBtn" onclick="videoModelHide()">x</button>
+        <div class="content">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2LsOyOaobrc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        // --video modal open hide--
+        function videoModelShow() {
+            let videoModal = document.getElementById("videoBoxModal")
+            videoModal.classList.add("videoModalActive")
+
+            document.body.style.overflowY = "hidden";
+        }
+        function videoModelHide() {
+            let videoModal = document.getElementById("videoBoxModal")
+            videoModal.classList.remove("videoModalActive")
+            document.body.style.overflowY = "auto";
+        }
+    </script>
 </body>
 
 </html>
