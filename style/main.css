@@ -2283,6 +2283,7 @@ a {
   font-size: 5rem;
   font-size: 6rem;
   line-height: 6.5rem;
+  font-weight: 500;
   margin-bottom: 1rem;
 }
 .aboutPage .aboutFourthSection .fourthcontainer .fourthRight .headingBox h2:hover span {
