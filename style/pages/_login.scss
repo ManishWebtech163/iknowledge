@@ -1,0 +1,142 @@
+.loginPage {
+    background-color: $darkBlueColor;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        width: 600px;
+        height: 600px;
+        background-color: $primaryColor;
+        top: 22%;
+        left: -16%;
+        position: absolute;
+        border-radius: 50%;
+
+        @include mediumScreen {
+            display: none;
+        }
+
+        @include bigScreen {
+            width: 350px;
+            height: 350px;
+        }
+    }
+
+    .containerEle1 {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        top: -190px;
+        right: -10%;
+        background-image: url('../../images/el1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: rotate(40deg);
+
+        @include mediumScreen {
+            display: none;
+
+        }
+        @include bigScreen {
+            width: 350px;
+            height: 350px;
+        }
+    }
+
+    .containerEle2 {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        bottom: -150px;
+        right: -7%;
+        background-image: url('../../images/el1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @include mediumScreen {
+            display: none;
+
+        }
+
+        @include bigScreen {
+            width: 350px;
+            height: 350px;
+        }
+    }
+
+    .loginPageContainer {
+        @include container_1420;
+
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+
+        .containerBox {
+
+
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(2.8px);
+            -webkit-backdrop-filter: blur(2.8px);
+            width: min(500px, 95%);
+            margin: auto;
+            padding: 0px 40px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            height: 400px;
+
+            .formContainer {
+                width: 100%;
+                margin-top: 10px;
+
+                .inputContainer {
+                    width: 100%;
+                    padding: 10px 0px;
+
+                    .inputBase {
+                        width: 100%;
+                        border-bottom: 1px solid white;
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                        background: none;
+                        padding: 10px 5px;
+                        outline: none;
+                        color: white;
+
+                        &::placeholder {
+                            color: white;
+
+                        }
+                    }
+
+
+                }
+
+                .Loginbtn {
+                    width: 100%;
+                    height: 100%;
+                    margin-top: 20px;
+
+                    .submitBtn {
+                        width: 100%;
+                        height: 40px;
+                        background-color: $lightBlueColor;
+                        color: white;
+                        border: none;
+                        font-size: 2rem;
+                        font-weight: 600;
+                        border-radius: 6px;
+                        cursor: pointer;
+
+                    }
+                }
+
+            }
+        }
+    }
+}
