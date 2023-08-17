@@ -2034,6 +2034,153 @@ a {
   font-weight: 400;
   color: #cccccc;
 }
+.aboutPage .thirdSection {
+  width: min(1420px, 98%);
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.aboutPage .thirdSection .thirdSectionContainer {
+  width: 100%;
+  margin: 10vh auto;
+}
+.aboutPage .thirdSection .thirdSectionContainer .boxes {
+  display: grid;
+  grid-template-columns: 60% auto;
+}
+@media (max-width: 992px) {
+  .aboutPage .thirdSection .thirdSectionContainer .boxes {
+    grid-template-columns: 100%;
+  }
+}
+.aboutPage .thirdSection .thirdSectionContainer .boxes .contentBox {
+  padding-right: 10vw;
+}
+@media (max-width: 992px) {
+  .aboutPage .thirdSection .thirdSectionContainer .boxes .contentBox {
+    text-align: center;
+    padding-right: 0vw;
+  }
+}
+.aboutPage .thirdSection .thirdSectionContainer .boxes .contentBox .heading {
+  font-size: 5rem;
+}
+.aboutPage .thirdSection .thirdSectionContainer .boxes .contentBox .heading:hover span {
+  color: #222;
+}
+.aboutPage .thirdSection .thirdSectionContainer .boxes .contentBox .heading span {
+  color: #05be74;
+}
+@media (max-width: 992px) {
+  .aboutPage .thirdSection .thirdSectionContainer .boxes .contentBox .heading {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .aboutPage .thirdSection .thirdSectionContainer .boxes .contentBox .heading {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+}
+.aboutPage .thirdSection .thirdSectionContainer .boxes .contentBox .heading span {
+  color: #05be74;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+.aboutPage .thirdSection .thirdSectionContainer .boxes .contentBox .heading span:hover {
+  color: #222;
+}
+.aboutPage .thirdSection .thirdSectionContainer .boxes .contentBox .pera {
+  font-size: 1.6rem;
+  margin: 2vw 0;
+}
+.aboutPage .thirdSection .thirdSectionContainer .boxes .contentBox .numbersBox {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .aboutPage .thirdSection .thirdSectionContainer .boxes .contentBox .numbersBox {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+}
+.aboutPage .thirdSection .thirdSectionContainer .boxes .contentBox .numbersBox .box .num {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.aboutPage .thirdSection .thirdSectionContainer .boxes .contentBox .numbersBox .box .title {
+  font-size: 1.6rem;
+}
+.aboutPage .thirdSection .thirdSectionContainer .boxes .contentBox .numbersBox .box .subTitle {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+.aboutPage .thirdSection .thirdSectionContainer .boxes .contentBox .numbersBox .box.ratingCourse .stars {
+  margin-top: 2rem;
+  display: flex;
+  font-size: 1.4rem;
+  gap: 0.5rem;
+  color: #e9aa13;
+}
+@media (max-width: 992px) {
+  .aboutPage .thirdSection .thirdSectionContainer .boxes .contentBox .numbersBox .box.ratingCourse .stars {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
+.aboutPage .thirdSection .thirdSectionContainer .boxes .contentBox .numbersBox .box.tutorials .youBox {
+  margin-top: 2rem;
+  display: flex;
+  font-size: 1.6rem;
+  gap: 0.5rem;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.5333333333);
+}
+@media (max-width: 992px) {
+  .aboutPage .thirdSection .thirdSectionContainer .boxes .contentBox .numbersBox .box.tutorials .youBox {
+    margin-top: 1rem;
+  }
+}
+.aboutPage .thirdSection .thirdSectionContainer .boxes .contentBox .numbersBox .box.tutorials .youBox .icon {
+  color: red;
+}
+.aboutPage .thirdSection .thirdSectionContainer .boxes .contentBox .numbersBox .box.registarions .link {
+  margin-top: 2rem;
+  display: flex;
+  font-size: 1.6rem;
+  color: #f4f4f4;
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .aboutPage .thirdSection .thirdSectionContainer .boxes .contentBox .numbersBox .box.registarions .link {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
+.aboutPage .thirdSection .thirdSectionContainer .boxes .contentBox .numbersBox .box.registarions .link span {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #f4f4f4;
+  color: #222;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+@media (max-width: 992px) {
+  .aboutPage .thirdSection .thirdSectionContainer .boxes .imageBox {
+    margin-top: 4rem;
+    text-align: center;
+  }
+}
+.aboutPage .thirdSection .thirdSectionContainer .boxes .imageBox picture,
+.aboutPage .thirdSection .thirdSectionContainer .boxes .imageBox img {
+  width: min(450px, 90%);
+}
 .aboutPage .aboutFourthSection {
   width: min(1420px, 98%);
   margin: auto;
