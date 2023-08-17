@@ -2078,145 +2078,6 @@ a {
   font-weight: 400;
   color: #cccccc;
 }
-.aboutPage .aboutFourthSection {
-  width: min(1420px, 98%);
-  margin: auto;
-  margin-bottom: 5rem;
-}
-.aboutPage .aboutFourthSection .fourthcontainer {
-  display: grid;
-  gap: 4rem;
-  grid-template-columns: 1fr 1fr;
-}
-@media (max-width: 992px) {
-  .aboutPage .aboutFourthSection .fourthcontainer {
-    grid-template-columns: 1fr;
-  }
-}
-.aboutPage .aboutFourthSection .fourthcontainer .fourthLeft {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(7, auto);
-  gap: 1rem;
-}
-@media (max-width: 992px) {
-  .aboutPage .aboutFourthSection .fourthcontainer .fourthLeft {
-    display: none;
-  }
-}
-.aboutPage .aboutFourthSection .fourthcontainer .fourthLeft .card {
-  width: 350px;
-  border-radius: 10px;
-  padding: 2rem;
-  background-color: #152052;
-  display: flex;
-  gap: 1rem;
-  flex-direction: column;
-  align-items: center;
-}
-.aboutPage .aboutFourthSection .fourthcontainer .fourthLeft .card.card_one {
-  grid-row: 1/5;
-  grid-column: 1/2;
-}
-.aboutPage .aboutFourthSection .fourthcontainer .fourthLeft .card.card_two {
-  grid-row: 1/2;
-  grid-column: 2/3;
-}
-.aboutPage .aboutFourthSection .fourthcontainer .fourthLeft .card.card_three {
-  grid-row: 5/7;
-  grid-column: 1/2;
-}
-.aboutPage .aboutFourthSection .fourthcontainer .fourthLeft .card.card_three .quotes {
-  width: 100%;
-  text-align: end;
-}
-.aboutPage .aboutFourthSection .fourthcontainer .fourthLeft .card.card_three p {
-  font-weight: bold;
-  font-size: 2rem;
-}
-.aboutPage .aboutFourthSection .fourthcontainer .fourthLeft .card.card_fore {
-  grid-row: 2/7;
-  grid-column: 2/3;
-}
-.aboutPage .aboutFourthSection .fourthcontainer .fourthLeft .card .image {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-.aboutPage .aboutFourthSection .fourthcontainer .fourthLeft .card .image img {
-  width: 80px;
-}
-.aboutPage .aboutFourthSection .fourthcontainer .fourthLeft .card .author h4 {
-  font-size: 1.9rem;
-}
-.aboutPage .aboutFourthSection .fourthcontainer .fourthLeft .card .author p {
-  color: #465286;
-  font-size: 1.6rem;
-  text-align: center;
-  font-weight: 500;
-}
-.aboutPage .aboutFourthSection .fourthcontainer .fourthLeft .card .authordes p {
-  font-weight: 500;
-  text-align: center;
-  font-size: 2rem;
-}
-.aboutPage .aboutFourthSection .fourthcontainer .fourthRight .headingBox h2 {
-  font-size: 5rem;
-  font-size: 6rem;
-  line-height: 6.5rem;
-  margin-bottom: 1rem;
-}
-.aboutPage .aboutFourthSection .fourthcontainer .fourthRight .headingBox h2:hover span {
-  color: #222;
-}
-.aboutPage .aboutFourthSection .fourthcontainer .fourthRight .headingBox h2 span {
-  color: #05be74;
-}
-@media (max-width: 992px) {
-  .aboutPage .aboutFourthSection .fourthcontainer .fourthRight .headingBox h2 {
-    font-size: 4rem;
-  }
-}
-@media (max-width: 576px) {
-  .aboutPage .aboutFourthSection .fourthcontainer .fourthRight .headingBox h2 {
-    font-size: 3.5rem;
-    line-height: 5rem;
-  }
-}
-@media (max-width: 992px) {
-  .aboutPage .aboutFourthSection .fourthcontainer .fourthRight .headingBox h2 {
-    font-size: 5rem;
-  }
-}
-.aboutPage .aboutFourthSection .fourthcontainer .fourthRight .headingBox h2 span {
-  color: #05be74;
-  transition: 0.3s;
-  transition-delay: 0.3s;
-}
-.aboutPage .aboutFourthSection .fourthcontainer .fourthRight .headingBox h2 span:hover {
-  color: #222;
-}
-.aboutPage .aboutFourthSection .fourthcontainer .fourthRight .description {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.aboutPage .aboutFourthSection .fourthcontainer .fourthRight .description p {
-  color: #cccccc;
-  margin-bottom: 1rem;
-}
-.aboutPage .aboutFourthSection .fourthcontainer .fourthRight .description .btn {
-  padding: 1rem 3rem;
-  background: linear-gradient(100deg, #f98601 0%, #ebcc63 100%);
-  color: #f4f4f4;
-  border-radius: 54px;
-  border: none;
-  font-size: 1.6rem;
-  font-weight: 600;
-  cursor: pointer;
-  padding: 1.5rem 1rem;
-  text-align: center;
-  width: 30%;
-}
 
 .contactPage .heroSection {
   width: min(1420px, 98%);
@@ -2582,4 +2443,731 @@ a {
 }
 .contactPage .bottomSection .bottomSectionContainer .playstore img {
   width: 120px;
+}
+
+.couresePage .heroSection {
+  width: min(1420px, 98%);
+  margin: auto;
+  margin: 10vh auto;
+  min-height: 70vh;
+  position: relative;
+  min-height: auto;
+}
+.couresePage .heroSection .heroSectionContainer {
+  position: relative;
+  background-image: linear-gradient(160deg, #202b54 0%, #0d132f 100%);
+  border-radius: 30px;
+}
+@media (max-width: 768px) {
+  .couresePage .heroSection .heroSectionContainer {
+    margin: 5vh auto;
+    padding-top: 1.5rem;
+  }
+}
+.couresePage .heroSection .heroSectionContainer .boxes {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  padding: 2vw;
+  position: relative;
+  z-index: 4;
+}
+@media (max-width: 768px) {
+  .couresePage .heroSection .heroSectionContainer .boxes {
+    grid-template-columns: 100%;
+    padding: 4vw;
+  }
+}
+.couresePage .heroSection .heroSectionContainer .boxes .infoBox .tagBox {
+  background-color: aqua;
+  padding: 1rem 2rem;
+  display: inline-flex;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background: linear-gradient(100deg, #ebcc63 0%, #0bcb73 100%);
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.couresePage .heroSection .heroSectionContainer .boxes .infoBox .tagBox .bookIcon {
+  font-size: 3rem;
+  color: #222;
+}
+@media (max-width: 768px) {
+  .couresePage .heroSection .heroSectionContainer .boxes .infoBox .tagBox .bookIcon {
+    font-size: 2rem;
+  }
+}
+.couresePage .heroSection .heroSectionContainer .boxes .infoBox .tagBox h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .couresePage .heroSection .heroSectionContainer .boxes .infoBox .tagBox h2 {
+    font-size: 1.6rem;
+  }
+}
+.couresePage .heroSection .heroSectionContainer .boxes .infoBox .heading {
+  margin-bottom: 2rem;
+  font-size: 7rem;
+  line-height: 9rem;
+}
+@media (max-width: 1200px) {
+  .couresePage .heroSection .heroSectionContainer .boxes .infoBox .heading {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+}
+@media (max-width: 768px) {
+  .couresePage .heroSection .heroSectionContainer .boxes .infoBox .heading {
+    font-size: 5rem;
+    line-height: 5rem;
+    text-align: center;
+  }
+}
+.couresePage .heroSection .heroSectionContainer .boxes .infoBox .heading span {
+  color: #05be74;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+.couresePage .heroSection .heroSectionContainer .boxes .infoBox .heading span:hover {
+  color: #222;
+}
+.couresePage .heroSection .heroSectionContainer .boxes .infoBox .smallerTitle {
+  font-weight: 400;
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .couresePage .heroSection .heroSectionContainer .boxes .infoBox .smallerTitle {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+.couresePage .heroSection .heroSectionContainer .boxes .infoBox .smallerTitle span {
+  color: #ebcc63;
+}
+.couresePage .heroSection .heroSectionContainer .boxes .imageBox {
+  margin-top: -10rem;
+}
+@media (max-width: 768px) {
+  .couresePage .heroSection .heroSectionContainer .boxes .imageBox {
+    margin-top: 0;
+  }
+}
+.couresePage .heroSection .heroSectionContainer .boxes .imageBox picture,
+.couresePage .heroSection .heroSectionContainer .boxes .imageBox img {
+  width: min(420px, 90%);
+  display: block;
+  margin: auto;
+}
+.couresePage .heroSection .heroSectionContainer .backgroundImageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.couresePage .heroSection .heroSectionContainer .backgroundImageContainer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.couresePage .heroSection .starImage {
+  position: absolute;
+  right: -4rem;
+  top: -4rem;
+  width: min(200px, 100%);
+  z-index: 5;
+}
+.couresePage .heroSection .starImage img {
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .couresePage .heroSection .starImage {
+    display: none;
+  }
+}
+.couresePage .classesCategoriesSection {
+  width: min(1420px, 98%);
+  margin: auto;
+}
+.couresePage .classesCategoriesSection .classesCategoriesSectionContainer {
+  width: 100%;
+  padding: 5vh 2vw;
+}
+@media (max-width: 1200px) {
+  .couresePage .classesCategoriesSection .classesCategoriesSectionContainer {
+    padding: 5vh 0;
+  }
+}
+.couresePage .classesCategoriesSection .classesCategoriesSectionContainer .headingBox {
+  margin: 2rem 0 4rem 0;
+}
+.couresePage .classesCategoriesSection .classesCategoriesSectionContainer .headingBox h2 {
+  font-size: 5rem;
+  text-align: center;
+  width: min(650px, 99%);
+  margin: auto;
+}
+.couresePage .classesCategoriesSection .classesCategoriesSectionContainer .headingBox h2:hover span {
+  color: #222;
+}
+.couresePage .classesCategoriesSection .classesCategoriesSectionContainer .headingBox h2 span {
+  color: #05be74;
+}
+@media (max-width: 992px) {
+  .couresePage .classesCategoriesSection .classesCategoriesSectionContainer .headingBox h2 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .couresePage .classesCategoriesSection .classesCategoriesSectionContainer .headingBox h2 {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+}
+.couresePage .classesCategoriesSection .classesCategoriesSectionContainer .headingBox h2 span {
+  color: #05be74;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+.couresePage .classesCategoriesSection .classesCategoriesSectionContainer .headingBox h2 span:hover {
+  color: #222;
+}
+.couresePage .classesCategoriesSection .classesCategoriesSectionContainer .boxes {
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 2rem 0;
+}
+@media (max-width: 992px) {
+  .couresePage .classesCategoriesSection .classesCategoriesSectionContainer .boxes {
+    grid-template-columns: 100%;
+  }
+}
+.couresePage .classesCategoriesSection .classesCategoriesSectionContainer .boxes .cardsBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  padding: 1rem;
+}
+@media (max-width: 1200px) {
+  .couresePage .classesCategoriesSection .classesCategoriesSectionContainer .boxes .cardsBox {
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 992px) {
+  .couresePage .classesCategoriesSection .classesCategoriesSectionContainer .boxes .cardsBox {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+  }
+}
+@media (max-width: 576px) {
+  .couresePage .classesCategoriesSection .classesCategoriesSectionContainer .boxes .cardsBox {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.couresePage .classesCategoriesSection .classesCategoriesSectionContainer .boxes .cardsBox .card {
+  background: #152052;
+  border: 2px solid #465286;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: 0.3s;
+}
+.couresePage .classesCategoriesSection .classesCategoriesSectionContainer .boxes .cardsBox .card:hover {
+  background: radial-gradient(#00082a, #152052);
+  border: 2px solid #05be74;
+}
+.couresePage .classesCategoriesSection .classesCategoriesSectionContainer .boxes .cardsBox .card .tags {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+.couresePage .classesCategoriesSection .classesCategoriesSectionContainer .boxes .cardsBox .card .tags .price {
+  background-color: #e9aa13;
+  padding: 0.3rem 0.7rem;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+.couresePage .classesCategoriesSection .classesCategoriesSectionContainer .boxes .cardsBox .card .tags .rating {
+  background-color: #465286;
+  padding: 0.3rem 0.7rem;
+  border-radius: 3px;
+}
+.couresePage .classesCategoriesSection .classesCategoriesSectionContainer .boxes .cardsBox .card .content h3 {
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+@media (max-width: 992px) {
+  .couresePage .classesCategoriesSection .classesCategoriesSectionContainer .boxes .cardsBox .card .content h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+}
+.couresePage .classesCategoriesSection .classesCategoriesSectionContainer .boxes .cardsBox .card .content p {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 992px) {
+  .couresePage .classesCategoriesSection .classesCategoriesSectionContainer .boxes .cardsBox .card .content p {
+    font-size: 1.4rem;
+  }
+}
+.couresePage .classesCategoriesSection .classesCategoriesSectionContainer .boxes .cardsBox .btnDiv {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.couresePage .classesCategoriesSection .classesCategoriesSectionContainer .boxes .cardsBox .btnDiv .startBtn {
+  background-color: #e9aa13;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 54px;
+}
+.couresePage .classesCategoriesSection .classesCategoriesSectionContainer .boxes .cardsBox .btnDiv .videoModelBtn {
+  background-color: #e9aa13;
+  font-size: 2rem;
+  font-weight: 600;
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  animation: slideIn 1s ease-in-out 0.5s infinite;
+}
+@keyframes slideIn {
+  from {
+    box-shadow: 0 0 0px 0px rgba(235, 204, 99, 0.4784313725);
+  }
+  to {
+    box-shadow: 0 0 5px 10px rgba(235, 204, 99, 0.4784313725);
+  }
+}
+.couresePage .othereCourseSection {
+  width: min(1420px, 98%);
+  margin: auto;
+  background: radial-gradient(closest-side at 50% 50%, #152052, #00082a);
+}
+.couresePage .othereCourseSection .othereCourseSectionContainer {
+  width: 100%;
+  padding: 5vh 2vw;
+}
+@media (max-width: 1200px) {
+  .couresePage .othereCourseSection .othereCourseSectionContainer {
+    padding: 5vh 0;
+  }
+}
+.couresePage .othereCourseSection .othereCourseSectionContainer .headingBox {
+  margin: 2rem 0 4rem 0;
+}
+.couresePage .othereCourseSection .othereCourseSectionContainer .headingBox h2 {
+  font-size: 5rem;
+  text-align: center;
+  width: min(650px, 99%);
+  margin: auto;
+}
+.couresePage .othereCourseSection .othereCourseSectionContainer .headingBox h2:hover span {
+  color: #222;
+}
+.couresePage .othereCourseSection .othereCourseSectionContainer .headingBox h2 span {
+  color: #05be74;
+}
+@media (max-width: 992px) {
+  .couresePage .othereCourseSection .othereCourseSectionContainer .headingBox h2 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .couresePage .othereCourseSection .othereCourseSectionContainer .headingBox h2 {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+}
+.couresePage .othereCourseSection .othereCourseSectionContainer .headingBox h2 span {
+  color: #05be74;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+.couresePage .othereCourseSection .othereCourseSectionContainer .headingBox h2 span:hover {
+  color: #222;
+}
+.couresePage .othereCourseSection .othereCourseSectionContainer .boxes {
+  display: grid;
+  grid-template-columns: 45% auto;
+  padding: 2rem 0;
+}
+@media (max-width: 992px) {
+  .couresePage .othereCourseSection .othereCourseSectionContainer .boxes {
+    grid-template-columns: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .couresePage .othereCourseSection .othereCourseSectionContainer .boxes .imageBox {
+    text-align: center;
+  }
+}
+.couresePage .othereCourseSection .othereCourseSectionContainer .boxes .imageBox picture,
+.couresePage .othereCourseSection .othereCourseSectionContainer .boxes .imageBox img {
+  width: min(450px, 90%);
+}
+.couresePage .othereCourseSection .othereCourseSectionContainer .boxes .cardsBox {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+}
+.couresePage .othereCourseSection .othereCourseSectionContainer .boxes .cardsBox .card {
+  background: #152052;
+  border: 2px solid #465286;
+  border-radius: 10px;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 140px auto;
+  align-items: center;
+  transition: 0.3s;
+  margin-bottom: 2rem;
+}
+@media (max-width: 992px) {
+  .couresePage .othereCourseSection .othereCourseSectionContainer .boxes .cardsBox .card {
+    padding: 0.5rem 1rem;
+    grid-template-columns: 100px auto;
+  }
+}
+.couresePage .othereCourseSection .othereCourseSectionContainer .boxes .cardsBox .card:hover {
+  background: radial-gradient(#00082a, #152052);
+  border: 2px solid #05be74;
+}
+.couresePage .othereCourseSection .othereCourseSectionContainer .boxes .cardsBox .card .videoImageDiv {
+  width: 100%;
+  aspect-ratio: 16/12;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.couresePage .othereCourseSection .othereCourseSectionContainer .boxes .cardsBox .card .videoImageDiv img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+.couresePage .othereCourseSection .othereCourseSectionContainer .boxes .cardsBox .card .videoImageDiv button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #f4f4f4;
+}
+.couresePage .othereCourseSection .othereCourseSectionContainer .boxes .cardsBox .card .content {
+  padding: 1rem 2rem;
+}
+.couresePage .othereCourseSection .othereCourseSectionContainer .boxes .cardsBox .card .content h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+@media (max-width: 992px) {
+  .couresePage .othereCourseSection .othereCourseSectionContainer .boxes .cardsBox .card .content h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+.couresePage .othereCourseSection .othereCourseSectionContainer .boxes .cardsBox .card .content .rating {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .couresePage .othereCourseSection .othereCourseSectionContainer .boxes .cardsBox .card .content .rating {
+    font-size: 1.2rem;
+  }
+}
+.couresePage .othereCourseSection .othereCourseSectionContainer .boxes .cardsBox .card .content .rating .starIcon {
+  color: #e9aa13;
+}
+.couresePage .othereCourseSection .othereCourseSectionContainer .boxes .cardsBox .card .content .timeing {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.couresePage .othereCourseSection .othereCourseSectionContainer .boxes .cardsBox .card .content .timeing .box {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+.couresePage .othereCourseSection .othereCourseSectionContainer .boxes .cardsBox .card .content .timeing .box p {
+  font-size: 1.2rem;
+}
+.couresePage .bestCourseSection {
+  width: min(1420px, 98%);
+  margin: auto;
+}
+.couresePage .bestCourseSection .bestCourseSectionContainer {
+  padding: 0 0 5vh 0;
+}
+.couresePage .bestCourseSection .bestCourseSectionContainer .headingBox {
+  margin: 2rem 0 4rem 0;
+}
+.couresePage .bestCourseSection .bestCourseSectionContainer .headingBox h2 {
+  font-size: 5rem;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .couresePage .bestCourseSection .bestCourseSectionContainer .headingBox h2 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .couresePage .bestCourseSection .bestCourseSectionContainer .headingBox h2 {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+}
+.couresePage .bestCourseSection .bestCourseSectionContainer .headingBox h2 span {
+  color: #05be74;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+.couresePage .bestCourseSection .bestCourseSectionContainer .headingBox h2 span:hover {
+  color: #222;
+}
+.couresePage .bestCourseSection .bestCourseSectionContainer .cardBox {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.couresePage .bestCourseSection .bestCourseSectionContainer .cardBox .card {
+  display: flex;
+  align-items: center;
+  border: 2px solid #465286;
+  border-radius: 300px;
+  gap: 3rem;
+  padding: 2rem 4rem;
+  background-color: #152052;
+}
+@media (max-width: 992px) {
+  .couresePage .bestCourseSection .bestCourseSectionContainer .cardBox .card {
+    flex-direction: column;
+    border-radius: 10px;
+  }
+}
+.couresePage .bestCourseSection .bestCourseSectionContainer .cardBox .card:hover {
+  border: 2px solid #0bcb73;
+  background: #0d132f;
+}
+.couresePage .bestCourseSection .bestCourseSectionContainer .cardBox .card .course {
+  width: 30%;
+}
+@media (max-width: 992px) {
+  .couresePage .bestCourseSection .bestCourseSectionContainer .cardBox .card .course {
+    width: 100%;
+    text-align: center;
+  }
+}
+.couresePage .bestCourseSection .bestCourseSectionContainer .cardBox .card .course h6 {
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-top: 5px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+@media (max-width: 576px) {
+  .couresePage .bestCourseSection .bestCourseSectionContainer .cardBox .card .course h6 {
+    font-size: 1.6rem;
+  }
+}
+.couresePage .bestCourseSection .bestCourseSectionContainer .cardBox .card .course h4 {
+  font-weight: 400;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+@media (max-width: 576px) {
+  .couresePage .bestCourseSection .bestCourseSectionContainer .cardBox .card .course h4 {
+    font-size: 2rem;
+  }
+}
+.couresePage .bestCourseSection .bestCourseSectionContainer .cardBox .card .course p {
+  color: #465286;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.couresePage .bestCourseSection .bestCourseSectionContainer .cardBox .card .course .rating {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+@media (max-width: 992px) {
+  .couresePage .bestCourseSection .bestCourseSectionContainer .cardBox .card .course .rating {
+    justify-content: center;
+  }
+}
+.couresePage .bestCourseSection .bestCourseSectionContainer .cardBox .card .course .rating .stars {
+  display: flex;
+  gap: 8px;
+}
+.couresePage .bestCourseSection .bestCourseSectionContainer .cardBox .card .level {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  width: 50%;
+}
+@media (max-width: 992px) {
+  .couresePage .bestCourseSection .bestCourseSectionContainer .cardBox .card .level {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .couresePage .bestCourseSection .bestCourseSectionContainer .cardBox .card .level {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.couresePage .bestCourseSection .bestCourseSectionContainer .cardBox .card .level .levelCard {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .couresePage .bestCourseSection .bestCourseSectionContainer .cardBox .card .level .levelCard {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+.couresePage .bestCourseSection .bestCourseSectionContainer .cardBox .card .level .levelCard .levelTitle h6 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #465286;
+}
+.couresePage .bestCourseSection .bestCourseSectionContainer .cardBox .card .level .levelCard .levelTitle p {
+  font-weight: 400;
+  font-size: 2rem;
+}
+.couresePage .bestCourseSection .bestCourseSectionContainer .cardBox .card .registration {
+  width: 30%;
+  text-align: end;
+}
+@media (max-width: 992px) {
+  .couresePage .bestCourseSection .bestCourseSectionContainer .cardBox .card .registration {
+    width: 100%;
+    text-align: center;
+  }
+}
+.couresePage .bestCourseSection .bestCourseSectionContainer .cardBox .card .registration button {
+  padding: 1rem 3rem;
+  background: linear-gradient(100deg, #f98601 0%, #ebcc63 100%);
+  color: #f4f4f4;
+  border-radius: 54px;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 1.4rem 2.5rem;
+}
+.couresePage .bottomSection {
+  width: min(1420px, 98%);
+  margin: auto;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  background-image: linear-gradient(280deg, rgba(41, 70, 200, 0.4196078431) 0%, rgba(76, 87, 136, 0.5058823529) 100%);
+}
+.couresePage .bottomSection .overlay {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/backgroundstar.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  opacity: 0.6;
+  mix-blend-mode: overlay;
+}
+.couresePage .bottomSection .bottomSectionContainer {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .couresePage .bottomSection .bottomSectionContainer {
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+}
+.couresePage .bottomSection .bottomSectionContainer .earthBox {
+  width: 100%;
+  text-align: center;
+}
+.couresePage .bottomSection .bottomSectionContainer .earthBox img {
+  width: min(500px, 90%);
+  margin: auto;
+}
+.couresePage .bottomSection .bottomSectionContainer .headingBox {
+  margin: 2rem 0 4rem 0;
+  position: relative;
+  z-index: 4;
+}
+.couresePage .bottomSection .bottomSectionContainer .headingBox h2 {
+  font-size: 5rem;
+}
+.couresePage .bottomSection .bottomSectionContainer .headingBox h2:hover span {
+  color: #222;
+}
+.couresePage .bottomSection .bottomSectionContainer .headingBox h2 span {
+  color: #05be74;
+}
+@media (max-width: 992px) {
+  .couresePage .bottomSection .bottomSectionContainer .headingBox h2 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .couresePage .bottomSection .bottomSectionContainer .headingBox h2 {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+}
+.couresePage .bottomSection .bottomSectionContainer .headingBox p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+.couresePage .bottomSection .bottomSectionContainer .headingBox button {
+  padding: 1rem 3rem;
+  background: linear-gradient(100deg, #f98601 0%, #ebcc63 100%);
+  color: #f4f4f4;
+  border-radius: 54px;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

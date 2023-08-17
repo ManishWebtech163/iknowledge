@@ -1,0 +1,484 @@
+.couresePage {
+  // --heroSection--
+  .heroSection {
+    @include commonHeroSection;
+    min-height: auto;
+  }
+  // --//heroSection--
+
+  //--classes categories section--
+  .classesCategoriesSection {
+    @include container_1420;
+
+    .classesCategoriesSectionContainer {
+      width: 100%;
+      padding: 5vh 2vw;
+      @include bigScreen {
+        padding: 5vh 0;
+      }
+      // -headingBox-
+      .headingBox {
+        margin: 2rem 0 4rem 0;
+        h2 {
+          @include commongHeading;
+          text-align: center;
+          width: min(650px, 99%);
+          margin: auto;
+          span {
+            @include primaryColorHover;
+          }
+        }
+      }
+      // -boxes-
+      .boxes {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 2rem 0;
+        @include largeScreen {
+          grid-template-columns: 100%;
+        }
+        .cardsBox {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+
+          gap: 2.5rem;
+          padding: 1rem;
+          @include bigScreen {
+            gap: 1.5rem;
+            grid-template-columns: repeat(3, 1fr);
+          }
+          @include largeScreen {
+            grid-template-columns: repeat(2, 1fr);
+            text-align: left;
+          }
+          @include smallScreen {
+            grid-template-columns: repeat(1, 1fr);
+          }
+          // -card
+          .card {
+            background: $lightBlueColor;
+            border: 2px solid #465286;
+            border-radius: 10px;
+            padding: 1.5rem;
+            transition: 0.3s;
+            &:hover {
+              background: radial-gradient($darkBlueColor, $lightBlueColor);
+              border: 2px solid $primaryColor;
+            }
+            .tags {
+              display: flex;
+              gap: 1rem;
+              font-size: 1.3rem;
+              .price {
+                background-color: $secondryColor;
+                padding: 0.3rem 0.7rem;
+                border-radius: 3px;
+                display: flex;
+                align-items: center;
+              }
+              .rating {
+                background-color: #465286;
+                padding: 0.3rem 0.7rem;
+                border-radius: 3px;
+              }
+            }
+            .content {
+              h3 {
+                font-size: 2.5rem;
+                margin: 2rem 0;
+                @include largeScreen {
+                  font-size: 2rem;
+                  margin: 1rem 0;
+                }
+              }
+              p {
+                font-size: 1.6rem;
+                margin-bottom: 1rem;
+                @include largeScreen {
+                  font-size: 1.4rem;
+                }
+              }
+            }
+          }
+          // -
+          .btnDiv {
+            grid-column: 1/-1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            gap: 2rem;
+            margin-top: 2rem;
+            .startBtn {
+              background-color: $secondryColor;
+              font-size: 1.6rem;
+              font-weight: 600;
+              padding: 1rem 2rem;
+              border-radius: 54px;
+            }
+            .videoModelBtn {
+              background-color: $secondryColor;
+              font-size: 2rem;
+              font-weight: 600;
+              height: 50px;
+              width: 50px;
+              border: none;
+              border-radius: 50%;
+              color: white;
+              animation: slideIn 1s ease-in-out 0.5s infinite;
+              @keyframes slideIn {
+                from {
+                  box-shadow: 0 0 0px 0px #ebcc637a;
+                }
+                to {
+                  box-shadow: 0 0 5px 10px #ebcc637a;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //--//classes categories section--
+  //--othere course section--
+  .othereCourseSection {
+    @include container_1420;
+
+    background: radial-gradient(
+      closest-side at 50% 50%,
+      $lightBlueColor,
+      $darkBlueColor
+    );
+    .othereCourseSectionContainer {
+      width: 100%;
+      padding: 5vh 2vw;
+      @include bigScreen {
+        padding: 5vh 0;
+      }
+      // -headingBox-
+      .headingBox {
+        margin: 2rem 0 4rem 0;
+        h2 {
+          @include commongHeading;
+          text-align: center;
+          width: min(650px, 99%);
+          margin: auto;
+          span {
+            @include primaryColorHover;
+          }
+        }
+      }
+      // -boxes-
+      .boxes {
+        display: grid;
+        grid-template-columns: 45% auto;
+        padding: 2rem 0;
+        @include largeScreen {
+          grid-template-columns: 100%;
+        }
+        .imageBox {
+          @include largeScreen {
+            text-align: center;
+          }
+          picture,
+          img {
+            width: min(450px, 90%);
+          }
+        }
+        .cardsBox {
+          display: block;
+          width: 100%;
+          padding: 1rem;
+          // -card
+          .card {
+            background: $lightBlueColor;
+            border: 2px solid #465286;
+            border-radius: 10px;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: 140px auto;
+            align-items: center;
+            transition: 0.3s;
+            margin-bottom: 2rem;
+            @include largeScreen {
+              padding: 0.5rem 1rem;
+              grid-template-columns: 100px auto;
+            }
+            &:hover {
+              background: radial-gradient($darkBlueColor, $lightBlueColor);
+              border: 2px solid $primaryColor;
+            }
+            .videoImageDiv {
+              width: 100%;
+              aspect-ratio: 16/12;
+              position: relative;
+              border-radius: 10px;
+              overflow: hidden;
+              img {
+                width: 100%;
+                height: 100%;
+                opacity: 0.7;
+              }
+              button {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: $nText;
+                height: 4rem;
+                width: 4rem;
+                border-radius: 50%;
+                background-color: transparent;
+                border: 1px solid $whiteColor;
+              }
+            }
+            .content {
+              padding: 1rem 2rem;
+              h3 {
+                font-size: 2.5rem;
+                font-weight: 400;
+                @include largeScreen {
+                  font-size: 1.5rem;
+                  margin: 0;
+                  margin-bottom: 0.5rem;
+                }
+              }
+              .rating {
+                font-size: $sText;
+                margin-bottom: 1rem;
+                display: flex;
+                gap: 0.5rem;
+                align-items: center;
+                @include largeScreen {
+                  font-size: 1.2rem;
+                }
+                .starIcon {
+                  color: $secondryColor;
+                }
+              }
+              .timeing {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 1rem;
+                margin-top: 1rem;
+                .box {
+                  display: flex;
+                  align-items: center;
+                  font-size: $sText;
+                  gap: 0.5rem;
+                  color: $lightWhiteColor;
+                  p {
+                    font-size: $sText;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //--//othere course section--
+  //--best course section--
+  .bestCourseSection {
+    @include container_1420;
+    .bestCourseSectionContainer {
+      padding: 0 0 5vh 0;
+      .headingBox {
+        margin: 2rem 0 4rem 0;
+        h2 {
+          font-size: $xxlText;
+          text-align: center;
+          @include largeScreen {
+            font-size: $xlText;
+          }
+          @include smallScreen {
+            font-size: $lText + 1rem;
+            line-height: 5rem;
+          }
+          span {
+            @include primaryColorHover;
+          }
+        }
+      }
+      .cardBox {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .card {
+          display: flex;
+          align-items: center;
+          // justify-content: space-between;
+          border: 2px solid #465286;
+          border-radius: 300px;
+          gap: 3rem;
+          padding: 2rem 4rem;
+          background-color: $lightBlueColor;
+          @include largeScreen {
+            flex-direction: column;
+            border-radius: 10px;
+          }
+          &:hover {
+            border: 2px solid #0bcb73;
+            background: #0d132f;
+          }
+          .course {
+            width: 30%;
+            @include largeScreen {
+              width: 100%;
+              text-align: center;
+            }
+            h6 {
+              font-weight: 400;
+              font-size: $nText + 0.2rem;
+              margin-top: 5px;
+              word-spacing: 1px;
+              letter-spacing: 1px;
+              @include smallScreen {
+                font-size: $nText;
+              }
+            }
+            h4 {
+              font-weight: 400;
+              font-size: $mText + 0.4rem;
+              text-transform: uppercase;
+              @include smallScreen {
+                font-size: $mText;
+              }
+            }
+            p {
+              color: #465286;
+              font-size: $nText;
+              font-weight: 600;
+            }
+            .rating {
+              display: flex;
+              align-items: center;
+              margin-top: 1rem;
+
+              gap: 1rem;
+              @include largeScreen {
+                justify-content: center;
+              }
+              .stars {
+                display: flex;
+                gap: 8px;
+              }
+            }
+          }
+          .level {
+            display: flex;
+            gap: 2rem;
+            justify-content: space-between;
+            width: 50%;
+            @include largeScreen {
+              width: 100%;
+              justify-content: center;
+            }
+            @include mediumScreen {
+              flex-direction: column;
+              justify-content: center;
+            }
+            .levelCard {
+              display: flex;
+              gap: 1.5rem;
+              align-items: center;
+              @include mediumScreen {
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+              }
+              .levelTitle {
+                h6 {
+                  font-size: $nText + 0.1rem;
+                  font-weight: 600;
+                  color: #465286;
+                }
+                p {
+                  font-weight: 400;
+                  font-size: $mText;
+                }
+              }
+            }
+          }
+          .registration {
+            width: 30%;
+            text-align: end;
+            @include largeScreen {
+              width: 100%;
+              text-align: center;
+            }
+            button {
+              @include commonButton;
+              padding: 1.4rem 2.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  //--//best course section--
+  //--bottom section--
+  .bottomSection {
+    @include container_1420;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    background-image: linear-gradient(280deg, #2946c86b 0%, #4c578881 100%);
+
+    .overlay {
+      width: 100%;
+      height: 100%;
+      background-image: url("../images/backgroundstar.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      opacity: 0.6;
+      mix-blend-mode: overlay;
+    }
+    .bottomSectionContainer {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      border-radius: 30px;
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      align-items: center;
+      @include largeScreen {
+        grid-template-columns: 100%;
+        text-align: center;
+      }
+      .earthBox {
+        width: 100%;
+        text-align: center;
+        img {
+          width: min(500px, 90%);
+          margin: auto;
+        }
+      }
+      .headingBox {
+        margin: 2rem 0 4rem 0;
+        position: relative;
+        z-index: 4;
+        h2 {
+          @include commongHeading;
+        }
+        p {
+          font-size: $mText;
+          margin-bottom: 2rem;
+          color: $lightWhiteColor;
+        }
+        button {
+          @include commonButton;
+        }
+      }
+    }
+  }
+  //--//bottom section--
+}
