@@ -2946,4 +2946,152 @@ a {
   font-size: 1.6rem;
   font-weight: 600;
   cursor: pointer;
+}
+
+.courseDetailsPage .heroSection {
+  width: min(1420px, 98%);
+  margin: auto;
+  margin: 10vh auto;
+  min-height: 70vh;
+  position: relative;
+}
+.courseDetailsPage .heroSection .heroSectionContainer {
+  position: relative;
+  background-image: linear-gradient(160deg, #202b54 0%, #0d132f 100%);
+  border-radius: 30px;
+}
+@media (max-width: 768px) {
+  .courseDetailsPage .heroSection .heroSectionContainer {
+    margin: 5vh auto;
+    padding-top: 1.5rem;
+  }
+}
+.courseDetailsPage .heroSection .heroSectionContainer .boxes {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  padding: 2vw;
+  position: relative;
+  z-index: 4;
+}
+@media (max-width: 768px) {
+  .courseDetailsPage .heroSection .heroSectionContainer .boxes {
+    grid-template-columns: 100%;
+    padding: 4vw;
+  }
+}
+.courseDetailsPage .heroSection .heroSectionContainer .boxes .infoBox .tagBox {
+  background-color: aqua;
+  padding: 1rem 2rem;
+  display: inline-flex;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background: linear-gradient(100deg, #ebcc63 0%, #0bcb73 100%);
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.courseDetailsPage .heroSection .heroSectionContainer .boxes .infoBox .tagBox .bookIcon {
+  font-size: 3rem;
+  color: #222;
+}
+@media (max-width: 768px) {
+  .courseDetailsPage .heroSection .heroSectionContainer .boxes .infoBox .tagBox .bookIcon {
+    font-size: 2rem;
+  }
+}
+.courseDetailsPage .heroSection .heroSectionContainer .boxes .infoBox .tagBox h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .courseDetailsPage .heroSection .heroSectionContainer .boxes .infoBox .tagBox h2 {
+    font-size: 1.6rem;
+  }
+}
+.courseDetailsPage .heroSection .heroSectionContainer .boxes .infoBox .heading {
+  margin-bottom: 2rem;
+  font-size: 7rem;
+  line-height: 9rem;
+}
+@media (max-width: 1200px) {
+  .courseDetailsPage .heroSection .heroSectionContainer .boxes .infoBox .heading {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+}
+@media (max-width: 768px) {
+  .courseDetailsPage .heroSection .heroSectionContainer .boxes .infoBox .heading {
+    font-size: 5rem;
+    line-height: 5rem;
+    text-align: center;
+  }
+}
+.courseDetailsPage .heroSection .heroSectionContainer .boxes .infoBox .heading span {
+  color: #05be74;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+.courseDetailsPage .heroSection .heroSectionContainer .boxes .infoBox .heading span:hover {
+  color: #222;
+}
+.courseDetailsPage .heroSection .heroSectionContainer .boxes .infoBox .smallerTitle {
+  font-weight: 400;
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .courseDetailsPage .heroSection .heroSectionContainer .boxes .infoBox .smallerTitle {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+.courseDetailsPage .heroSection .heroSectionContainer .boxes .infoBox .smallerTitle span {
+  color: #ebcc63;
+}
+.courseDetailsPage .heroSection .heroSectionContainer .boxes .imageBox {
+  margin-top: -10rem;
+}
+@media (max-width: 768px) {
+  .courseDetailsPage .heroSection .heroSectionContainer .boxes .imageBox {
+    margin-top: 0;
+  }
+}
+.courseDetailsPage .heroSection .heroSectionContainer .boxes .imageBox picture,
+.courseDetailsPage .heroSection .heroSectionContainer .boxes .imageBox img {
+  width: min(420px, 90%);
+  display: block;
+  margin: auto;
+}
+.courseDetailsPage .heroSection .heroSectionContainer .backgroundImageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.courseDetailsPage .heroSection .heroSectionContainer .backgroundImageContainer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.courseDetailsPage .heroSection .starImage {
+  position: absolute;
+  right: -4rem;
+  top: -4rem;
+  width: min(200px, 100%);
+  z-index: 5;
+}
+.courseDetailsPage .heroSection .starImage img {
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .courseDetailsPage .heroSection .starImage {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
