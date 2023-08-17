@@ -1618,26 +1618,12 @@ a {
   pointer-events: all;
 }
 
-.aboutPage .starImage {
-  position: absolute;
-  right: 5rem;
-  top: 5rem;
-  width: min(200px, 100%);
-  z-index: 5;
-}
-.aboutPage .starImage img {
-  width: 100%;
-}
-@media (max-width: 992px) {
-  .aboutPage .starImage {
-    display: none;
-  }
-}
 .aboutPage .heroSection {
   width: min(1420px, 98%);
   margin: auto;
   margin: 10vh auto;
   min-height: 70vh;
+  position: relative;
 }
 .aboutPage .heroSection .heroSectionContainer {
   position: relative;
@@ -1764,7 +1750,176 @@ a {
   -o-object-position: top;
      object-position: top;
 }
+.aboutPage .heroSection .starImage {
+  position: absolute;
+  right: -4rem;
+  top: -4rem;
+  width: min(200px, 100%);
+  z-index: 5;
+}
+.aboutPage .heroSection .starImage img {
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .aboutPage .heroSection .starImage {
+    display: none;
+  }
+}
 
+.contactPage .heroSection {
+  width: min(1420px, 98%);
+  margin: auto;
+  margin: 10vh auto;
+  position: relative;
+}
+.contactPage .heroSection .heroSectionContainer {
+  position: relative;
+  background-image: linear-gradient(160deg, #202b54 0%, #0d132f 100%);
+  border-radius: 30px;
+}
+@media (max-width: 768px) {
+  .contactPage .heroSection .heroSectionContainer {
+    margin: 5vh auto;
+    padding-top: 1.5rem;
+  }
+}
+.contactPage .heroSection .heroSectionContainer .boxes {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  padding: 2vw;
+  position: relative;
+  z-index: 4;
+}
+@media (max-width: 768px) {
+  .contactPage .heroSection .heroSectionContainer .boxes {
+    grid-template-columns: 100%;
+    padding: 4vw;
+  }
+}
+.contactPage .heroSection .heroSectionContainer .boxes .infoBox .tagBox {
+  background-color: aqua;
+  padding: 1rem 2rem;
+  display: inline-flex;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background: linear-gradient(100deg, #ebcc63 0%, #0bcb73 100%);
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.contactPage .heroSection .heroSectionContainer .boxes .infoBox .tagBox .bookIcon {
+  font-size: 3rem;
+  color: #222;
+}
+@media (max-width: 768px) {
+  .contactPage .heroSection .heroSectionContainer .boxes .infoBox .tagBox .bookIcon {
+    font-size: 2rem;
+  }
+}
+.contactPage .heroSection .heroSectionContainer .boxes .infoBox .tagBox h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .contactPage .heroSection .heroSectionContainer .boxes .infoBox .tagBox h2 {
+    font-size: 1.6rem;
+  }
+}
+.contactPage .heroSection .heroSectionContainer .boxes .infoBox .heading {
+  margin-bottom: 2rem;
+  font-size: 5rem;
+  font-size: 7rem;
+}
+.contactPage .heroSection .heroSectionContainer .boxes .infoBox .heading:hover span {
+  color: #222;
+}
+.contactPage .heroSection .heroSectionContainer .boxes .infoBox .heading span {
+  color: #05be74;
+}
+@media (max-width: 992px) {
+  .contactPage .heroSection .heroSectionContainer .boxes .infoBox .heading {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .contactPage .heroSection .heroSectionContainer .boxes .infoBox .heading {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .contactPage .heroSection .heroSectionContainer .boxes .infoBox .heading {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 768px) {
+  .contactPage .heroSection .heroSectionContainer .boxes .infoBox .heading {
+    font-size: 5rem;
+    text-align: center;
+  }
+}
+.contactPage .heroSection .heroSectionContainer .boxes .infoBox .smallerTitle {
+  font-weight: 400;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .contactPage .heroSection .heroSectionContainer .boxes .infoBox .smallerTitle {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+.contactPage .heroSection .heroSectionContainer .boxes .infoBox .smallerTitle span {
+  color: #ebcc63;
+}
+.contactPage .heroSection .heroSectionContainer .boxes .imageBox {
+  margin-top: -10rem;
+}
+@media (max-width: 768px) {
+  .contactPage .heroSection .heroSectionContainer .boxes .imageBox {
+    margin-top: 0;
+  }
+}
+.contactPage .heroSection .heroSectionContainer .boxes .imageBox picture,
+.contactPage .heroSection .heroSectionContainer .boxes .imageBox img {
+  width: min(420px, 90%);
+  display: block;
+  margin: auto;
+}
+.contactPage .heroSection .heroSectionContainer .backgroundImageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.contactPage .heroSection .heroSectionContainer .backgroundImageContainer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.contactPage .heroSection .starImage {
+  position: absolute;
+  right: -4rem;
+  top: -4rem;
+  width: min(200px, 100%);
+  z-index: 5;
+}
+.contactPage .heroSection .starImage img {
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .contactPage .heroSection .starImage {
+    display: none;
+  }
+}
 .contactPage .contactFormSection {
   width: min(1420px, 98%);
   margin: auto;
@@ -1900,4 +2055,79 @@ a {
   display: flex;
   gap: 2rem;
   font-size: 2.5rem;
+}
+.contactPage .bottomSection {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  background-image: linear-gradient(280deg, rgba(41, 70, 200, 0.4196078431) 0%, rgba(76, 87, 136, 0.5058823529) 100%);
+  width: min(1420px, 98%);
+  margin: auto;
+  margin: 4rem auto;
+}
+.contactPage .bottomSection .overlay {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/backgroundstar.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  opacity: 0.6;
+  mix-blend-mode: overlay;
+}
+.contactPage .bottomSection .bottomSectionContainer {
+  text-align: center;
+  margin-top: 6rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  padding: 1rem;
+}
+.contactPage .bottomSection .bottomSectionContainer .earthBox {
+  width: 100%;
+}
+.contactPage .bottomSection .bottomSectionContainer .earthBox img {
+  width: min(800px, 100%);
+}
+.contactPage .bottomSection .bottomSectionContainer .headingBox {
+  margin: 2rem 0 4rem 0;
+  position: relative;
+  z-index: 4;
+}
+.contactPage .bottomSection .bottomSectionContainer .headingBox h2 {
+  font-size: 5rem;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .contactPage .bottomSection .bottomSectionContainer .headingBox h2 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .contactPage .bottomSection .bottomSectionContainer .headingBox h2 {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+}
+.contactPage .bottomSection .bottomSectionContainer .headingBox h2 span {
+  color: #05be74;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+.contactPage .bottomSection .bottomSectionContainer .headingBox h2 span:hover {
+  color: #222;
+}
+.contactPage .bottomSection .bottomSectionContainer .headingBox p {
+  font-size: 2rem;
+  color: #cccccc;
+}
+.contactPage .bottomSection .bottomSectionContainer .playstore {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.contactPage .bottomSection .bottomSectionContainer .playstore img {
+  width: 120px;
 }/*# sourceMappingURL=main.css.map */
