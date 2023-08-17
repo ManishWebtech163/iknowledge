@@ -223,3 +223,15 @@
     }
   }
 }
+
+// --input mixing--
+@mixin inputStyle {
+  background: $darkBlueColor;
+  border: 2px solid $lightWhiteColor;
+  border-radius: 7px;
+  color: $whiteColor;
+  padding: 0.5rem 1rem;
+  display: block;
+  width: 100%;
+  min-height: 4rem;
+}

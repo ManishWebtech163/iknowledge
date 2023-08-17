@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course details</title>
+    <!-- --custom css link-- -->
+    <link rel="stylesheet" href="../style/main.css">
+    <!-- --icon libary cdn-- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- navSection -->
+    <div class="navSection">
+        <nav class="navbar">
+            <div class="backgroundOverlay"></div>
+            <div class="navbar-container container">
+                <input type="checkbox" id="menuInput" hidden>
+                <label class="hamburger-lines" for="menuInput">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </label>
+                <ul class="menu-items">
+                    <li><a href="#">Home</a></li>
+                    <li class="plus"><a href="#">Services
+                        </a>
+                        <div class="items">
+                            <a class="item" href="./pages/coureses.html">Course</a>
+                            <a class="item">Course detail</a>
+                        </div>
+                    </li>
+                    <li> <a class="item" href="./pages/about.html">About us</a></li>
+                    <li> <a class="item" href="./pages/contact.html">Contact</a></li>
+                    <li><i class="fa-solid fa-magnifying-glass searchIcon" onclick="searchModelShow()"></i></li>
+                </ul>
+                <img src="../images/iknowledge.png" class="logo" />
+            </div>
+        </nav>
+    </div>
+    <!-- //navSection -->
+    <section class="courseDetailsPage">
+        <!-- --hero section-- -->
+        <main class="heroSection">
+            <div class="heroSectionContainer">
+                <div class="boxes">
+                    <!-- info box -->
+                    <div class="infoBox">
+                        <!---->
+                        <div class="tagBox">
+                            <i class="fa-solid fa-book bookIcon"></i>
+                            <h2>PLATFORM EDUCATION</h2>
+                        </div>
+                        <!---->
+                        <h1 class="heading" data-aos="fade-down">
+                            Courses <span> Detail.</span>
+                        </h1>
+                        <!---->
+                        <h1 class="smallerTitle"><span>HOME</span> / COURSES</h1>
+                    </div>
+                    <!-- image box -->
+                    <div class="imageBox">
+                        <picture>
+                            <img src="../images/rocket.png" alt="robot-1">
+                        </picture>
+                    </div>
+                </div>
+                <div class="backgroundImageContainer">
+                    <img src="../images/heroBackgroundImage.png" alt="heroBackgroundImage">
+                </div>
+            </div>
+
+            <div class="starImage">
+                <img src="../images/stars.png" alt="">
+            </div>
+        </main>
+        <!-- --//hero section-- -->
+    </section>
+</body>
+
+</html>
