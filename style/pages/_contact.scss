@@ -1,0 +1,120 @@
+.contactPage {
+  // --contactFormSection--
+  .contactFormSection {
+    @include container_1420;
+    min-height: 100vh;
+    padding: 5vw 0;
+    display: grid;
+    place-items: center;
+    .contactFormContainer {
+      .heading {
+        @include commongHeading;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 3vw;
+      }
+      // -boxes
+      .boxes {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        gap: 3vw;
+        @include largeScreen {
+          grid-template-columns: 100%;
+        }
+        // -formBox
+        .formBox {
+          background-color: $lightBlueColor;
+          padding: 2rem 1rem;
+          border-radius: 10px;
+          border: 1px solid $lightWhiteColor;
+          h4 {
+            font-size: $lText;
+            font-weight: 400;
+          }
+          .form {
+            margin-top: 2rem;
+            .item {
+              margin-top: 2rem;
+              .title {
+                display: block;
+                font-size: $nText;
+                margin-bottom: 0.5rem;
+              }
+              input,
+              textarea {
+                background: $darkBlueColor;
+                border: 2px solid $lightWhiteColor;
+                border-radius: 7px;
+                color: $whiteColor;
+                padding: 0.5rem 1rem;
+                display: block;
+                width: 100%;
+                min-height: 4rem;
+              }
+            }
+            .submitBtn {
+              margin-top: 3rem;
+              button {
+                @include commonButton;
+                width: 100%;
+              }
+            }
+          }
+        }
+        // -infoBox
+        .infoBox {
+          padding: 0 1rem;
+          .title {
+            font-size: $lText + 0.5rem;
+            margin-bottom: 0.7rem;
+          }
+          .pera {
+            font-size: $nText;
+            margin-bottom: 0.7rem;
+          }
+          .socialItems {
+            margin-top: 2rem;
+            .item {
+              background-color: $lightBlueColor;
+              margin-bottom: 2rem;
+              padding: 1.5rem 0.3rem;
+              border-radius: 10px;
+              border: 1px solid $lightWhiteColor;
+              display: flex;
+              .icon {
+                width: 50px;
+                display: grid;
+                place-items: center;
+
+                font-size: 3rem;
+              }
+              .content {
+                padding-left: 1rem;
+                h5 {
+                  font-size: $mText;
+                  font-weight: 400;
+                }
+                p {
+                  font-size: $nText;
+                  font-weight: 300;
+                  color: $lightWhiteColor;
+                }
+              }
+            }
+            .socialLinks {
+              .title {
+                font-size: $lText;
+                font-weight: 400;
+              }
+              .links {
+                display: flex;
+                gap: 2rem;
+                font-size: $lText;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
