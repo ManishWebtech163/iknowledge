@@ -489,6 +489,7 @@
                         font-size: $xxlText + 1rem;
 
                         line-height: $xxlText + 1.5rem;
+                        font-weight: 500;
                         margin-bottom: 1rem;
                         @include largeScreen {
                             font-size: $xxlText;
