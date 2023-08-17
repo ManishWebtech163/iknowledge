@@ -2230,6 +2230,9 @@ a {
   grid-row: 1/2;
   grid-column: 2/3;
 }
+.aboutPage .aboutFourthSection .fourthcontainer .fourthLeft .card.card_two .stars {
+  color: yellow;
+}
 .aboutPage .aboutFourthSection .fourthcontainer .fourthLeft .card.card_three {
   grid-row: 5/7;
   grid-column: 1/2;
