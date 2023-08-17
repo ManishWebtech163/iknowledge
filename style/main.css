@@ -1618,143 +1618,6 @@ a {
   pointer-events: all;
 }
 
-.contactPage .contactFormSection {
-  width: min(1420px, 98%);
-  margin: auto;
-  min-height: 100vh;
-  padding: 5vw 0;
-  display: grid;
-  place-items: center;
-}
-.contactPage .contactFormSection .contactFormContainer .heading {
-  font-size: 5rem;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 3vw;
-}
-.contactPage .contactFormSection .contactFormContainer .heading:hover span {
-  color: #222;
-}
-.contactPage .contactFormSection .contactFormContainer .heading span {
-  color: #05be74;
-}
-@media (max-width: 992px) {
-  .contactPage .contactFormSection .contactFormContainer .heading {
-    font-size: 4rem;
-  }
-}
-@media (max-width: 576px) {
-  .contactPage .contactFormSection .contactFormContainer .heading {
-    font-size: 3.5rem;
-    line-height: 5rem;
-  }
-}
-.contactPage .contactFormSection .contactFormContainer .boxes {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  gap: 3vw;
-}
-@media (max-width: 992px) {
-  .contactPage .contactFormSection .contactFormContainer .boxes {
-    grid-template-columns: 100%;
-  }
-}
-.contactPage .contactFormSection .contactFormContainer .boxes .formBox {
-  background-color: #152052;
-  padding: 2rem 1rem;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-}
-.contactPage .contactFormSection .contactFormContainer .boxes .formBox h4 {
-  font-size: 2.5rem;
-  font-weight: 400;
-}
-.contactPage .contactFormSection .contactFormContainer .boxes .formBox .form {
-  margin-top: 2rem;
-}
-.contactPage .contactFormSection .contactFormContainer .boxes .formBox .form .item {
-  margin-top: 2rem;
-}
-.contactPage .contactFormSection .contactFormContainer .boxes .formBox .form .item .title {
-  display: block;
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
-}
-.contactPage .contactFormSection .contactFormContainer .boxes .formBox .form .item input,
-.contactPage .contactFormSection .contactFormContainer .boxes .formBox .form .item textarea {
-  background: #00082a;
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  border-radius: 7px;
-  color: #f4f4f4;
-  padding: 0.5rem 1rem;
-  display: block;
-  width: 100%;
-  min-height: 4rem;
-}
-.contactPage .contactFormSection .contactFormContainer .boxes .formBox .form .submitBtn {
-  margin-top: 3rem;
-}
-.contactPage .contactFormSection .contactFormContainer .boxes .formBox .form .submitBtn button {
-  padding: 1rem 3rem;
-  background: linear-gradient(100deg, #f98601 0%, #ebcc63 100%);
-  color: #f4f4f4;
-  border-radius: 54px;
-  border: none;
-  font-size: 1.6rem;
-  font-weight: 600;
-  cursor: pointer;
-  width: 100%;
-}
-.contactPage .contactFormSection .contactFormContainer .boxes .infoBox {
-  padding: 0 1rem;
-}
-.contactPage .contactFormSection .contactFormContainer .boxes .infoBox .title {
-  font-size: 3rem;
-  margin-bottom: 0.7rem;
-}
-.contactPage .contactFormSection .contactFormContainer .boxes .infoBox .pera {
-  font-size: 1.6rem;
-  margin-bottom: 0.7rem;
-}
-.contactPage .contactFormSection .contactFormContainer .boxes .infoBox .socialItems {
-  margin-top: 2rem;
-}
-.contactPage .contactFormSection .contactFormContainer .boxes .infoBox .socialItems .item {
-  background-color: #152052;
-  margin-bottom: 2rem;
-  padding: 1.5rem 0.3rem;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  display: flex;
-}
-.contactPage .contactFormSection .contactFormContainer .boxes .infoBox .socialItems .item .icon {
-  width: 50px;
-  display: grid;
-  place-items: center;
-  font-size: 3rem;
-}
-.contactPage .contactFormSection .contactFormContainer .boxes .infoBox .socialItems .item .content {
-  padding-left: 1rem;
-}
-.contactPage .contactFormSection .contactFormContainer .boxes .infoBox .socialItems .item .content h5 {
-  font-size: 2rem;
-  font-weight: 400;
-}
-.contactPage .contactFormSection .contactFormContainer .boxes .infoBox .socialItems .item .content p {
-  font-size: 1.6rem;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.4);
-}
-.contactPage .contactFormSection .contactFormContainer .boxes .infoBox .socialItems .socialLinks .title {
-  font-size: 2.5rem;
-  font-weight: 400;
-}
-.contactPage .contactFormSection .contactFormContainer .boxes .infoBox .socialItems .socialLinks .links {
-  display: flex;
-  gap: 2rem;
-  font-size: 2.5rem;
-}
-
 .aboutPage .starImage {
   position: absolute;
   right: 5rem;
@@ -1900,4 +1763,141 @@ a {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+}
+
+.contactPage .contactFormSection {
+  width: min(1420px, 98%);
+  margin: auto;
+  min-height: 100vh;
+  padding: 5vw 0;
+  display: grid;
+  place-items: center;
+}
+.contactPage .contactFormSection .contactFormContainer .heading {
+  font-size: 5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3vw;
+}
+.contactPage .contactFormSection .contactFormContainer .heading:hover span {
+  color: #222;
+}
+.contactPage .contactFormSection .contactFormContainer .heading span {
+  color: #05be74;
+}
+@media (max-width: 992px) {
+  .contactPage .contactFormSection .contactFormContainer .heading {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .contactPage .contactFormSection .contactFormContainer .heading {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+}
+.contactPage .contactFormSection .contactFormContainer .boxes {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 3vw;
+}
+@media (max-width: 992px) {
+  .contactPage .contactFormSection .contactFormContainer .boxes {
+    grid-template-columns: 100%;
+  }
+}
+.contactPage .contactFormSection .contactFormContainer .boxes .formBox {
+  background-color: #152052;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.contactPage .contactFormSection .contactFormContainer .boxes .formBox h4 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.contactPage .contactFormSection .contactFormContainer .boxes .formBox .form {
+  margin-top: 2rem;
+}
+.contactPage .contactFormSection .contactFormContainer .boxes .formBox .form .item {
+  margin-top: 2rem;
+}
+.contactPage .contactFormSection .contactFormContainer .boxes .formBox .form .item .title {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+.contactPage .contactFormSection .contactFormContainer .boxes .formBox .form .item input,
+.contactPage .contactFormSection .contactFormContainer .boxes .formBox .form .item textarea {
+  background: #00082a;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 7px;
+  color: #f4f4f4;
+  padding: 0.5rem 1rem;
+  display: block;
+  width: 100%;
+  min-height: 4rem;
+}
+.contactPage .contactFormSection .contactFormContainer .boxes .formBox .form .submitBtn {
+  margin-top: 3rem;
+}
+.contactPage .contactFormSection .contactFormContainer .boxes .formBox .form .submitBtn button {
+  padding: 1rem 3rem;
+  background: linear-gradient(100deg, #f98601 0%, #ebcc63 100%);
+  color: #f4f4f4;
+  border-radius: 54px;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+}
+.contactPage .contactFormSection .contactFormContainer .boxes .infoBox {
+  padding: 0 1rem;
+}
+.contactPage .contactFormSection .contactFormContainer .boxes .infoBox .title {
+  font-size: 3rem;
+  margin-bottom: 0.7rem;
+}
+.contactPage .contactFormSection .contactFormContainer .boxes .infoBox .pera {
+  font-size: 1.6rem;
+  margin-bottom: 0.7rem;
+}
+.contactPage .contactFormSection .contactFormContainer .boxes .infoBox .socialItems {
+  margin-top: 2rem;
+}
+.contactPage .contactFormSection .contactFormContainer .boxes .infoBox .socialItems .item {
+  background-color: #152052;
+  margin-bottom: 2rem;
+  padding: 1.5rem 0.3rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+}
+.contactPage .contactFormSection .contactFormContainer .boxes .infoBox .socialItems .item .icon {
+  width: 50px;
+  display: grid;
+  place-items: center;
+  font-size: 3rem;
+}
+.contactPage .contactFormSection .contactFormContainer .boxes .infoBox .socialItems .item .content {
+  padding-left: 1rem;
+}
+.contactPage .contactFormSection .contactFormContainer .boxes .infoBox .socialItems .item .content h5 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.contactPage .contactFormSection .contactFormContainer .boxes .infoBox .socialItems .item .content p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+}
+.contactPage .contactFormSection .contactFormContainer .boxes .infoBox .socialItems .socialLinks .title {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.contactPage .contactFormSection .contactFormContainer .boxes .infoBox .socialItems .socialLinks .links {
+  display: flex;
+  gap: 2rem;
+  font-size: 2.5rem;
 }/*# sourceMappingURL=main.css.map */
