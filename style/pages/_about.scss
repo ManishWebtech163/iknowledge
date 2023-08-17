@@ -419,6 +419,9 @@
                     &.card_two {
                         grid-row: 1 / 2;
                         grid-column: 2/3;
+                        .stars {
+                            color: yellow;
+                        }
                     }
                     &.card_three {
                         grid-row: 5 / 7;
