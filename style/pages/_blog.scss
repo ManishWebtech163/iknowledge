@@ -1,0 +1,350 @@
+.BlogPageContainer {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+    .sidebar {
+
+     
+        height: 100%;
+        background-color: #09CB74;
+        color: white;
+        padding-top: 20px;
+
+
+        transition: left 0.3s ease-in-out;
+
+        .SidebarProfileDetails {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 10px;
+
+            img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+                font-size: 1rem;
+                margin-top: 10px;
+                font-weight: 400;
+            }
+
+            button {
+                background: none;
+                margin-top: 30px;
+                width: 150px;
+                height: 40px;
+                border-radius: 60px;
+                color: white;
+                border: 1px solid white;
+                cursor: pointer;
+
+            }
+
+
+            //  --accordion css --
+            .accordion {
+                width: 90%;
+                margin: 2rem auto;
+            }
+
+            .accordion-item {
+                background-color: #fff;
+                color: #111;
+                margin: 1rem 0;
+                border-radius: 0.5rem;
+
+            }
+
+            .accordion-item-header {
+                padding: 0.5rem 3rem 0.5rem 1rem;
+                min-height: 3.5rem;
+                line-height: 1.25rem;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                position: relative;
+                cursor: pointer;
+                font-size: 1rem;
+            }
+
+            .accordion-item-header::after {
+                content: "\002B";
+                font-size: 2rem;
+                position: absolute;
+                right: 1rem;
+            }
+
+            .accordion-item-header.active::after {
+                content: "\2212";
+            }
+
+            .accordion-item-body {
+                max-height: 0;
+                overflow: auto;
+                transition: max-height 0.2s ease-out;
+            }
+
+            .accordion-item-body-content {
+                padding: 1rem;
+                font-size: 1.2rem;
+                text-align: justify;
+                line-height: 1.5rem;
+                border-top: 1px solid;
+                border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+            }
+
+
+        }
+
+    }
+
+
+    /* Content area styles */
+    .content {
+        width: auto;
+
+        overflow: auto;
+
+        transition: margin-left 0.3s ease-in-out;
+
+        .ContentBanner {
+
+            background-image: url("../../images/backgroundstar.jpg");
+            height: 400px;
+
+
+
+            #toggleSidebar {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 40px;
+                color: #fff;
+                background: none;
+                border: none;
+
+                display: none;
+
+
+                svg {
+                    fill: #fff;
+                }
+            }
+
+            h1 {
+                text-align: center;
+                padding-top: 60px;
+            }
+
+        }
+
+        .BlogCard {
+            padding: 20px;
+            width: max(800px, 60%);
+            background-color: white;
+            margin: -250px auto;
+            border-radius: 6px;
+
+            .cardHeading {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                h1 {
+                    color: #111;
+                }
+            }
+
+            .sunTitle {
+                font-size: 1.5rem;
+
+                color: black;
+            }
+
+            .cardDes {
+                color: #111;
+                text-align: justify;
+                font-size: 1.5rem;
+                margin-top: 20px;
+            }
+
+            .commiteContainer {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 20px;
+
+
+                .commiteBtn {
+                    background: none;
+                    border: none;
+                    color: black;
+                    font-size: 1.2rem;
+                }
+
+                .readMoreBtn {
+                    background: none;
+                    border: none;
+                    color: blue;
+                    font-size: 1.2rem;
+                }
+            }
+
+        }
+
+
+        .BlogCardTwo {
+            padding: 20px;
+            width: 60%;
+            height: 400px;
+            background-color: white;
+            margin: 280px auto;
+            border-radius: 6px;
+
+            .cardHeading {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                h1 {
+                    color: #111;
+                    font-size: 2.6rem;
+                }
+            }
+
+            .sunTitle {
+                font-size: 1.5rem;
+                margin-top: 60px;
+                color: black;
+            }
+
+
+            .HeadingAndImg {
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 60px;
+                padding: 30px 0px;
+
+                .cardDes {
+                    color: #111;
+                    text-align: justify;
+                    font-size: 1.5rem;
+                    margin-top: 20px;
+                }
+
+            }
+
+            .cardDes {
+                color: #111;
+                text-align: justify;
+                font-size: 1.5rem;
+                margin-top: 20px;
+            }
+
+            .commiteContainer {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 20px;
+
+
+                .commiteBtn {
+                    background: none;
+                    border: none;
+                    color: black;
+                    font-size: 1.2rem;
+                }
+
+                .readMoreBtn {
+                    background: none;
+                    border: none;
+                    color: blue;
+                    font-size: 1.2rem;
+                }
+            }
+
+        }
+
+        button#toggleSidebar {
+            display: block;
+            margin-bottom: 20px;
+
+        }
+    }
+
+    .sidebar-open {
+        left: 0px;
+        width: 70% !important;
+        display: block !important;
+    }
+}
+
+
+
+@media (max-width: 992px) {
+
+    #toggleSidebar {
+        display: block !important;
+    }
+
+    .BlogPageContainer .sidebar {
+        transition: left 0.3s ease-in-out;
+
+        display: none;
+    }
+
+    .content {
+        width: 100% !important;
+    }
+
+    .BlogCard {
+        width: 90% !important;
+
+    }
+
+    .BlogPageContainer .content .BlogCard .cardHeading h1 {
+        font-size: 1.5rem;
+    }
+
+    .BlogPageContainer .content .BlogCard .cardDes {
+        font-size: 12px;
+    }
+
+    .BlogCardTwo {
+        width: 90% !important;
+    }
+
+    .BlogPageContainer .content .BlogCard {
+        height: 100%;
+    }
+
+    .BlogPageContainer .content .BlogCardTwo {
+        height: 100%;
+    }
+
+    .BlogPageContainer .content .BlogCardTwo .HeadingAndImg {
+        display: inline-block;
+    }
+
+    .BlogPageContainer .content .BlogCardTwo .cardHeading h1 {
+        font-size: 1.5rem;
+    }
+
+    .BlogPageContainer .content .BlogCardTwo .HeadingAndImg .cardDes {
+        font-size: 12px;
+    }
+}
