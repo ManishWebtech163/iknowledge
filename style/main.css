@@ -4499,6 +4499,7 @@ a {
   }
   .BlogCardTwo {
     width: 90% !important;
+    height: 100% !important;
   }
   .BlogPageContainer .content .BlogCardTwo .HeadingAndImg {
     display: inline-block;
