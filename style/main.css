@@ -4500,12 +4500,6 @@ a {
   .BlogCardTwo {
     width: 90% !important;
   }
-  .BlogPageContainer .content .BlogCard {
-    height: 100%;
-  }
-  .BlogPageContainer .content .BlogCardTwo {
-    height: 100%;
-  }
   .BlogPageContainer .content .BlogCardTwo .HeadingAndImg {
     display: inline-block;
   }
