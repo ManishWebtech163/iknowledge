@@ -1612,10 +1612,249 @@ a {
 #videoBoxModal .content {
   width: min(700px, 90%);
 }
+#videoBoxModal .content .video {
+  border-radius: 10px;
+}
+#videoBoxModal .content .video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 #videoBoxModal.videoModalActive {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
+}
+
+.upcomingSection {
+  width: min(1420px, 98%);
+  margin: auto;
+  margin: 5vh auto;
+  display: flex;
+  align-items: center;
+}
+.upcomingSection .upcomingSectionContainer {
+  width: 100%;
+  margin: 10vh auto;
+}
+.upcomingSection .upcomingSectionContainer .boxes .heading {
+  font-size: 5rem;
+  text-align: center;
+  width: min(620px, 99%);
+  margin: auto;
+}
+.upcomingSection .upcomingSectionContainer .boxes .heading:hover span {
+  color: #222;
+}
+.upcomingSection .upcomingSectionContainer .boxes .heading span {
+  color: #05be74;
+}
+@media (max-width: 992px) {
+  .upcomingSection .upcomingSectionContainer .boxes .heading {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .upcomingSection .upcomingSectionContainer .boxes .heading {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+}
+.upcomingSection .upcomingSectionContainer .boxes .pera {
+  width: min(800px, 90%);
+  margin: 1rem auto;
+  text-align: center;
+}
+.upcomingSection .upcomingSectionContainer .boxes .eventslider {
+  margin: 5vh 0;
+  padding-bottom: 4rem;
+}
+.upcomingSection .upcomingSectionContainer .boxes .eventslider .eventCard {
+  width: 100%;
+  background-color: #152052;
+  border-radius: 7px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.upcomingSection .upcomingSectionContainer .boxes .eventslider .eventCard:hover .img img {
+  scale: 1.2;
+}
+.upcomingSection .upcomingSectionContainer .boxes .eventslider .eventCard .img {
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 16/12;
+}
+.upcomingSection .upcomingSectionContainer .boxes .eventslider .eventCard .img img {
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+}
+.upcomingSection .upcomingSectionContainer .boxes .eventslider .eventCard .content {
+  padding: 1rem 2rem;
+}
+.upcomingSection .upcomingSectionContainer .boxes .eventslider .eventCard .content .title {
+  font-size: 2rem;
+  color: #f4f4f4;
+  margin-bottom: 0.5rem;
+}
+.upcomingSection .upcomingSectionContainer .boxes .eventslider .eventCard .content .time {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+.upcomingSection .upcomingSectionContainer .boxes .eventslider .swiper-pagination-bullet {
+  background-color: #05be74;
+}
+
+.marketingPopupBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 999;
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.marketingPopupBox.marketingModalActive {
+  visibility: visible;
+  pointer-events: all;
+  opacity: 1;
+}
+
+.marketingPopupBox .wrpper {
+  height: 100%;
+  width: 100%;
+}
+
+.marketingPopupBox .wrpper .bgWrpper {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.marketingPopupBox .wrpper .modelContent {
+  width: min(650px, 90%);
+  border-radius: 10px;
+  background-color: white;
+  color: #222;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 35% auto;
+}
+@media (max-width: 768px) {
+  .marketingPopupBox .wrpper .modelContent {
+    width: min(500px, 90%);
+    grid-template-columns: 100%;
+  }
+}
+
+.marketingPopupBox .wrpper .modelContent .imgBox {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #001c00;
+  color: white;
+}
+@media (max-width: 768px) {
+  .marketingPopupBox .wrpper .modelContent .imgBox {
+    display: none;
+  }
+}
+
+.marketingPopupBox .wrpper .modelContent .imgBox img {
+  width: 50%;
+  aspect-ratio: 1;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.marketingPopupBox .wrpper .modelContent .speakerQuots {
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.marketingPopupBox .wrpper .modelContent .contentBox {
+  padding: 1.6rem;
+  position: relative;
+}
+
+.marketingPopupBox .wrpper .modelContent .contentBox .closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #222;
+  cursor: pointer;
+}
+
+.marketingPopupBox .wrpper .modelContent .contentBox .subHeading {
+  font-size: 2rem;
+}
+
+.marketingPopupBox .wrpper .modelContent .contentBox h1 {
+  font-size: 3.6rem;
+  margin-bottom: 0.2rem;
+  color: #006400;
+}
+
+.marketingPopupBox .wrpper .modelContent .contentBox .pSecond {
+  font-size: 1.6rem;
+}
+
+.marketingPopupBox .wrpper .modelContent .contentBox .offerBox {
+  background-color: rgba(0, 100, 0, 0.7);
+  margin: 1rem 0;
+  color: white;
+  padding: 1rem;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.marketingPopupBox .wrpper .modelContent .contentBox .offerBox .classRegisterBtn {
+  text-align: center;
+  margin: 0.3rem;
+  background-color: #ff8d22;
+  padding: 0.5rem 0.3rem;
+  border-radius: 3px;
+  font-size: 1.6rem;
+  color: white;
+  text-decoration: none;
+  /* animation: btnAnimation 3 linear 0 10; */
+  animation-name: btnAnimation;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.marketingPopupBox .wrpper .modelContent .contentBox .offerBox .classRegisterBtn .title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+.marketingPopupBox .wrpper .modelContent .contentBox .bottomLine {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.2rem;
 }
 
 .loginPage {

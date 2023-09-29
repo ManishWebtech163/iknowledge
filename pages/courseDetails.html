@@ -38,7 +38,7 @@
                     </li>
                     <li> <a class="item" href="./about.html">About us</a></li>
                     <li> <a class="item" href="./contact.html">Contact</a></li>
-                    <li><i class="fa-solid fa-magnifying-glass searchIcon" onclick="searchModelShow()"></i></li>
+
                 </ul>
                 <img src="../images/iknowledge.png" class="logo" />
             </div>
@@ -90,7 +90,8 @@
                     <div class="box box1">
                         <div class="videoImageBox">
                             <img src="../images/photo-3.jpg" alt="/">
-                            <button class="playBtn" onclick="videoModelShow()"><i class="fa-solid fa-play"></i></button>
+                            <button class="playBtn" onclick="videoModelShow({src:'../videos/testVideo.mp4'})"><i
+                                    class="fa-solid fa-play"></i></button>
                         </div>
                         <div class="info description">
                             <h6 class="title">DESCRIPTION</h6>
@@ -523,10 +524,9 @@
         <button class="closeBtn" onclick="videoModelHide()">x</button>
         <div class="content">
             <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2LsOyOaobrc"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                <video controls id="videoModalVideoTag">
+                    <source src="./videos/testVideo.mp4">
+                </video>
             </div>
         </div>
     </div>
@@ -536,15 +536,23 @@
     </script>
     <script>
         // --video modal open hide--
-        function videoModelShow() {
+        function videoModelShow(e) {
             let videoModal = document.getElementById("videoBoxModal")
+            let videoModalVideoTag = document.getElementById("videoModalVideoTag")
+            // -video src set-
+            videoModalVideoTag.src = e.src
+            // -show modal-
             videoModal.classList.add("videoModalActive")
-
+            // -body scroll off-
             document.body.style.overflowY = "hidden";
         }
+
         function videoModelHide() {
             let videoModal = document.getElementById("videoBoxModal")
             videoModal.classList.remove("videoModalActive")
+            // -video src set-
+            videoModalVideoTag.src = ""
+            //  --
             document.body.style.overflowY = "auto";
         }
     </script>

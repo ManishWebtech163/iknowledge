@@ -238,7 +238,7 @@
                         <!-- - -->
                         <div class="btnDiv">
                             <a class="startBtn">Start learning</a>
-                            <button class="videoModelBtn" onclick="videoModelShow()"><i
+                            <button class="videoModelBtn" onclick="videoModelShow({src:'./videos/testVideo.mp4'})"><i
                                     class="fa-solid fa-circle-play"></i></button>
                         </div>
                     </div>
@@ -472,6 +472,107 @@
             </div>
         </section>
         <!---- //forth section ---->
+        <!-- --upcoming events section-- -->
+        <section class="upcomingSection">
+            <div class="upcomingSectionContainer">
+                <div class="boxes">
+                    <h3 class="heading" data-aos="fade-down">
+                        Upcoming <span> Events </span>
+                    </h3>
+                    <p class="pera">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae excepturi non aspernatur
+                        quasi est sapiente similique pariatur, enim voluptates suscipit.
+                    </p>
+                    <!-- --events slider-- -->
+                    <div class="eventsSliderBox">
+                        <div class="swiper eventslider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="eventCard" onclick="marketingModelShow()">
+                                        <div class="img">
+                                            <img src="./images/photo-1.jpg" alt="eventImg">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">Lorem ipsum dolor sit.</div>
+                                            <p class="time"><i class="fa-solid fa-calendar-days"></i> 4th Sept 2023
+                                                &nbsp; <i class="fa-solid fa-stopwatch"></i> 7PM
+                                                Onwards</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="eventCard" onclick="marketingModelShow()">
+                                        <div class="img">
+                                            <img src="./images/photo-1.jpg" alt="eventImg">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">Lorem ipsum dolor sit.</div>
+                                            <p class="time"><i class="fa-solid fa-calendar-days"></i> 4th Sept 2023
+                                                &nbsp; <i class="fa-solid fa-stopwatch"></i> 7PM
+                                                Onwards</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="eventCard" onclick="marketingModelShow()">
+                                        <div class="img">
+                                            <img src="./images/photo-1.jpg" alt="eventImg">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">Lorem ipsum dolor sit.</div>
+                                            <p class="time"><i class="fa-solid fa-calendar-days"></i> 4th Sept 2023
+                                                &nbsp; <i class="fa-solid fa-stopwatch"></i> 7PM
+                                                Onwards</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="eventCard" onclick="marketingModelShow()">
+                                        <div class="img">
+                                            <img src="./images/photo-1.jpg" alt="eventImg">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">Lorem ipsum dolor sit.</div>
+                                            <p class="time"><i class="fa-solid fa-calendar-days"></i> 4th Sept 2023
+                                                &nbsp; <i class="fa-solid fa-stopwatch"></i> 7PM
+                                                Onwards</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="eventCard" onclick="marketingModelShow()">
+                                        <div class="img">
+                                            <img src="./images/photo-1.jpg" alt="eventImg">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">Lorem ipsum dolor sit.</div>
+                                            <p class="time"><i class="fa-solid fa-calendar-days"></i> 4th Sept 2023
+                                                &nbsp; <i class="fa-solid fa-stopwatch"></i> 7PM
+                                                Onwards</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="eventCard" onclick="marketingModelShow()">
+                                        <div class="img">
+                                            <img src="./images/photo-1.jpg" alt="eventImg">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">Lorem ipsum dolor sit.</div>
+                                            <p class="time"><i class="fa-solid fa-calendar-days"></i> 4th Sept 2023
+                                                &nbsp; <i class="fa-solid fa-stopwatch"></i> 7PM
+                                                Onwards</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination eventSliderPagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --//upcoming events section-- -->
         <!---- fifth section ---->
         <section class="fifthSection">
             <div class="fifthSectionContainer">
@@ -483,9 +584,9 @@
                     <!-- videos -->
                     <div class="videoBox">
                         <div class="videoCard">
-                            <div class="imgBox">
+                            <div class="imgBox" onclick="videoModelShow({src:'./videos/testVideo.mp4'})">
                                 <img src="./images/photo-1.jpg" alt="youtubeVideoImg">
-                                <button class="playBtn" onclick="videoModelShow()"><i
+                                <button class="playBtn" onclick="videoModelShow({src:'./videos/testVideo.mp4'})"><i
                                         class="fa-solid fa-play"></i></button>
                             </div>
                             <div class="content">
@@ -528,9 +629,9 @@
                             </div>
                         </div>
                         <div class="videoCard">
-                            <div class="imgBox">
+                            <div class="imgBox" onclick="videoModelShow({src:'./videos/testVideo.mp4'})">
                                 <img src="./images/photo-3.jpg" alt="youtubeVideoImg">
-                                <button class="playBtn" onclick="videoModelShow()"><i
+                                <button class="playBtn" onclick="videoModelShow({src:'./videos/testVideo.mp4'})"><i
                                         class="fa-solid fa-play"></i></button>
                             </div>
                             <div class="content">
@@ -573,9 +674,9 @@
                             </div>
                         </div>
                         <div class="videoCard">
-                            <div class="imgBox">
+                            <div class="imgBox" onclick="videoModelShow({src:'./videos/testVideo.mp4'})">
                                 <img src="./images/photo-4.jpg" alt="youtubeVideoImg">
-                                <button class="playBtn" onclick="videoModelShow()"><i
+                                <button class="playBtn" onclick="videoModelShow({src:'./videos/testVideo.mp4'})"><i
                                         class="fa-solid fa-play"></i></button>
                             </div>
                             <div class="content">
@@ -618,9 +719,9 @@
                             </div>
                         </div>
                         <div class="videoCard">
-                            <div class="imgBox">
+                            <div class="imgBox" onclick="videoModelShow({src:'./videos/testVideo.mp4'})">
                                 <img src="./images/photo-5.jpg" alt="youtubeVideoImg">
-                                <button class="playBtn" onclick="videoModelShow()"><i
+                                <button class="playBtn" onclick="videoModelShow({src:'./videos/testVideo.mp4'})"><i
                                         class="fa-solid fa-play"></i></button>
                             </div>
                             <div class="content">
@@ -663,9 +764,9 @@
                             </div>
                         </div>
                         <div class="videoCard">
-                            <div class="imgBox">
+                            <div class="imgBox" onclick="videoModelShow({src:'./videos/testVideo.mp4'})">
                                 <img src="./images/photo-3.jpg" alt="youtubeVideoImg">
-                                <button class="playBtn" onclick="videoModelShow()"><i
+                                <button class="playBtn" onclick="videoModelShow({src:'./videos/testVideo.mp4'})"><i
                                         class="fa-solid fa-play"></i></button>
                             </div>
                             <div class="content">
@@ -708,9 +809,9 @@
                             </div>
                         </div>
                         <div class="videoCard">
-                            <div class="imgBox">
+                            <div class="imgBox" onclick="videoModelShow({src:'./videos/testVideo.mp4'})">
                                 <img src="./images/photo-6.jpg" alt="youtubeVideoImg">
-                                <button class="playBtn" onclick="videoModelShow()"><i
+                                <button class="playBtn" onclick="videoModelShow({src:'./videos/testVideo.mp4'})"><i
                                         class="fa-solid fa-play"></i></button>
                             </div>
                             <div class="content">
@@ -1046,13 +1147,55 @@
         <button class="closeBtn" onclick="videoModelHide()">x</button>
         <div class="content">
             <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2LsOyOaobrc"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                <video controls id="videoModalVideoTag">
+                    <source src="./videos/testVideo.mp4">
+                </video>
             </div>
         </div>
     </div>
+    <!--marketing model-->
+    <div class="marketingPopupBox" id="marketingBoxModal">
+        <div class="wrpper">
+            <!-- - -->
+            <div class="bgWrpper"></div>
+
+            <!-- - -->
+            <div class="modelContent">
+                <div class="imgBox">
+                    <img src="./images/speakerImage.png" alt="Speaker Image">
+                    <p class="speakerQuots">
+                        <span>
+                            It’s Always the Fundamentals That People Underestimate and Lose while Trading.
+                        </span>
+                        <span>Hi, <span style="color:#77f777; font-weight: 600;"> I’m Dinesh, </span> a
+                            full-time Stock Trader and a mentor, helping people become a full
+                            time Stock Trader By <span style="color:#77f777; font-weight: 600;">
+                                Spending 60 Minutes Per
+                                day.</span></span>
+                    </p>
+                </div>
+                <div class="contentBox">
+                    <button class="closeBtn" onclick="marketingModelHide()">x</button>
+                    <hgroup>
+                        <p class="subHeading">Are You In a Rush To Make Money in the</p>
+                        <h1>Stock market?</h1>
+                    </hgroup>
+                    <p class="pSecond">If you are in a hurry, the Market can make you go through hell</p>
+                    <div class="offerBox">
+                        <h2 class="classDays">5 day Live Program</h2>
+                        <P class="date"> 4th Sept 2023 @ 7PM Onwards</P>
+                        <a href="/" class="classRegisterBtn">
+                            <p class="title">Register Now for Rs.99/-</p>
+                            <p class="subTitle">5 day Live Program - 4th Sept 2023 | 7pm</p>
+                        </a>
+                    </div>
+                    <p class="bottomLine"> <q> STOP Giving Those Excuses, For Previous Losses You Faced and Start
+                            Trading Successfully From Scratch </q></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//marketing model-->
     <!-- ----//modals---- -->
     <!-- --scripts load-- -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -1063,6 +1206,17 @@
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 4,
             spaceBetween: 10,
+        });
+        // --eventslider--
+        var swiper = new Swiper(".eventslider", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+
         });
 
         // --search modal open hide--
@@ -1077,15 +1231,43 @@
             document.body.style.overflowY = "auto";
         }
         // --video modal open hide--
-        function videoModelShow() {
+        function videoModelShow(e) {
             let videoModal = document.getElementById("videoBoxModal")
+            let videoModalVideoTag = document.getElementById("videoModalVideoTag")
+            // -video src set-
+            videoModalVideoTag.src = e.src
+            // -show modal-
             videoModal.classList.add("videoModalActive")
-
+            // -body scroll off-
             document.body.style.overflowY = "hidden";
         }
         function videoModelHide() {
             let videoModal = document.getElementById("videoBoxModal")
             videoModal.classList.remove("videoModalActive")
+            // -video src set-
+            videoModalVideoTag.src = ""
+            //  --
+            document.body.style.overflowY = "auto";
+        }
+
+        // --marketing Model open Hide--
+        function marketingModelShow() {
+            let model = document.getElementById("marketingBoxModal")
+            // -show modal-
+            model.classList.add("marketingModalActive")
+            // -body scroll off-
+            document.body.style.overflowY = "hidden";
+        }
+        // -model show after window load-
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                marketingModelShow()
+            }, 3000)
+        })
+        function marketingModelHide() {
+            let model = document.getElementById("marketingBoxModal")
+            model.classList.remove("marketingModalActive")
+            //  --
             document.body.style.overflowY = "auto";
         }
     </script>
