@@ -1,0 +1,783 @@
+.eventsPage {
+  width: 100%;
+  // --firstSection--
+  .firstSection {
+    width: 100%;
+    height: 800px;
+    margin-bottom: 2rem;
+    background-color: $lightBlueColor;
+    @include mediumScreen {
+      margin-bottom: 1rem;
+    }
+    @include smallScreen {
+      height: auto;
+    }
+    .container {
+      @include container_1420;
+      padding: 1rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      @include smallScreen {
+        display: block;
+      }
+      //-offersCard-
+      .offersCard {
+        display: flex;
+        width: 100%;
+        gap: 2rem;
+        @include largeScreen {
+          flex-wrap: wrap;
+        }
+        @include mediumScreen {
+          gap: 1rem;
+        }
+        @include smallScreen {
+          margin: 3rem 0;
+        }
+        .card {
+          width: 50%;
+          border-radius: 10px;
+          background: $lightBlueColor;
+          border: 2px solid #465286;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          padding: 1rem;
+          @include smallScreen {
+            flex-direction: column;
+            align-items: center;
+          }
+          &:hover {
+            background: radial-gradient($darkBlueColor, $lightBlueColor);
+            border: 2px solid $primaryColor;
+          }
+
+          @include largeScreen {
+            width: 100%;
+            row-gap: 1rem;
+          }
+          .box {
+            display: flex;
+            align-items: center;
+            column-gap: 1rem;
+            @include smallScreen {
+              flex-direction: column;
+              row-gap: 1rem;
+            }
+            .dateBox {
+              font-size: 2.3rem;
+              line-height: 2.8rem;
+              font-weight: 600;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              padding: 0rem 2rem;
+              color: $primaryColor;
+              border-right: 1px solid $lightWhiteColor;
+              @include mediumScreen {
+                font-size: 2rem;
+                line-height: 2.3rem;
+              }
+              @include smallScreen {
+                border: none;
+              }
+              .day {
+                font-size: 3.3rem;
+                line-height: 3.8rem;
+                @include mediumScreen {
+                  font-size: 3rem;
+                  line-height: 3.3rem;
+                }
+              }
+            }
+            .contentBox {
+              padding: 0rem 2rem;
+              width: 100%;
+              @include smallScreen {
+                text-align: center;
+              }
+              p {
+                font-size: 1.9rem;
+                @include mediumScreen {
+                  font-size: 1.6rem;
+                }
+              }
+              .colorText {
+                color: $primaryColor;
+              }
+            }
+          }
+          .cardBtn {
+            display: flex;
+            align-items: flex-end;
+            @include smallScreen {
+              text-align: center;
+              align-items: center;
+            }
+            a {
+              width: 10rem;
+              font-size: 1.6rem;
+              color: $secondryColor;
+              display: inline-block;
+              padding: 0.4rem 1rem;
+              border-radius: 10px;
+              margin-top: 0.3rem;
+              background-color: $darkBlueColor;
+              text-align: center;
+              margin: auto;
+              &:hover {
+                background-color: $secondryColor;
+                color: $whiteColor;
+              }
+              @include mediumScreen {
+                font-size: 1.3rem;
+              }
+            }
+          }
+        }
+      }
+      //   -timerBox-
+      .timerBox {
+        margin-top: 3vw;
+        @include smallScreen {
+          margin: 3rem 0;
+        }
+        .title {
+          text-align: center;
+          font-size: $lText;
+          color: $primaryColor;
+          margin-bottom: 1rem;
+          @include smallScreen {
+            font-size: $mText;
+          }
+        }
+        .pera {
+          text-align: center;
+          font-size: $mText;
+          margin-bottom: 2rem;
+          @include smallScreen {
+            font-size: $nText;
+          }
+        }
+        .countDown {
+          display: flex;
+          gap: 1rem;
+          justify-content: center;
+          flex-wrap: wrap;
+          .box {
+            // background-color: white;
+            border: 1px solid red;
+            border-radius: 10px;
+            padding: 1rem;
+            font-size: $mText;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width: 12rem;
+            background: $lightBlueColor;
+            border: 2px solid #465286;
+            .count {
+              font-size: $lText + 1;
+              color: $primaryColor;
+              font-weight: 600;
+              border-bottom: 1px solid $lightWhiteColor;
+              @include smallScreen {
+                font-size: $lText;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //   --banner section--
+  .bannerSection {
+    width: 100%;
+    margin-bottom: 4rem;
+    @include mediumScreen {
+      margin-bottom: 2rem;
+    }
+    .container {
+      @include container_1420;
+      padding: 1rem;
+      .imgBox {
+        img {
+          width: 100%;
+          max-height: 500px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  //   --pointsSection--
+  .pointsSection {
+    width: 100%;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+    @include mediumScreen {
+      margin-bottom: 1rem;
+    }
+    .container {
+      @include container_1420;
+      padding: 1rem;
+
+      .title {
+        text-align: center;
+        font-size: $xlText;
+        @include mediumScreen {
+          font-size: $lText;
+        }
+        @include smallScreen {
+          font-size: $mText;
+          text-align: left;
+        }
+      }
+      ul {
+        width: min(800px, 100%);
+        margin: 3rem auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: $nText;
+        gap: 2rem;
+        @include smallScreen {
+          grid-template-columns: 1fr;
+        }
+        li {
+          display: flex;
+          align-items: center;
+          align-items: baseline;
+          gap: 10px;
+          &:nth-child(odd) {
+            flex-direction: row-reverse;
+            text-align: right;
+          }
+          @include smallScreen {
+            &:nth-child(odd) {
+              flex-direction: row;
+              text-align: left;
+            }
+          }
+          h4 {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  // --founderSection--
+  .founderSection {
+    position: relative;
+    width: 100%;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+    @include mediumScreen {
+      margin-bottom: 1rem;
+    }
+    .container {
+      @include container_1420;
+      padding: 1rem;
+      .boxes {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 1rem;
+        @include mediumScreen {
+          grid-template-columns: 1fr;
+        }
+        .imgBox {
+          border: 1px solid $lightWhiteColor;
+          padding: 1rem;
+          border-radius: 10px;
+          aspect-ratio: 16/16;
+          position: sticky;
+          top: 1rem;
+          @include mediumScreen {
+            position: relative;
+            top: unset;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            // object-fit: cover;
+            object-position: center;
+          }
+        }
+        .content {
+          padding: 1rem;
+          @include mediumScreen {
+            padding: 0;
+          }
+          .title {
+            font-size: $mText;
+            color: $primaryColor;
+          }
+
+          .name {
+            font-size: $lText + 1;
+            font-weight: 600;
+          }
+          .pera {
+            font-size: $nText;
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  // --featuredSection--
+  .featuredSection {
+    position: relative;
+    width: 100%;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+    @include mediumScreen {
+      padding: 2rem 0;
+      margin-bottom: 1rem;
+    }
+    .container {
+      @include container_1420;
+      padding: 1rem;
+      .title {
+        text-align: center;
+        padding: 1rem 0;
+        text-align: center;
+        font-size: $xlText;
+        @include mediumScreen {
+          font-size: $lText;
+        }
+        @include smallScreen {
+          font-size: $mText;
+        }
+      }
+      .featuredSlider {
+        padding: 2rem 0;
+        .sliderCard {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  // --trainersSection--
+  .trainersSection {
+    position: relative;
+    width: 100%;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+    @include mediumScreen {
+      padding: 2rem 0;
+      margin-bottom: 1rem;
+    }
+    .container {
+      @include container_1420;
+      padding: 1rem;
+      .title {
+        text-align: center;
+        padding: 1rem 0;
+        text-align: center;
+        font-size: $xlText;
+        @include mediumScreen {
+          font-size: $lText;
+        }
+        @include smallScreen {
+          font-size: $mText;
+        }
+      }
+      .featuredSlider {
+        padding: 2rem 0;
+        .sliderCard {
+          width: 100%;
+          img {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: contain;
+            border-radius: 50%;
+          }
+          .person {
+            text-align: center;
+            .name {
+              font-size: $mText;
+            }
+            .location {
+              font-size: $sText;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // --storiesSection--
+  .storiesSection {
+    position: relative;
+    width: 100%;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+    background-color: $lightBlueColor;
+    @include mediumScreen {
+      padding: 2rem 0;
+      margin-bottom: 1rem;
+    }
+    .container {
+      @include container_1420;
+      padding: 1rem;
+      .title {
+        text-align: center;
+        padding: 1rem 0;
+        text-align: center;
+        font-size: $xlText;
+        @include mediumScreen {
+          font-size: $lText;
+        }
+        @include smallScreen {
+          font-size: $mText;
+        }
+      }
+      .storiesSlider {
+        padding: 2rem 0;
+        .sliderCard {
+          width: 100%;
+          display: grid;
+          grid-template-columns: 60% 40%;
+          @include smallScreen {
+            grid-template-columns: 100%;
+          }
+          .content {
+            padding-top: 2rem;
+            @include smallScreen {
+              grid-row: 2;
+              padding-top: 1rem;
+            }
+            .icon {
+              font-size: 3rem;
+              @include smallScreen {
+                font-size: 1.5rem;
+              }
+            }
+            .title {
+              font-size: $mText;
+              text-align: left;
+              @include smallScreen {
+                font-size: $nText;
+              }
+            }
+            .story {
+              font-size: $nText;
+              margin-bottom: 1rem;
+              @include smallScreen {
+                font-size: $sText;
+              }
+            }
+            .info {
+              .name {
+                font-size: $mText;
+                font-weight: 600;
+                @include smallScreen {
+                  font-size: $nText;
+                }
+              }
+              .profacion {
+                font-style: italic;
+              }
+            }
+          }
+          .imgBox {
+            img {
+              width: 80%;
+              margin: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // --reviewSection--
+  .reviewSection {
+    position: relative;
+    width: 100%;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+    @include mediumScreen {
+      padding: 2rem 0;
+      margin-bottom: 1rem;
+    }
+    .container {
+      @include container_1420;
+      padding: 1rem;
+      .title {
+        text-align: center;
+        padding: 1rem 0;
+        text-align: center;
+        font-size: $xlText;
+        @include mediumScreen {
+          font-size: $lText;
+        }
+        @include smallScreen {
+          font-size: $mText;
+        }
+      }
+      .reviewSlider {
+        padding: 2rem 0;
+        width: min(700px, 100%);
+        margin: auto;
+        .reviewSlider_arrowBtn {
+          font-size: $nText;
+          color: $primaryColor;
+          width: 4rem;
+          height: 4rem;
+          background-color: transparent;
+          border: 1px solid $primaryColor;
+          margin-right: 1rem;
+          border-radius: 4px;
+          cursor: pointer;
+          &:hover {
+            background-color: $primaryColor;
+            color: $whiteColor;
+          }
+          &.swiper-button-disabled {
+            background-color: gray;
+            color: $lightBlueColor;
+          }
+        }
+        .sliderCard {
+          width: 100%;
+          display: grid;
+          grid-template-columns: 100%;
+          .content {
+            padding-top: 2rem;
+            @include smallScreen {
+              grid-row: 2;
+              padding-top: 1rem;
+            }
+
+            .title {
+              font-size: $mText;
+              text-align: left;
+              line-height: $nText;
+              @include smallScreen {
+                font-size: $nText;
+              }
+            }
+            .count {
+              font-size: $sText;
+            }
+            .star {
+              margin-bottom: 1rem;
+              .fill {
+                color: $secondryColor;
+              }
+            }
+            .review {
+              font-size: $nText;
+              margin-bottom: 1rem;
+              @include smallScreen {
+                font-size: $sText;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //   --smallBannersSection--
+  .smallBannersSection {
+    width: 100%;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+    @include mediumScreen {
+      margin-bottom: 1rem;
+    }
+    .container {
+      @include container_1420;
+      padding: 1rem;
+
+      .title {
+        text-align: center;
+        font-size: $xlText;
+        @include mediumScreen {
+          font-size: $lText;
+        }
+        @include smallScreen {
+          font-size: $mText;
+        }
+      }
+      .banners {
+        margin: 3rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        @include smallScreen {
+          grid-template-columns: 1fr;
+        }
+        .banner {
+          a {
+            display: block;
+            text-align: center;
+            width: min(500px, 100%);
+            margin: auto;
+            img {
+              width: 100%;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //   --bottomPointsSection--
+  .bottomPointsSection {
+    width: 100%;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+    @include mediumScreen {
+      margin-bottom: 1rem;
+      padding: 2rem 0;
+    }
+    .container {
+      @include container_1420;
+      padding: 1rem;
+
+      .title {
+        text-align: center;
+        font-size: $xlText;
+        @include mediumScreen {
+          font-size: $lText;
+        }
+        @include smallScreen {
+          font-size: $mText;
+          text-align: left;
+        }
+      }
+      ul {
+        width: min(800px, 100%);
+        margin: 3rem auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: $nText;
+        gap: 2rem;
+        @include smallScreen {
+          grid-template-columns: 1fr;
+        }
+        li {
+          display: flex;
+          align-items: center;
+          align-items: baseline;
+          gap: 10px;
+          &:nth-child(odd) {
+            flex-direction: row-reverse;
+            text-align: right;
+          }
+          @include smallScreen {
+            &:nth-child(odd) {
+              flex-direction: row;
+              text-align: left;
+            }
+          }
+          h4 {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  // --firstSection--
+  .bottomCountDownSection {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 2rem;
+    background-color: $lightBlueColor;
+    @include mediumScreen {
+      margin-bottom: 1rem;
+    }
+    @include smallScreen {
+      height: auto;
+    }
+    .container {
+      @include container_1420;
+      padding: 1rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      @include smallScreen {
+        display: block;
+      }
+      //   -timerBox-
+      .timerBox {
+        margin-top: 3vw;
+        @include smallScreen {
+          margin: 3rem 0;
+        }
+        .title {
+          text-align: center;
+          font-size: $lText + 1;
+          color: $primaryColor;
+          margin-bottom: 2rem;
+          @include smallScreen {
+            font-size: $mText;
+          }
+        }
+
+        .countDown {
+          display: flex;
+          gap: 1rem;
+          justify-content: center;
+          flex-wrap: wrap;
+          .box {
+            // background-color: white;
+            border: 1px solid red;
+            border-radius: 10px;
+            padding: 1rem;
+            font-size: $mText;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width: 12rem;
+            background: $lightBlueColor;
+            border: 2px solid #465286;
+            .count {
+              font-size: $lText + 1;
+              color: $primaryColor;
+              font-weight: 600;
+              border-bottom: 1px solid $lightWhiteColor;
+              @include smallScreen {
+                font-size: $lText;
+              }
+            }
+          }
+        }
+        .registerBtn {
+          display: block;
+          width: min(200px, 90%);
+          padding: 0.8rem 0;
+          background-color: $secondryColor;
+          font-size: $mText;
+          text-align: center;
+          border-radius: 20px;
+          margin: auto;
+          margin-top: 2rem;
+          &:hover {
+            background-color: $whiteColor;
+          }
+        }
+      }
+    }
+  }
+}
