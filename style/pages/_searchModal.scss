@@ -1,3 +1,179 @@
 .searchModal {
   @include modalBox;
+  &.searchModalOpen {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+  .wrapper {
+    overflow: auto;
+    .closeBtn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .content {
+      width: min(700px, 95%);
+      margin: auto;
+      background-image: linear-gradient(160deg, #202b54 0%, #0d132f 100%);
+      margin: 5vh auto 5vh auto;
+      border-radius: 10px;
+      color: $whiteColor;
+      padding: 3rem 2rem;
+      // -searchBox-
+      .searchBox {
+        .title {
+          font-size: 2rem;
+          padding: 0 0 1rem 0;
+        }
+        .box {
+          display: flex;
+          gap: 1rem;
+          input {
+            width: 100%;
+            border-radius: 54px;
+            height: 40px;
+            outline: none;
+            padding: 0 2rem;
+            background-color: $darkBlueColor;
+            color: $whiteColor;
+            border: 2px solid #465286;
+          }
+          button {
+            @include commonButton;
+            white-space: nowrap;
+            @include mediumScreen {
+              font-size: 1.2rem;
+              padding: 1rem;
+            }
+          }
+        }
+      }
+      // -tabs-
+      .tabs {
+        width: 100%;
+
+        margin: 4rem 0;
+        .title {
+          font-size: 2rem;
+          padding: 0 0 1rem 0;
+        }
+        ul {
+          display: flex;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 2rem;
+          li {
+            width: 100%;
+            aspect-ratio: 16/7;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            text-transform: capitalize;
+            cursor: pointer;
+            background: $lightBlueColor;
+            border: 2px solid #465286;
+            border-radius: 10px;
+            transition: 0.3s;
+            &:hover {
+              background: radial-gradient($darkBlueColor, $lightBlueColor);
+              border: 2px solid $primaryColor;
+            }
+            @include mediumScreen {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+      // -options-
+      .options {
+        width: 100%;
+        margin: 2rem 0;
+        .title {
+          font-size: 2rem;
+          padding: 0 0 1rem 0;
+        }
+        //   .option {
+        //     width: 100%;
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: space-between;
+        //     font-size: 1.6rem;
+        //     padding: 1rem;
+
+        //     margin-bottom: 1rem;
+        //     background: $lightBlueColor;
+        //     border: 2px solid #465286;
+        //     border-radius: 10px;
+        //     transition: 0.3s;
+        //     cursor: pointer;
+        //     &:hover {
+        //       background: radial-gradient($darkBlueColor, $lightBlueColor);
+        //       border: 2px solid $primaryColor;
+        //     }
+        //   }
+        .tableContainer {
+          background: $lightBlueColor;
+          border: 2px solid #465286;
+          width: 100%;
+          overflow: auto;
+          border-radius: 10px;
+          table {
+            width: 100%;
+            padding: 1rem;
+
+            min-width: 600px;
+            tr {
+              width: 100%;
+              text-align: left;
+              margin-bottom: 1rem;
+              th {
+                font-size: 1.6rem;
+                &.actionBtn {
+                  text-align: center;
+                }
+              }
+              td {
+                font-size: 1.2rem;
+                padding: 1rem 0;
+                &.actionBtn {
+                  text-align: center;
+                  font-size: 1.6rem;
+                  button {
+                    width: 30px;
+                    background: $lightBlueColor;
+                    border: 2px solid #465286;
+                    color: $whiteColor;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    &:hover {
+                      background-color: $primaryColor;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      // -searchBtn-
+      .searchBtn {
+        display: flex;
+        margin: 1rem;
+        justify-content: center;
+        .btn {
+          @include commonButton;
+          white-space: nowrap;
+          min-width: 100px;
+          @include mediumScreen {
+            font-size: 1.2rem;
+            padding: 1rem;
+          }
+        }
+      }
+    }
+  }
 }

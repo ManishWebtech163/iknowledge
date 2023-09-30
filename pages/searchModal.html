@@ -5,14 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>searchModal</title>
+    <link rel="stylesheet" href="../style/main.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="searchModal">
-            <h1>asdf</h1>
+        <!-- -open btn- -->
+        <button class="modalOpen" onclick="searchModalModalOpenFun()">Modal open</button>
+        <!-- -modal- -->
+        <div class="searchModal " id="searchModalId">
+            <div class="wrapper">
+                <div class="closeBtn" onclick="searchModalModalOpenFun()">X</div>
+                <div class="content">
+                    <!-- - -->
+                    <div class="searchBox">
+                        <p class="title">Title for this section</p>
+                        <div class="box">
+                            <input type="text" placeholder="Search...">
+                            <!-- <button>Search</button> -->
+                        </div>
+                    </div>
+                    <!-- - -->
+                    <div class="tabs">
+                        <p class="title">Title for this section</p>
+                        <ul>
+                            <li>first</li>
+                            <li>second</li>
+                            <li>thired</li>
+                            <li>second</li>
+                            <li>thired</li>
+                        </ul>
+                    </div>
+                    <!-- - -->
+                    <div class="options">
+                        <p class="title">Title for this section</p>
+                        <div class="tableContainer">
+                            <table>
+                                <tr>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>First Name</th>
+                                    <th class="actionBtn">Action</th>
+                                </tr>
+                                <tr>
+                                    <td>Test</td>
+                                    <td>Test</td>
+                                    <td>Test</td>
+
+                                    <td class="actionBtn"> <button>></button> </td>
+                                </tr>
+                                <tr>
+                                    <td>Test</td>
+                                    <td>Test</td>
+                                    <td>Test</td>
+
+                                    <td class="actionBtn"> <button>></button> </td>
+                                </tr>
+                                <tr>
+                                    <td>Test</td>
+                                    <td>Test</td>
+                                    <td>Test</td>
+
+                                    <td class="actionBtn"> <button>></button> </td>
+                                </tr>
+                                <tr>
+                                    <td>Test</td>
+                                    <td>Test</td>
+                                    <td>Test</td>
+
+                                    <td class="actionBtn"> <button>></button> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="searchBtn">
+                        <button class="btn">Search</button>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- -//modal- -->
     </div>
+
+    <!-- --script-- -->
+    <script>
+        // searchModal hide/show function
+        function searchModalModalOpenFun() {
+            let searchModalId = document.getElementById("searchModalId");
+            var classTest = searchModalId.classList.contains("searchModalOpen");
+            if (classTest) {
+                searchModalId.classList.remove("searchModalOpen")
+            } else {
+                searchModalId.classList.add("searchModalOpen")
+            }
+        }
+    </script>
 </body>
 
 </html>

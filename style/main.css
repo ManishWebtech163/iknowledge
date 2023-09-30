@@ -4486,4 +4486,212 @@ a {
   font-size: 1.4rem;
   gap: 0.5rem;
   color: #f4f4f4;
+}
+
+.searchModal {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchModal .wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.searchModal .closeBtn {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  color: #f4f4f4;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: 1px solid #f4f4f4;
+  font-size: 2rem;
+  background-color: transparent;
+}
+.searchModal .content {
+  position: relative;
+  z-index: 3;
+}
+.searchModal.searchModalOpen {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+.searchModal .wrapper {
+  overflow: auto;
+}
+.searchModal .wrapper .closeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.searchModal .wrapper .content {
+  width: min(700px, 95%);
+  margin: auto;
+  background-image: linear-gradient(160deg, #202b54 0%, #0d132f 100%);
+  margin: 5vh auto 5vh auto;
+  border-radius: 10px;
+  color: #f4f4f4;
+  padding: 3rem 2rem;
+}
+.searchModal .wrapper .content .searchBox .title {
+  font-size: 2rem;
+  padding: 0 0 1rem 0;
+}
+.searchModal .wrapper .content .searchBox .box {
+  display: flex;
+  gap: 1rem;
+}
+.searchModal .wrapper .content .searchBox .box input {
+  width: 100%;
+  border-radius: 54px;
+  height: 40px;
+  outline: none;
+  padding: 0 2rem;
+  background-color: #00082a;
+  color: #f4f4f4;
+  border: 2px solid #465286;
+}
+.searchModal .wrapper .content .searchBox .box button {
+  padding: 1rem 3rem;
+  background: linear-gradient(100deg, #f98601 0%, #ebcc63 100%);
+  color: #f4f4f4;
+  border-radius: 54px;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .searchModal .wrapper .content .searchBox .box button {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+}
+.searchModal .wrapper .content .tabs {
+  width: 100%;
+  margin: 4rem 0;
+}
+.searchModal .wrapper .content .tabs .title {
+  font-size: 2rem;
+  padding: 0 0 1rem 0;
+}
+.searchModal .wrapper .content .tabs ul {
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.searchModal .wrapper .content .tabs ul li {
+  width: 100%;
+  aspect-ratio: 16/7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: #152052;
+  border: 2px solid #465286;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.searchModal .wrapper .content .tabs ul li:hover {
+  background: radial-gradient(#00082a, #152052);
+  border: 2px solid #05be74;
+}
+@media (max-width: 768px) {
+  .searchModal .wrapper .content .tabs ul li {
+    font-size: 1.2rem;
+  }
+}
+.searchModal .wrapper .content .options {
+  width: 100%;
+  margin: 2rem 0;
+}
+.searchModal .wrapper .content .options .title {
+  font-size: 2rem;
+  padding: 0 0 1rem 0;
+}
+.searchModal .wrapper .content .options .tableContainer {
+  background: #152052;
+  border: 2px solid #465286;
+  width: 100%;
+  overflow: auto;
+  border-radius: 10px;
+}
+.searchModal .wrapper .content .options .tableContainer table {
+  width: 100%;
+  padding: 1rem;
+  min-width: 600px;
+}
+.searchModal .wrapper .content .options .tableContainer table tr {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.searchModal .wrapper .content .options .tableContainer table tr th {
+  font-size: 1.6rem;
+}
+.searchModal .wrapper .content .options .tableContainer table tr th.actionBtn {
+  text-align: center;
+}
+.searchModal .wrapper .content .options .tableContainer table tr td {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+.searchModal .wrapper .content .options .tableContainer table tr td.actionBtn {
+  text-align: center;
+  font-size: 1.6rem;
+}
+.searchModal .wrapper .content .options .tableContainer table tr td.actionBtn button {
+  width: 30px;
+  background: #152052;
+  border: 2px solid #465286;
+  color: #f4f4f4;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.searchModal .wrapper .content .options .tableContainer table tr td.actionBtn button:hover {
+  background-color: #05be74;
+}
+.searchModal .wrapper .content .searchBtn {
+  display: flex;
+  margin: 1rem;
+  justify-content: center;
+}
+.searchModal .wrapper .content .searchBtn .btn {
+  padding: 1rem 3rem;
+  background: linear-gradient(100deg, #f98601 0%, #ebcc63 100%);
+  color: #f4f4f4;
+  border-radius: 54px;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  min-width: 100px;
+}
+@media (max-width: 768px) {
+  .searchModal .wrapper .content .searchBtn .btn {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
 }/*# sourceMappingURL=main.css.map */
