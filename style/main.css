@@ -4255,21 +4255,37 @@ a {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  /* Content area styles */
+  /* --Content area styles-- */
 }
 .BlogPageContainer .sidebar {
+  width: 350px;
   height: 100%;
-  background-color: #09CB74;
+  background-color: #09cb74;
   color: white;
   padding-top: 20px;
   transition: left 0.3s ease-in-out;
+  position: relative;
+  z-index: 10;
+}
+.BlogPageContainer .sidebar .closeBtn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #f4f4f4;
+  color: #f4f4f4;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  display: none;
 }
 .BlogPageContainer .sidebar .SidebarProfileDetails {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 10px;
+  padding: 1rem;
+  width: 350px;
 }
 .BlogPageContainer .sidebar .SidebarProfileDetails img {
   width: 150px;
@@ -4281,7 +4297,7 @@ a {
 }
 .BlogPageContainer .sidebar .SidebarProfileDetails p {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin-top: 10px;
   font-weight: 400;
 }
@@ -4294,6 +4310,13 @@ a {
   color: white;
   border: 1px solid white;
   cursor: pointer;
+}
+.BlogPageContainer .sidebar .SidebarProfileDetails button:hover {
+  background-color: #f4f4f4;
+  color: #05be74;
+}
+.BlogPageContainer .sidebar .SidebarProfileDetails .accordion *::-webkit-scrollbar {
+  display: none;
 }
 .BlogPageContainer .sidebar .SidebarProfileDetails .accordion {
   width: 90%;
@@ -4471,19 +4494,27 @@ a {
   display: block;
   margin-bottom: 20px;
 }
-.BlogPageContainer .sidebar-open {
-  left: 0px;
-  width: 70% !important;
-  display: block !important;
-}
 
 @media (max-width: 992px) {
+  .closeBtn {
+    display: block !important;
+  }
   #toggleSidebar {
     display: block !important;
   }
   .BlogPageContainer .sidebar {
-    transition: left 0.3s ease-in-out;
-    display: none;
+    transition: 0.3s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .BlogPageContainer .sidebar-open {
+    display: block;
+    left: 0;
+    pointer-events: all;
+    visibility: visible;
   }
   .content {
     width: 100% !important;
